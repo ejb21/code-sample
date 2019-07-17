@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    color:black;
+    display:block;
+}
+
+.bodyType{
+    display: flex;
+    justify-content: flex-start;
+}
+
+form{
+    margin-top: 1em;
+    flex-direction: center;
+}
+
+label{
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+
+  }
+
+form .total{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+li{
+    display:inline;
+    margin-right:5rem;
+    align-items: flex-end;
+    font-size: 24px;
+  }
+
+  li a{
+      color:white;
+  }
+
+  li a:hover{
+    text-shadow: 4px 4px 4px purple;
+  }

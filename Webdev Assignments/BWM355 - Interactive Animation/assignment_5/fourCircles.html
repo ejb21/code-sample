@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; Four Circles</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.arc(50,50,50,0,2*Math.PI);
+                context.strokeStyle = 'black';
+                context.stroke();
+                context.fillStyle = 'red';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(550,0,50,0,Math.PI);
+                context.strokeStyle = 'red';
+                context.stroke();
+                context.fillStyle = 'black';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(50,400,50,Math.PI,0);
+                context.strokeStyle = 'pink';
+                context.stroke();
+                context.fillStyle = 'green';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(600,400);
+                context.lineTo(550,400);
+                context.arc(600,400,50,Math.PI,1.5*Math.PI);
+                context.lineTo(600,400);
+                context.strokeStyle = 'green';
+                context.stroke();
+                context.fillStyle = 'pink';
+                context.fill();
+                context.closePath();
+            };
+        </script>    
+    </head>
+    <body>
+        <canvas id="canvas" width="600" height="400"style="border:1px solid black;"></canvas>
+    </body>
+</html>

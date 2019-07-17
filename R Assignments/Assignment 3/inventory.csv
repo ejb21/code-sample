@@ -1,0 +1,10 @@
+item,description,unit price,qty on hand
+201,washer 1,0.67,22
+206,washer 2,0.78,34
+310,gasket 1,1.12,12
+313,gasket 2,1.33,11
+322,gasket 3,1.4,6
+343,O-ring 1,1.6,9
+355,O-ring 2,2.1,2
+361,O-ring 3,3.1,15
+389,O-ring 4,3.75,17

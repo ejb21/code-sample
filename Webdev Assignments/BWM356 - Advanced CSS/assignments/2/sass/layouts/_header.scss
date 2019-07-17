@@ -1,0 +1,135 @@
+.header
+{
+    background: linear-gradient(rgba(#c91b34,0.7), rgba(#c91b34,0.7)), url('../img/fenway.jpg');
+    background-size: 100% auto;
+    width: 100%;
+    height: 37rem;
+    position: relative;
+    text-align: center;
+    padding-top: 1.1rem;
+
+    &__title
+    {
+        font-family: 'Bosox';
+        text-decoration: none;
+        color: white;
+        font-size: 13rem;
+        transition: all 0.3s ease-out;
+        text-shadow: 0 0 2rem rgba($lightred, 0.8);
+        font-weight: 500;
+        width: auto;
+
+        &:hover
+        {
+            color: $red;
+            text-shadow: 0 0 10rem $lightred, 0 0 8rem $lightred, 0 0 7rem $lightred, 0 0 6rem $lightred,
+                0 0 5rem $lightred, 0 0 5rem $lightred, 0 0 5rem $lightred, 0 0 4rem $lightred, 0 0 4rem $lightred;
+        }
+    }
+
+    &__subheading
+    {
+        font-family: 'Aileron Bold';
+        color: white;
+        font-size: 3rem;
+        margin-top: -1.5rem;
+    }
+
+    &__social
+    {
+        margin-top: 2.5rem;
+
+        & a
+        {
+            color: white;
+
+            & i
+            {
+                font-size: 3.5rem;
+                transition: all 0.2s;
+
+                &:hover
+                {
+                    transform: scale(1.3) translateY(-.3rem);
+                    transition: all 0.2s;
+                }
+            }
+
+            &:not(:first-child)
+            {
+                margin-left: 1.5rem;
+            }
+        }
+        color: white;
+    }
+
+    &__nav
+    {
+        height: 8rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: $red;
+        border-top: 10px solid darken($red, 5%);
+        list-style: none;
+        padding: 0 13%;
+        line-height: 7rem;
+        text-align: left;
+
+        &--a
+        {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 2rem;
+
+            &:not(:first-child)
+            {
+                margin-left: 3rem;
+            }
+
+            &:not(:first-child) .header__nav--li:before
+            {
+                content: "/";
+                margin-right: 3rem;
+                font-weight: 900;
+                font-size: 2rem;
+                position: relative;
+                top: -0.4rem;
+            }
+        }
+
+        &--ul
+        {
+            display: inline-block;
+        }
+
+        &--li
+        {
+            font-family: 'Bosox';
+            font-size: 2.8rem;
+            list-style: none;
+            transition: all .2s;
+
+            &:hover
+            {
+                text-shadow: 0 0 1rem $lightred;
+            }
+        }
+    }
+}
+
+.fas.fa-search
+{
+    float: right;
+    color: white;
+    line-height: 6.5rem;
+    font-size: 2.5rem;
+    transition: all .2s;
+
+    &:hover
+    {
+        transform: scale(1.3) translateX(-.3rem);
+    }
+}

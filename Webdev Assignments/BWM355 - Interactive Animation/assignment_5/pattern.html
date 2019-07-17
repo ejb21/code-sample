@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; Pattern</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                var img = document.getElementById('image');
+                var pattern = context.createPattern(img,'repeat');
+
+                var gradient = context.createRadialGradient(300,125,100,300,125,600);
+                gradient.addColorStop(0,'#9A1E2C');
+                gradient.addColorStop(1,'#333333');
+                context.rect(0,0,600,250);
+                context.fillStyle = gradient;
+                context.fillRect(0,0,595,249);
+
+                context.fillStyle = pattern;
+                context.fill();
+            };
+        </script>    
+    </head>
+    <body>
+        <img id="image" src="sawx.png" alt="World Champions" style="display: none;">
+        <canvas id="canvas" width="595" height="249"style="border: 1px solid black;"></canvas>
+    </body>
+</html>

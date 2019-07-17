@@ -1,0 +1,72 @@
+.u-smallcap
+{
+    display: inline-block;
+    font-size: 90%;
+}
+
+.u-smallcap-up
+{
+    display: inline-block;
+    font-size: 90%;
+    position: relative;
+    top: -.25rem;
+
+    @include respond(900px)
+    {
+        top: 0;
+    }
+}
+
+.u-smallcap-down
+{
+    display: inline-block;
+    font-size: 85%;
+    position: relative;
+    top: .18rem;
+}
+
+.u-delay
+{
+    animation-delay: -1.5s !important;
+}
+
+.u-m-hidden
+{
+    @include respond(900px)
+    {
+        display: none;
+    }
+}
+
+.u-m-visible
+{
+    display: none;
+    
+    @include respond(1300px)
+    {
+        display: initial;
+    }
+}
+
+.u-inline
+{
+    display: inline;
+}
+
+.u-flip-bg
+{
+    transition: transform .4s ease-out;
+    transform: rotate(180deg);
+}
+
+.u-unflip-bg
+{
+    transition: transform .4s ease-out;
+    transform: rotate(0deg);
+}
+
+.u-show
+{
+    animation: navbar .5s forwards ease-out;
+    animation-delay: .2s;
+}

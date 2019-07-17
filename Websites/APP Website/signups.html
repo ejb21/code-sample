@@ -1,0 +1,101 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Penn College APP Club</title>
+    <meta name="description" content="The official website for the Penn College chapter of the Association of Professional Programmers">
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/signups.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script>
+        function frameLink()
+        {
+            var cssLink = document.createElement("link");
+            cssLink.href = "css/form.css"; 
+            cssLink.rel = "stylesheet"; 
+            cssLink.type = "text/css";
+            var form = document.getElementById("GoogleForm");
+
+            var head = form.children[0];
+            alert(head);
+
+            var head = form.document;
+            alert(head);
+
+            var head = form.childNodes;
+            alert(head);
+            alert(head[0]);
+            alert(head[0].textContent);
+
+            head[0].appendChild(cssLink);
+        }
+    </script>
+</head>
+    
+<body>
+    <header>
+        <span id="pct"><a href="https://www.pct.edu/" target="_blank">Penn College</a></span>
+        <span id="app">Association of Professional Programmers</span>
+        <nav><ul>
+            <a href="index.html"><li>Root</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="resources.html"><li>Resources</li></a>
+        </ul></nav>
+    </header>
+    
+    <div id="content">
+        <h1>Runtime Funtime Ground Rules</h1>
+        <p class="rules">
+            Teams will consist of 1-3 members who will compete at the highest member's skill level.
+        </p>
+        <p class="rules">
+            <span id="source">There are two skill levels:</span><br>
+            <span class="source">Low Tier:</span> Those who have not begun a 200-level programming course<br>
+            <span class="source">High Tier:</span> Those who have started/completed a 200-level programming course<br>
+        </p>
+        <p class="rules">
+            You may bring paper and pencil apart from your one allowed computing device.
+        </p>
+        <p class="rules">
+            Problems will be provided via packet and web. Problems will be submitted via web.
+        </p>
+        <p class="rules">
+            Students may compete in higher tiers, but not lower.
+        </p>
+        <p class="rules">
+            Graduate students may compete, but not for prizes.
+        </p>
+        <p class="rules">
+            Only one computing device is allowed per team.                
+        </p>
+
+        <h1 class="u-no-bottom-margin">Tentative Schedule for Sat., April 7</h1>
+        <h2>(Subject to change)</h2>
+        <p class="schedule">
+            <span class="source u-leading-zero">9:00 AM:</span> Sign-in starts
+        </p>
+        <p class="schedule">
+            <span class="source">10:00 PM:</span> Competition starts
+        </p>
+        <p class="schedule">
+            <span class="source u-leading-zero">1:00 PM:</span> Competition ends — lunch time!
+        </p>
+        <p class="schedule">
+            <span class="source u-leading-zero">1:30 PM:</span> Winners announced and prizes distributed
+        </p>
+
+        <h1>Runtime Funtime Signups</h1>
+        <iframe onload="frameLink()" id="GoogleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSf1ilmLPzY8Ru1xD2U08FNpauE7NhqYjrJmvwFUbNg9lDxE1Q/viewform?embedded=true" width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+        
+    <footer>
+        Copyright &copy; 2018 Penn College Association of Professional Programmers
+    </footer>
+</body>
+    
+</html>

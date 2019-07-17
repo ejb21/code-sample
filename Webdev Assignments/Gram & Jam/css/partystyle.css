@@ -1,0 +1,45 @@
+#container
+    {
+        background-image: url( "../images/Confetti.gif" ) ;
+        padding-top: 80px ;
+        padding-bottom: 100px ;
+        text-align: center ;
+    }
+
+
+#partay
+    {
+        font-family: Unocide ;
+        font-size: 60px ;
+        color: #924d90 ;
+        text-shadow: 2px 2px white , -2px -2px white , 2px -2px white , -2px 2px white , 0px 0px 13px #ff7b34 , 0px 0px 13px #ff7b34 ;
+        margin-bottom: 30px ;
+    }
+
+
+p
+    {
+        font-family: Expressway ;
+        font-size: 24px ;
+        width: 79% ;
+        margin: auto ;
+        margin-bottom: 20px ;
+        text-shadow: 10px 10px white , -10px -10px white , -10px 10px white , 10px -10px white , 0px 0px 30px white , 0px 0px 30px white ;
+    }
+
+
+#montage
+    {
+        padding-top: 26px ;
+    }
+
+
+#getdown
+    {
+        font-family: Unocide ;
+        font-size: 45px ;
+        color: #ff7b34 ;
+        text-shadow: 4px 4px white , -4px 4px white , 4px -4px white , -4px -4px white , 0px 0px 30px #31a066 ;
+        margin-top: 30px ;
+        margin-bottom: 40px ;
+    }

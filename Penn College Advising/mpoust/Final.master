@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Final.master.cs" Inherits="mpoust_Final" %>
+
+<html>
+    <head>
+        <h1>Michael Poust - CIT386 Final</h1>
+            <asp:ContentPlaceHolder id="head" runat="server">
+
+            </asp:ContentPlaceHolder>
+    </head>
+
+    <body>
+        <form id="bodyForm" runat="server">
+            <asp:ContentPlaceHolder id="body" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </form>
+    </body>
+</html>
+

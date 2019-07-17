@@ -1,0 +1,132 @@
+.footer
+{
+    padding: 0 13%;
+    height: 40rem;
+    background-color: $red;
+    border-top: 10px solid darken($red, 5%);
+    padding-top: 4rem;
+    position: relative;
+
+    &__heading
+    {
+        font-family: 'Bosox';
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__tag
+    {
+        text-decoration: none;
+        color: $offwhite;
+        border-radius: 6px;
+        background-color: lighten($red, 10%);
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Aileron';
+        display: inline-block;
+        margin: .5rem .2rem;
+        transition: .2s;
+
+        &:hover
+        {
+            background-color: lighten($red, 20%);
+        }
+    }
+
+    &__post
+    {
+        font-family: 'Aileron';
+        display: block;
+        text-decoration: none;
+        color: $offwhite;
+        font-size: 1.8rem;
+
+        &:not(:last-child)
+        {
+            margin-bottom: 1.5rem;
+        }
+
+        &:before
+        {
+            content: "»";
+            margin-right: 0.5rem;
+        }
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+
+    &__paragraph
+    {
+        font-family: 'Aileron';
+        color: $offwhite;
+        font-size: 1.8rem;
+
+        & em
+        {
+            font-size: 1.8rem;
+        }
+
+        &:not(:first-child)
+        {
+            margin-top: 3rem;
+        }
+
+        & a
+        {
+            text-decoration: none;
+            color: $offwhite;
+            font-size: 1.8rem;
+
+            &:hover
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    & .col-1-of-3:nth-child(2)
+    {
+        padding-left: 5rem;
+    }
+
+    & .row:last-child
+    {
+        background-color: darken($red, 5%);
+        height: 7rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0 13%;
+    }
+
+    &__link
+    {
+        font-family: 'Bosox';
+        color: white;
+        text-decoration: none;
+        line-height: 7rem;
+        font-size: 3rem;
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+
+    @include respond(hamburger)
+    {
+        [class^="col-"]
+        {
+            width: 100%;
+
+            &:not(:first-of-type)
+            {
+                display: none;
+            }
+        }
+    }
+}

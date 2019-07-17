@@ -1,0 +1,16 @@
+
+
+    add hat to font-awesome
+
+    nav toggle button size on mobile
+
+    fix up hero
+
+    hide mookie with bootstrap class
+
+    NEED A TABLE price
+        slider price
+
+    popovers (Most Valuable Player)?
+
+    push to GitHub

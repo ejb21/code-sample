@@ -1,0 +1,92 @@
+@font-face
+    {
+        font-family: Expressway ;
+        src: url("../fonts/Expressway.ttf") ;
+    }
+
+
+@font-face
+    {
+        font-family: CreativeBlock ;
+        src: url("../fonts/CreativeBlock.ttf") ;
+    }
+
+
+@font-face
+    {
+        font-family: Unocide ;
+        src: url( "../fonts/Unocide.ttf" ) ;
+    }
+
+
+body
+    {
+        width: 950px ;
+        margin: auto ;
+        background-image: url( "../images/Background.png" ) ;
+    }
+
+
+#container
+    {
+        background-color: white ;
+    }
+
+
+header
+    {
+        height: 367px ;
+        background-image: url( "../images/Header.gif" ) ;
+    }
+
+
+nav
+    {
+        background-color: #924d90 ;
+        height: 50px ;
+        text-align: center ;
+        position: relative ;
+        top: 317px ;
+    }
+
+
+nav ul li
+    {
+        display: inline ;
+        font-family: "CreativeBlock" ;
+        font-size: 36px ;
+    }
+
+
+nav ul li a
+    {
+        color: white ;
+        text-decoration: none ;
+        text-shadow: 0px 4px 0px black ;
+        position: relative ;
+        top: 4px ;
+    }
+
+
+nav ul li a:hover
+    {
+        color: #31a066 ;
+    }
+
+
+.navl
+    {
+        margin-right: 50px ;
+    }
+
+
+.navr
+    {
+        margin-left: 50px ;
+    }
+
+
+header , #container
+    {
+        box-shadow: 0px 0px 50px rgba( 0 , 0 , 0 , 0.8 ) ;
+    }

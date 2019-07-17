@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{72D55DDB-1C30-A90C-C531-27BE9C038CAC}") = "Prospector sans score", "Assembly-CSharp.csproj", "{63D01588-76D2-FC7A-8D0F-C7FCA5BD5CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63D01588-76D2-FC7A-8D0F-C7FCA5BD5CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D01588-76D2-FC7A-8D0F-C7FCA5BD5CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D01588-76D2-FC7A-8D0F-C7FCA5BD5CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D01588-76D2-FC7A-8D0F-C7FCA5BD5CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

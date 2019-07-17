@@ -1,0 +1,258 @@
+.container
+{
+    background-color: $sox-blue;
+    width: 120rem;
+    height: 200rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1.75fr 2.5fr 2.75fr 3.25fr 1.75fr / repeat(12, 1fr);
+    box-sizing: default;
+
+    @include respond(1200)
+    {
+        width: 100vw;
+        height: 167vw;
+    }
+}
+
+.won-loss
+{
+    display: block;
+    font-family: "Aileron Black";
+    font-size: 20rem;
+    line-height: 15rem;
+    color: $white;
+    -webkit-text-stroke: 1rem $sox-red;
+    letter-spacing: -1rem;
+
+    &-and
+    {
+        color: white;
+        display: block;
+        font-size: 5rem;
+        line-height: 11rem;
+    }
+}
+
+.block
+{
+    display: grid;
+    margin: 0.5rem;
+
+    &--fenway
+    {
+        margin: 0;
+        background: url(../img/fenway.jpg);
+        background-size: cover;
+        grid-template: 1.75fr 2.5fr / repeat(12, 1fr);
+        grid-area: 1 / 1 / 3 / -1;
+        padding: 0.5rem;
+    }
+
+    &--corner
+    {
+        grid-template: 10% 90% / 1fr;
+        grid-area: 1 / 1 / span 2 / span 3;
+
+        @include respond(tablet)
+        {
+            display: none;
+        }
+    }
+
+    &--blue
+    {
+        grid-template: 2.75fr 3.25fr 1.75fr / repeat(12, 1fr);
+        margin: 0;
+        padding: 0.5rem;
+        grid-area: 3 / 1 / -1 / -1;
+
+        @include respond(tablet)
+        {
+        grid-template: 2.75fr 2.75fr 2.75fr 1.75fr / repeat(12, 1fr);
+        }
+    }
+
+    &--starters
+    {
+        grid-template: 1fr 1fr / 1fr;
+        margin: 0;
+        grid-column: span 6;
+
+        @include respond(phone)
+        {
+            grid-column: span 12;
+        }
+    }
+
+    &--left
+    {
+        grid-template: 1fr 1fr 1fr / 1fr;
+        margin: 0;
+        grid-column: span 4;
+
+        @include respond(tablet)
+        {
+            order: 1;
+            grid-column: span 6;
+        }
+
+        @include respond(phone)
+        {
+            grid-column: span 12;
+        }
+    }
+
+    &--middle
+    {
+        grid-template: 1fr 1fr / 1fr;
+        margin: 0;
+        grid-column: span 4;
+
+        @include respond(tablet)
+        {
+            order: 0;
+            grid-column: span 12;
+            grid-template: 1fr / 1fr 1fr;
+            grid-auto-flow: row;
+        }
+    }
+
+    &--right
+    {
+        grid-template: 1fr 1fr 1fr / 1fr;
+        margin: 0;
+        grid-column: span 4;
+
+        @include respond(tablet)
+        {
+            order: 1;
+            grid-column: span 6;
+        }
+
+        @include respond(phone)
+        {
+            grid-column: span 12;
+        }
+    }
+
+    &--footer
+    {
+        grid-template: 1fr / 1fr 1fr;
+        grid-column: span 12;
+
+        @include respond(tablet)
+        {
+            order: 2;
+        }
+    }
+}
+
+.item
+{
+    margin: 0.5rem;
+
+    @include respond(phone)
+    {
+        margin: 1rem;
+    }
+
+    &--header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: 1 / 4 / span 1 / -1;
+        font-family: "Bosox";
+        color: white;
+        font-size: 12rem;
+        line-height: 10rem;
+        text-shadow: 0 0 2rem $sox-blue, 0 0 2rem $sox-blue, 0 0 2rem $sox-blue,
+                     0 0 5rem $sox-red, 0 0 5rem $sox-red, 0 0 8rem $sox-red, 0 0 10rem $sox-red;
+        
+        @include respond(tablet)
+        {
+            grid-area: 1 / 1 / span 1 / -1;
+        }
+    }
+
+    &--star
+    {
+        grid-column: span 3;
+
+        @include respond(tablet)
+        {
+            grid-column: span 4;
+        }
+    }
+
+    &--starter
+    {
+        grid-column: span 3;
+
+        @include respond(phone)
+        {
+            grid-column: span 6;
+        }
+    }
+
+    &--starters
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &--lplayer
+    {
+        display: flex;
+        grid-column: span 4;
+    }
+
+    &--mplayer
+    {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 4;
+
+        @include respond(tablet)
+        {
+            grid-column: span 1;
+        }
+
+        @include respond(phone)
+        {
+            grid-column: span 2;
+        }
+    }
+
+    &--rplayer
+    {
+        display: flex;
+        grid-column: span 4;
+    }
+
+    &--footer-logo
+    {
+        border-radius: 1.5rem;
+        width: 100%;
+
+        @include respond(phone)
+        {
+            display: none;
+        }
+    }
+
+    &--copyright
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include respond(phone)
+        {
+            grid-column: span 12;
+        }
+    }
+}

@@ -1,0 +1,282 @@
+#content
+{
+    width: 1000px ;
+    margin: auto ;
+    background-color: white ;
+    box-shadow: 0px 0px 50px black ;
+    padding-bottom: 50px ;
+}
+
+#calendar
+{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 35px ;
+    text-align: center ;
+    font-family: AileronBold ;
+    font-size: 20px ;
+    color: #4a7faf ;
+    text-shadow: 0px 2px #d6cdbe , 1px 0px #d6cdbe , -1px 0px #d6cdbe ;
+}
+
+#inputs
+{
+    text-align: center ;
+    margin-top: 23px ;
+}
+
+#calendar h2 , div.fc-left , div[class="fc-toolbar fc-header-toolbar"]
+{
+    display: none ;
+}
+
+.hfEvents
+{
+    width: 503px ;
+    height: 49px ;
+    border: inset 2px gray ;
+    border-radius: 4px ;
+    outline: none ;
+    margin-right: 20px ;
+    position: relative ;
+    top: -2px ;
+    text-align: center ;
+    font-family: Aileron ;
+    font-size: 22px ;
+}
+
+.btnSubmit
+{
+    background-color: #991431 ;
+    font-family: Helvetica ;
+    text-transform: uppercase ;
+    color: white ;
+    text-shadow: none ;
+    font-size: 28px ;
+    border: 2px outset #bf193d ;
+    border-radius: 4px ;
+    width: 370px ;
+    height: 55px ;
+    outline: none ;
+    cursor: default ;
+}
+
+.btnSubmit:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.btnSubmit:active
+{
+    border: 2px inset #bf193d ;
+}
+
+.btnClear
+{
+    display: inline-block ;
+    background-color: #991431 ;
+    font-family: Helvetica ;
+    text-transform: uppercase ;
+    color: white ;
+    text-shadow: none ;
+    font-size: 28px ;
+    border: 2px outset #bf193d ;
+    border-radius: 4px ;
+    width: 275px ;
+    height: 51px ;
+    line-height: 51px ;
+    outline: none ;
+    cursor: default ;
+    margin-left: 15px ;
+    user-select: none ;
+}
+
+.btnClear:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.btnClear:active
+{
+    border: 2px inset #bf193d ;
+}
+
+td[class="fc-axis fc-time fc-widget-content"]
+{
+    text-align: center !important ;
+    background-color: #e5e5e5 ;
+    color: #4a7faf ;
+}
+
+#calendar th
+{
+    background-color: #e5e5e5 ;
+    color: #4a7faf ;
+    height: 35px ;
+    padding-top: 10px ;
+}
+
+td[class="fc-head-container fc-widget-header"]
+{
+    background-color: #e5e5e5 ;
+}
+
+div.fc-content , div.fc-time
+{
+    height: 100% ;
+    display: flex ;
+    align-items: center !important ;
+    margin: auto !important ;
+}
+
+div.fc-time
+{
+    margin: auto ;
+}
+
+div.fc-time span
+{
+    display: block ;
+    text-shadow: none !important ;
+    margin: auto !important ;
+}
+
+a[class="fc-time-grid-event fc-v-event fc-event fc-start fc-end"]
+{
+    margin: auto !important ;
+}
+
+.fc-event-container
+{
+    width: 97% !important ;
+    margin: auto !important ;
+}
+
+#lightsOutAvail
+{
+    width: 100vw ;
+    height: 100vh ;
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgba( 0 , 0 , 0 , 0.75 ) ;
+    z-index: 1000 ;
+    display: none ;
+}
+
+#availPanel
+{
+    width: 980px ;
+    height: 275px ;
+    border: outset 10px #5693cc ;
+    border-radius: 25px ;
+    position: fixed ;
+    left: 50% ;
+    top: 50% ;
+    margin-left: -500px ;
+    margin-top: -140px ;
+    background-color: white ;
+    font-family: Aileron ;
+    font-size: 50px ;
+    display: none ;
+    text-align: center ;
+}
+
+#loadingText , #completeText
+{
+    width: 750px ;
+    margin: auto ;
+    line-height: 55px ;
+    margin-top: 50px ;
+}
+
+#loadingText
+{
+    margin-top: 46px ;
+}
+
+#loadingIcon
+{
+    height: 75px ;
+    margin: auto ;
+    margin-top: 40px ;
+}
+
+#btnContinue
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 46px ;
+    width: 300px ;
+    height: 65px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    margin: auto ;
+    margin-top: 45px ;
+    line-height: 45px ;
+}
+
+#btnContinue:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+    cursor: default ;
+}
+
+#btnContinue:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#loading
+{
+    display: inherit ;
+}
+
+#complete
+{
+    display: none ;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+
+  100% {
+    -o-transform: rotate(359deg); } }
+
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  100% {
+    -ms-transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(359deg); } }
+
+.icon-spin {
+  display: inline-block;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear; }

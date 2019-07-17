@@ -1,0 +1,58 @@
+@@include('./includes/header.html')
+@@include('./includes/navigation.html')
+
+<style>
+    body { position: relative; }
+    img.upvote { width: 10vw; height: auto; position: absolute; transform: rotate(0deg); animation: upvote 10s linear; z-index: 9999; filter: drop-shadow(0 0 .75rem rgba(0,0,0,0.35)); }
+    @keyframes upvote { to { top: 600vh; transform: rotate(7200deg); } }
+</style>
+
+<section class="intro">
+    <div id="intro-overlay"></div>
+    <h2 class="d-none">F—k the Yankees!!</h2>
+    <h1 id="boston-reddit-sox" class="display-3"><span class="the">The</span> <span class="boston">Boston</span> <span class="reddit">reddit</span> <span class="sox">Sox</span></h1>
+    <div class="h4 mt-4 home-h2 click-the-button"><strong>Click the button.</strong></div>
+    <a href="#" onclick="winWorldSeries();" class="btn btn-outline-light btn-lg btn-circle text-uppercase win-world-series">Win the World Series</a>
+    <div class="h4 home-h2 click-the-button odds">There's a 26.67% chance (historically, since 2004) that you'll win the World Series.</div>
+</section>
+
+<section class="container py-5 mt-5 f-t-y">
+    <div class="row">
+        <div class="col-12 mb-4 text-center">
+            <h2 class="our-mantra">Our mantra:</h2>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+            <div>
+                <span class="f-t-y fty-f">F</span>
+                <span class="f-t-y-shade fty-f">F</span>
+            </div>
+            <h3>Forget</h3>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+            <div>
+                <span class="f-t-y fty-t">T</span>
+                <span class="f-t-y-shade fty-t">T</span>
+            </div>
+            <h3>the</h3>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+            <div>
+                <span class="f-t-y fty-y">Y</span>
+                <span class="f-t-y-shade fty-y">Y</span>
+            </div>
+            <h3>Yankees</h3>
+        </div>
+    </div>
+</section>
+
+
+<section class="pt-5">
+    <div class="bg-primary body-copy">
+        <div class="container d-flex justify-content-around align-items-center">
+            <h4 class="text-white p-0 m-0">In need of more body copy?</h4>
+            <a href="#" class="btn btn-outline-light px-5 py-3 btn-circle">Us too!</a>
+        </div>
+    </div>
+</section>
+
+@@include('./includes/footer.html')

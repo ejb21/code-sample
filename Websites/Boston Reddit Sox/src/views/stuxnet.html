@@ -1,0 +1,158 @@
+@@include('./includes/header.html')
+@@include('./includes/navigation.html')
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+<style>nav#nav { background: linear-gradient(70deg, #FE4404, #FE4404 5%, #FF9D00); height: 4.25rem; }</style>
+
+<main id="stux">
+
+    <section id="hero">
+        <span>The</span>
+        <div id="background"></div>
+        <span>Worm</span>
+    </section>
+
+    <section id="summary">
+
+        <div id="isra-amer">
+            <img src="../img/israeli-flag.png" alt="Italian flag">
+            <p>
+                <span class="stux">The<span class="space">&nbsp;</span>Stuxnet<span class="space">&nbsp;</span>Worm</span> was invented by Israeli and American forces as an act of cyberwarfare.
+            </p>
+            <img src="../img/american-flag.png" alt="American flag">
+        </div>
+
+        <p>
+            Its purpose was to impede the Iranian nuclear arms program by infiltrating and destroying<br>their uranium centrifuges.
+        </p>
+
+        <p>The Stuxnet worm consists of three parts:</p>
+        <div id="three-parts">
+            <figure>
+                <div id="worm"></div>
+                <figcaption>a worm that<br>executes the attack</figcaption>
+            </figure>
+            <figure>
+                <div id="link-file"></div>
+                <figcaption>a link file that<br>executes the worm</figcaption>
+            </figure>
+            <figure>
+                <div id="rootkit"></div>
+                <figcaption>a rootkit for<br>disguising itself</figcaption>
+            </figure>
+        </div>
+
+        <p id="effective">It is the most effective piece of malware ever written.</p>
+        
+        <p>First, the worm is put onto a USB drive.</p>
+
+        <div id="usb">
+            <figure>
+                <img src="../img/usb.png" alt="USB">
+                <img src="../img/windows.png" alt="Windows logo">
+            </figure>
+            <p>
+                When the USB drive is inserted into a Windows PC, it has three ways of copying itself onto the machine without alerting any antivirus.
+            </p>
+            <p>
+                Two of these exploits were using brand-new bugs in the Windows operating system that nobody had ever known prior to the discovery of Stuxnet.
+            </p>
+        </div>
+
+        <p class="n-t-s">
+            Once it's on the Windows machine, it has two ways of granting itself <span id="admin">Administrator</span> privileges &mdash;<br>both of which were also previously unheard-of.
+        </p>
+
+        <p class="n-t-s">
+            If the infected machine ever connects to the Internet, Stuxnet opens encrypted communication channels with servers in <span id="malaysia">Malaysia</span> and <span id="denmark">Denmark</span>.<br>Then it updates itself to its newest version.
+        </p>
+        <p>
+            Any other memory that gets plugged into the PC is immediately infected by Stuxnet. It has two disk drivers that it uses to accomplish this. The disk drivers appear to be digitally signed by Realtek and JMicron, respectively.
+        </p>
+        <p>
+            How Stuxnet creators were able to steal the secret keys of two large Taiwanese companies remains a mystery.
+        </p>
+
+        <div id="realtek-jmicron">
+            <figure id="realtek">
+                <img src="../img/realtek-campus.jpg" alt="Realtek">
+                <img src="../img/realtek.png" alt="Realtek logo">
+            </figure>
+            <figure id="jmicron">
+                <img src="../img/jmicron-campus.png" alt="JMicron">
+                <img src="../img/jmicron.png" alt="JMicron logo">
+            </figure>
+        </div>
+
+        <p>
+            By now, the Stuxnet worm was so good at replicating itself, and so well-disguised, that it was able to infect over 200,000 computers without anyone noticing.
+        </p>
+        <p>
+            But it actually had a very particular end goal in mind.
+        </p>
+            
+        <div id="siemens">
+            <img src="../img/siemens.png" alt="Siemens">
+            <p>
+                Once Stuxnet had successfully infiltrated a computer, it would search for a particular brand of Siemens control software designed for large industrial machinery. If it's unable to locate that control software, it takes no further action.
+            </p>
+            <p>
+                But if Stuxnet does find Siemens control software, it exploits <em>another</em> previously unheard-of bug and rewrites the core program logic.
+            </p>
+        </div>
+
+        <p>
+            Once it's done that, it has permanent unabated control over every piece of heavy machinery on the network.<br>It can do anything it wants.
+        </p>
+        <p>So it begins collecting data.</p>
+        <p>It takes a long recording of normal diagnostic levels<br>to form a realistic baseline.</p>
+            
+        <p class="n-t-s">
+            Then it spins the centrifuges just a tiny bit faster or slower than normal. It ups the gas pressure just a bit. The goal is to produce <em>slightly</em> less-than-pure uranium.
+        </p>
+        <p>
+            Meanwhile, it hijacks the Siemens control console to show its previously-recorded baseline readings on a loop, as if nothing was wrong.
+        </p>
+
+        <p id="up-to-1000">The Stuxnet virus was capable of infecting up to 1,000 Iranian centrifuges at a time.</p>
+            
+        <p id="iran-wmd">Iran has still yet to achieve weapons-grade uranium.</p>
+
+        <div id="read-more">
+            <span>Read more:</span>
+            <a id="quora" href="https://www.quora.com/What-is-the-most-sophisticated-piece-of-software-ever-written-1"></a>
+            <a id="wiki" href="https://www.quora.com/What-is-the-most-sophisticated-piece-of-software-ever-written-1"></a>
+            <a id="wapo" href="https://www.washingtonpost.com/world/national-security/stuxnet-was-work-of-us-and-israeli-experts-officials-say/2012/06/01/gJQAlnEy6U_story.html"></a>
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+    (function(){
+        setTimeout(function(){
+
+            $('#hero span:first-child').css('left', '0');
+            $('#hero span:last-child').css('right', '0');
+
+        }, 2000);
+
+        var rand = Math.random() * 2;
+        if (Math.random() < .5) rand *= -1;
+        $('#iran img:not(#flag-ir):first-of-type').css('transform', 'rotate(' + rand + 'deg)');
+
+        rand = Math.random() * 2;
+        if (Math.random() < .5) rand *= -1;
+        $('#iran img:not(#flag-ir):nth-of-type(2)').css('transform', 'rotate(' + rand + 'deg)');
+
+        rand = Math.random() * 2;
+        if (Math.random() < .5) rand *= -1;
+        $('#iran img:not(#flag-ir):nth-of-type(3)').css('transform', 'rotate(' + rand + 'deg)');
+
+        $('#iran #flag-ir').css('transform', 'scaleX(1)');
+    })();
+</script>
+
+@@include('./includes/footer.html')

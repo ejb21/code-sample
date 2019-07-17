@@ -1,0 +1,33 @@
+.star
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &--super
+    {
+        height: 10%;
+        background-color: $sox-red;
+        font-family: "Bosox";
+        color: $white;
+        font-size: 4rem;
+        padding-top: 0.7rem;
+    }
+
+    &--name
+    {
+        height: 25%;
+        background-color: $sox-blue;
+        font-family: "Aileron Black";
+        color: $white;
+        font-size: 6rem;
+    }
+
+    &--image
+    {
+        height: 65%;
+        background-color: gray;
+    }
+}

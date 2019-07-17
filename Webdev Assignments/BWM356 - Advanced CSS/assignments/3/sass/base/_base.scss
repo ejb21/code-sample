@@ -1,0 +1,17 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+
+    @include respond(desktop)
+    {
+        font-size: 8px;
+    }
+
+    @include respond(tablet)
+    {
+        font-size: 6px;
+    }
+}

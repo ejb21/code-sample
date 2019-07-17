@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<friends>
+  <friend>
+    <firstName>
+    </firstName>
+    <lastName>
+    </lastName>
+    <age>
+    </age>
+  </friend>
+  <friend>
+    <firstName />
+    <lastName />
+    <age />
+  </friend>
+</friends>

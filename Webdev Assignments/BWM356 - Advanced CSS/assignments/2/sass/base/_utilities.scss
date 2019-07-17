@@ -1,0 +1,34 @@
+.u-float-left
+{
+    float: left;
+}
+
+.u-float-right
+{
+    float: right;
+}
+
+.u-preload
+{
+    transition: none !important;
+}
+
+.u-unset
+{
+    text-decoration: none;
+}
+
+.u-title-hyphen
+{
+    all: inherit;
+    position: relative;
+    left: 0.8rem;
+    bottom: 0.6rem;
+    transition-delay: -.2s;
+}
+
+.u-image-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}

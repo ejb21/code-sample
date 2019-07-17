@@ -1,0 +1,20 @@
+@import "aey.css";
+@import "ndm.css";
+html{
+    font-family:serif;
+}
+
+body{
+    background-image: linear-gradient(65deg, #fdf5e6,#36454f, #fdf5e6);
+    color: white;
+}
+#container{
+    width:1300px;
+    background-color: white;
+}
+
+footer{
+    background-color:#36454f;
+}
+
+

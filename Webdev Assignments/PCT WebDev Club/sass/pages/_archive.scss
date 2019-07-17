@@ -1,0 +1,255 @@
+.archive
+{
+    &_header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 6rem;
+        font-weight: 600;
+        grid-column: span 2;
+        margin-bottom: 5rem;
+        text-shadow: 0 0 5rem rgba(white, 0.3);
+
+        @include respond(62.5rem)
+        {
+            font-size: 7.5vw;
+            margin-bottom: 6.25vw;
+            text-shadow: 0 0 6.25vw rgba(white, 0.3);
+        }
+
+        @include respond(480px)
+        {
+            grid-column: span 1;
+        }
+    }
+    
+    &_link
+    {
+        text-decoration: none;
+        color: black;
+        font-family: 'Aileron Bold';
+        font-size: 3.8rem;
+        display: inline;
+        transition: color .2s ease-out, transform .2s ease-out;
+        position: relative;
+        z-index: 2;
+
+        @include respond(62.5rem)
+        {
+            font-size: 3.8vw;
+        }
+
+        @include respond(480px)
+        {
+            font-size: 5vw;
+        }
+
+        &:after
+        {
+            display: inline-block;
+            content: "";
+            background: url('../img/link-blue.png');
+            background-size: 3rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 2rem;
+            position: relative;
+            top: .2rem;
+            background-color: rgba($blue, 0);
+
+            @include respond(62.5rem)
+            {
+                background-size: 3vw;
+                width: 3vw;
+                height: 3vw;
+                margin-left: 2vw;
+                top: .2vw;
+            }
+        }
+
+        &:hover
+        {
+            color: $blue;
+            transform: scale(1.02);
+        }
+    }
+
+    &_constitution
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-link
+        {
+            font-family: 'Constitution';
+            font-size: 6rem;
+            color: $blue;
+            transition: text-shadow .2s ease-out, transform .4s ease-out;
+            padding: 6rem 0 7rem 0;
+
+            @include respond(62.5rem)
+            {
+                font-size: 7.5vw;
+                padding: 7.5vw 0 8.75vw 0;
+            }
+
+            @include respond(480px)
+            {
+                padding: 7.5vw 0 17vw 0;
+            }
+
+            &::after
+            {
+                display: inline-block;
+                content: "";
+                background: url('../img/link-blue.png');
+                background-size: 5rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 5rem;
+                height: 5rem;
+                margin-left: 3rem;
+                position: relative;
+                top: -.5rem;
+                background-color: rgba($blue, 0);
+
+                @include respond(62.5rem)
+                {
+                    background-size: 6.25vw;
+                    width: 6.25vw;
+                    height: 6.25vw;
+                    margin-left: 3.75vw;
+                    top: -.625vw;
+                }
+            }
+
+            &:hover
+            {
+                text-shadow: -.8rem -.5rem .5rem lighten($gray, 35%), .8rem .5rem .5rem lighten($gray, 35%),
+                    .8rem -.5rem .5rem lighten($gray, 45%), -.8rem .5rem .5rem lighten($gray, 45%);
+                transform: scale(1.05) translateY(-.3%);
+            }
+        }
+    }
+
+    &_practices
+    {
+        @include archive;
+        background-color: lighten($gray, 35%);
+    }
+
+    &_utilities
+    {
+        @include archive;
+        background-color: lighten($gray, 28%);
+
+        &-brackets
+        {
+            @include thumbnail(brackets);
+        }
+
+        &-vscode
+        {
+            @include thumbnail(vscode);
+        }
+
+        &-netbeans
+        {
+            @include thumbnail(netbeans);
+        }
+
+        &-autohotkey
+        {
+            @include thumbnail(autohotkey);
+        }
+
+        &-gimp
+        {
+            @include thumbnail(gimp);
+        }
+
+        &-sketch
+        {
+            @include thumbnail(sketch);
+        }
+    }
+
+    &_resources
+    {
+        @include archive;
+        background-color: lighten($gray, 21%);
+
+        &-github
+        {
+            @include thumbnail(github);
+        }
+
+        &-stackoverflow
+        {
+            @include thumbnail(stackoverflow);
+        }
+
+        &-fontawesome
+        {
+            @include thumbnail(fontawesome);
+        }
+
+        &-pagesxyz
+        {
+            @include thumbnail(pagesxyz);
+        }
+
+        &-1001fonts
+        {
+            @include thumbnail(1001fonts);
+        }
+
+        &-fontsinuse
+        {
+            @include thumbnail(fontsinuse);
+        }
+    }
+
+    &_extensions
+    {
+        @include archive;
+        background-color: lighten($gray, 14%);
+
+        &-ublock
+        {
+            @include thumbnail(ublock);
+        }
+
+        &-wappalyzer
+        {
+            @include thumbnail(wappalyzer);
+        }
+
+        &-ffninja
+        {
+            @include thumbnail(ffninja);
+        }
+
+        &-sessionbuddy
+        {
+            @include thumbnail(sessionbuddy);
+        }
+
+        &-onetab
+        {
+            @include thumbnail(onetab);
+        }
+
+        &-refresh
+        {
+            @include thumbnail(refresh);
+        }
+    }
+}

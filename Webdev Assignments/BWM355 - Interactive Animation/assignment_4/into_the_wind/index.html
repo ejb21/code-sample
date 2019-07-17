@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Into The Wind</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="progress"></div>
+    <div id="page-wrap">
+        <h2 class="into">INTO</h2>
+        <h2 class="the-wind">THE WIND</h2>
+        <p>Wind power, as an alternative to fossil fuels, is plentiful, renewable, widely distributed, and clean. The effects on the environment are generally less problematic than those from other power sources.  In 2010 wind energy production was growing rapidly at more than 25%&nbsp;per&nbsp;annum.</p> 
+        <div id="nav">
+            <div class="button">Is Wind Right for You</div>
+            <div class="button">Cost Savings Calculator</div>
+            <div class="button">Find a Local Wind Expert</div>
+        </div>
+
+    </div>
+    
+    <div id="bg"></div>
+    
+    <script src="js/TweenMax.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var progress = $('.progress'),
+                bg = $('#bg'),
+                into = $('.into'),
+                wind = $('.the-wind'),
+                blurb = $('p'),
+                button = $('.button');
+                
+            var tl = new TimelineLite();
+                
+            tl.from(bg, 1,
+            {
+                opacity: 0
+            })
+            .from(into, .5,
+            {
+                opacity: 0,
+                left: -50
+            })
+            .from(wind, .5,
+            {
+                opacity: 0,
+                right: -50
+            }, '+=.25')
+            .from(blurb, .5,
+            {
+                opacity: 0,
+                top: 50,
+                ease:Back.easeOut
+            }, '+=.5')
+            .staggerFrom(button, 1,
+            {
+                rotationX: -90,
+                transformOrigin: '50% 0',
+                ease:Back.easeOut
+            }, .3, '+=.2')
+            .from(progress, tl.duration(),
+            {
+                scaleX: 0,
+                transformOrigin:'0 50%'
+            }, 0)
+            .to(progress, .2,
+            {
+                opacity: 0,
+                top: -8
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\bin\Debug\DynamicUI.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\bin\Debug\DynamicUI.exe
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\bin\Debug\DynamicUI.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\App.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI_MarkupCompile.cache
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI_MarkupCompile.lref
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\MainWindow.baml
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.g.resources
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.Properties.Resources.resources
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.exe
+C:\Users\Eric\Documents\Penn College\CIT386\DynamicUI\DynamicUI\obj\Debug\DynamicUI.pdb

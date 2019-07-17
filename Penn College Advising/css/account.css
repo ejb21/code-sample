@@ -1,0 +1,202 @@
+﻿#content
+{
+    width: 1000px;
+    height: 1860px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 50px black;
+}
+
+#ContentPlaceHolder1_accountDiv , #password
+{
+    margin: auto ;
+    background-color: #e5e5e5 ;
+    border: solid 3px #d6cdbe ;
+    border-radius: 15px ;
+    text-align: center ;
+    margin-top: 75px ;
+    padding-bottom: 103px ;
+    width: 890px ;
+}
+
+#ContentPlaceHolder1_accountDiv
+{
+    margin-bottom: 100px ;
+}
+
+#ContentPlaceHolder1_accountDiv[class="accountStudent"]
+{
+    padding-bottom: 50px !important ;
+}
+
+#password
+{
+    width: 800px ;
+}
+
+#ContentPlaceHolder1_accountDiv:hover
+{
+    background-color: #e8e8e8 ;
+}
+
+#accountManagement , #changePassword
+{
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    margin: auto ;
+    font-size: 70px ;
+    text-shadow: 0px 4px #d6cdbe , 2px 0px #d6cdbe , -2px 0px #d6cdbe , 0px 3px 20px white , 0px 3px 10px white ;
+    position: relative ;
+    top: -44px ;
+    z-index: 1 ;
+}
+
+label
+{
+    font-family: AileronBold ;
+    font-size: 45px ;
+    margin-right: 20px ;
+    text-shadow: 3px 3px white , 3px -3px white , -3px 3px white , -3px -3px white ,
+                    0px 3px 20px #4a7faf , -3px -3px white , 0px 3px 10px #4a7faf ;
+}
+
+p
+{
+    margin-top: 24px ;
+}
+
+#name
+{
+    margin-top: 18px ;
+}
+
+.txtFirstName , .txtLastName , .txtEmail , .txtPhone , .txtExt , .txtOffice , .txtBuilding
+{
+    height: 55px ;
+    width: 400px ;
+    border-radius: 5px ;
+    text-align: center ;
+    border: inset 2px gray ;
+    font-family: Aileron ;
+    font-size: 34px ;
+    color: #991431 ;
+    margin-top: 12px ;
+}
+
+.txtCurrent , .txtNew , .txtConfirm
+{
+    height: 55px ;
+    width: 550px ;
+    border-radius: 5px ;
+    text-align: center ;
+    border: inset 2px gray ;
+    font-family: Aileron ;
+    font-size: 34px ;
+    color: #991431 ;
+    margin-top: 12px ;
+}
+
+.txtFirstName , .txtLastName , .txtOffice , .txtBuilding
+{
+    width: 350px ;
+}
+
+.txtEmail
+{
+    width: 620px ;
+}
+
+.txtExt
+{
+    width: 200px ;
+}
+
+.txtFirstName , .txtPhone , .txtOffice
+{
+    margin-right: 5px ;
+}
+
+.txtLastName , .txtExt , .txtBuilding
+{
+    margin-left: 5px ;
+}
+
+.update , .change , .updateStudent
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 42px ;
+    width: 550px ;
+    height: 68px ;
+    border: 3px outset #bf193d ;
+    margin-top: 50px ;
+}
+
+.change
+{
+    margin-top: 30px ;
+}
+
+.update:hover , .change:hover , .updateStudent:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.update:active , .change:active , .updateStudent:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.updateStudent
+{
+    margin-top: 40px ;
+}
+
+.txtFirstName , .txtLastName , .txtEmail , .txtPhone , .txtExt , .txtOffice ,
+.txtBuilding , .update , .txtCurrent , .txtNew , .txtConfirm , .change
+{
+    outline: none ;
+}
+
+#spFirstName
+{
+    position: relative ;
+    left: -40px ;
+}
+
+#spLastName
+{
+    position: relative ;
+    left: 68px ;
+}
+
+#spPhone
+{
+    position: relative ;
+    left: -43px ;
+}
+
+#spExt
+{
+    position: relative ;
+    left: 140px ;
+}
+
+#spOffice
+{
+    position: relative ;
+    left: -68px ;
+}
+
+#spBuilding
+{
+    position: relative ;
+    left: 116px ;
+}
+
+#pwCurrent
+{
+    margin-top: 25px ;
+}

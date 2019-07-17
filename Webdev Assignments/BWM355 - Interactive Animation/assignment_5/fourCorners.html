@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; Four Corners</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.rect(0,0,80,20);
+                context.strokeStyle = '#000000';
+                context.stroke();
+                context.fillStyle = 'blue';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.rect(570,0,600,30);
+                context.strokeStyle = 'blue';
+                context.stroke();
+                context.fillStyle = '#000000';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(0,350);
+                context.lineTo(100,300);
+                context.lineTo(100,400);
+                context.lineTo(0,350);
+                context.strokeStyle = 'magenta';
+                context.stroke();
+                context.fillStyle = 'purple';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(600,375);
+                context.lineTo(550,350);
+                context.lineTo(550,400);
+                context.lineTo(600,375);
+                context.strokeStyle = 'purple';
+                context.stroke();
+                context.fillStyle = 'magenta';
+                context.fill();
+                context.closePath();
+            };
+        </script>    
+    </head>
+    <body>
+        <canvas id="canvas" width="600" height="400"style="border:1px solid black;"></canvas>
+    </body>
+</html>

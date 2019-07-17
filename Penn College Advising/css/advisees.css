@@ -1,0 +1,347 @@
+﻿#content
+{
+    width: 1000px;
+    padding-bottom: 70px ;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 50px black;
+}
+
+#divUpload
+{
+    margin: auto ;
+    background-color: #e5e5e5 ;
+    border: solid 3px #d6cdbe ;
+    border-radius: 15px ;
+    height: 200px ;
+    width: 700px ;
+    text-align: center ;
+    margin-top: 83px ;
+}
+
+#divUpload:hover
+{
+    background-color: #f2f2f2 ;
+}
+
+#uploadLabel
+{
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    margin: auto ;
+    font-size: 60px ;
+    text-shadow: 0px 4px #d6cdbe , 2px 0px #d6cdbe , -2px 0px #d6cdbe , 0px 3px 10px white ;
+    position: relative ;
+    top: -33px ;
+    z-index: 1 ;
+}
+
+#filetype
+{
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    margin: auto ;
+    font-size: 40px ;
+    text-shadow: 0px 4px #d6cdbe , 2px 0px #d6cdbe , -2px 0px #d6cdbe , 0px 3px 10px white ;
+    position: relative ;
+    top: -33px ;
+    z-index: 1 ;
+}
+
+#advList
+{
+    display: none ;
+}
+
+#fileUpload
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 45px ;
+    width: 350px ;
+    height: 57px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    padding-top: 10px ;
+    z-index: 1 ;
+    text-transform: uppercase ;
+    cursor: default ;
+    user-select: none ;
+    margin: auto ;
+}
+
+#fileUpload:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#fileUpload:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#tblStudents
+{
+    width: 900px ;
+    margin: auto ;
+    margin-top: 85px ;
+}
+
+#tblStudents th
+{
+    background-color: #e5e5e5 ;
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    margin: auto ;
+    font-size: 45px ;
+    text-shadow: 0px 4px #d6cdbe , 2px 0px #d6cdbe , -2px 0px #d6cdbe , 0px 3px 10px white ;
+    border: 2px solid #d6cdbe ;
+    padding-top: 8px ;
+    padding-bottom: 15px ;
+}
+
+#tblStudents td
+{
+    background-color: #f2f2f2 ;
+    border: 2px solid #d6cdbe ;
+    font-family: Aileron ;
+    font-size: 26px ;
+    text-align: center ;
+    padding-top: 8px ;
+    padding-bottom: 8px ;
+}
+
+#sendTable
+{
+    height: 42px ;
+    position: relative ;
+    top: 7px ;
+}
+
+.stuContact
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 25px ;
+    width: 100px ;
+    height: 25px ;
+    padding: 5px ;
+    border: 2px outset #bf193d ;
+    outline: none ;
+    z-index: 1 ;
+    cursor: default ;
+    user-select: none ;
+    margin: auto ;
+}
+
+.stuContact:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.stuContact:active
+{
+    border: 2px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#lightsOutAdvisees
+{
+    width: 100vw ;
+    height: 100vh ;
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgba( 0 , 0 , 0 , 0.75 ) ;
+    z-index: 1000 ;
+    display: none ;
+}
+
+#contactPanel
+{
+    width: 850px ;
+    height: 640px ;
+    border: outset 10px #5693cc ;
+    border-radius: 25px ;
+    position: fixed ;
+    left: 50% ;
+    top: 50% ;
+    margin-left: -425px ;
+    margin-top: -330px ;
+    background-color: white ;
+    font-family: Aileron ;
+    font-size: 45px ;
+    display: none ;
+}
+
+#lblTo
+{
+    font-family: AileronBold ;
+    font-size: 50px ;
+    color: #991431 ;
+    text-shadow: 0px 3px white , 3px 0px white , -3px 0px white , 0px 3px 10px #4a7faf  ;
+    margin-right: 20px ;
+    padding-left: 22px ;
+}
+
+#pTo
+{
+    margin-top: 15px ;
+}
+
+#pSubject
+{
+    margin-top: 13px ;
+}
+
+#lblSubject
+{
+    font-family: AileronBold ;
+    font-size: 45px ;
+    color: #991431 ;
+    text-shadow: 0px 3px white , 3px 0px white , -3px 0px white , 0px 3px 10px #4a7faf  ;
+    margin-right: 20px ;
+    padding-left: 22px ;
+    position: relative ;
+    top: 2px ;
+}
+
+.subject , .message
+{
+    border: 3px inset #5693cc ;
+    border-radius: 5px ;
+    font-family: Aileron ;
+    outline: none ;
+}
+
+.subject
+{
+    height: 45px ;
+    font-size: 32px ;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    width: 580px ;
+}
+
+#pMessage
+{
+    width: 100% ;
+    text-align: center ;
+    margin-top: 20px ;
+}
+
+.message
+{
+    margin: auto ;
+    width: 780px ;
+    height: 350px ;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 15px ;
+    font-size: 26px ;
+    resize: none ;
+}
+
+#contactButtons
+{
+    width: 100% ;
+    text-align: center ;
+    margin-top: 15px ;
+}
+
+#contactClosebtn , #ContentPlaceHolder1_sendEmail.sendEmail
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 45px ;
+    width: 325px ;
+    height: 52px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    display: inline-block ;
+}
+
+#contactClosebtn
+{
+    width: 260px ;
+    margin-left: 15px ;
+    position: relative ;
+    top: -9px ;
+}
+
+#errorPanel
+{
+    width: 1000px;
+    height: 250px;
+    border: outset 10px #5693cc;
+    border-radius: 25px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -135px;
+    background-color: white;
+    font-family: Aileron;
+    font-size: 45px;
+    text-align: center ;
+    display: none;
+}
+
+#errorPanel p
+{
+    margin-top: 47px ;
+}
+
+#errorClosebtn
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 45px ;
+    width: 260px ;
+    height: 52px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    display: inline-block ;
+    margin-top: 40px ;
+}
+
+#contactClosebtn:hover , #ContentPlaceHolder1_sendEmail.sendEmail:hover , #errorClosebtn:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+    cursor: default ;
+}
+
+#contactClosebtn:active , #ContentPlaceHolder1_sendEmail.sendEmail:active , #errorClosebtn:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#imgSend
+{
+    height: 45px ;
+    margin-left: 20px ;
+    padding-top: 3px ;
+    display: inline ;
+}
+
+#sendtxt
+{
+    position: relative ;
+    top: -5px ;
+}
+
+#contactClosebtntxt , #errorClosebtntxt
+{
+    position: relative ;
+    top: 4px ;
+}

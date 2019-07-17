@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523475632560.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DBFC2E23",
+    "lastKnownWriteTime" : 5292976843906638626,
+    "last_content_update" : 1523479285004,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "25,0",
+        "scrollLine" : "8",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

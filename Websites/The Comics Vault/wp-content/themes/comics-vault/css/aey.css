@@ -1,0 +1,195 @@
+
+/*  Mobile  */
+
+@media only screen and (max-width: 1366px)      /*  Tiny computers  */
+{
+     .size-large{width:100%; height:auto;}
+
+    .woocommerce .woocommerce-ordering select{
+        display:none;
+    }
+
+    main h1{
+        text-align:center;
+    }
+
+    /*
+    main:before, main:after{
+        display:none;
+    }
+    */
+
+   /* body > footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:40rem;
+        margin: auto auto;
+        background: radial-gradient(farthest-corner at 50% -100%, black, transparent 70%);
+    }
+    footer .logo img{
+        display:none;
+    }*/
+}
+
+@media only screen and (max-width: 1280px)      /*  Minuscule computers  */
+{
+    .woocommerce .woocommerce-ordering select{
+        display:none;
+    }
+
+    main h1{
+        text-align:center;
+    }
+
+    body > footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:90rem;
+        background: radial-gradient(farthest-corner at 50% -100%, black, transparent 70%);
+    }
+    footer .logo img{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 991px)       /*  Middle-sized shit idk  */
+{
+    body:before{
+        animation:none;
+    }
+
+    .woocommerce .woocommerce-ordering select{
+        display:none;
+    }
+
+    /*
+    #panel-2-0-0-1 dt:after {
+        content: "\2014";
+        position: absolute;
+        right: -.1rem;
+        transform: scaleX(1.25);
+        text-shadow: none;
+    }
+
+    #panel-2-0-0-1 dt, #panel-2-0-0-1 dd {
+        width: 50%;
+        display: block;
+        float: left;
+        padding-top: 0px;
+        padding-right: 2rem;
+        padding-bottom: 0px;
+        padding-left: 2rem;
+        line-height: 4rem;
+    }
+
+    #panel-2-0-0-1 dt {
+        text-align: right;
+        font-size: 2rem;
+        /font-weight: 600;
+        font-style: italic;
+        position: relative;
+        text-shadow: 0 0.1rem 0 #111;
+    }
+
+    dd {
+        font-size: 15px;
+    }
+    */
+
+    body > footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:70rem;
+        background: radial-gradient(farthest-corner at 50% -100%, black, transparent 70%);
+    }
+    footer .logo img{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 767px)       /*  Tablets  */
+{
+    body:before{
+        animation:none;
+    } 
+
+    .woocommerce .woocommerce-ordering select{
+        display:none;
+    }
+
+    main h1{
+        text-align:center;
+    }
+
+    body > footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:40rem;
+        background: radial-gradient(farthest-corner at 50% -100%, black, transparent 70%);
+    }
+    footer .logo img{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 500px)       /*  Cell phones - ONE STYLESHEET TO RULE THEM ALL  */
+{
+    .woocommerce .woocommerce-ordering select{
+        display:none;
+    }
+
+    .so-widget-sow-editor .display-posts-listing .listing-item img.wp-post-image {
+        margin-left: 1ex;
+        display: block;
+        float:none !important;
+    }
+
+    main h1{
+        text-align:center;
+    }
+
+    body > footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:35rem;
+        background: radial-gradient(farthest-corner at 50% -100%, black, transparent 70%);
+    }
+    footer .logo img{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #social a{
+        width: 4rem;
+        height: 4rem;
+        display: inline-block;
+        background-repeat: no-repeat;
+        border-radius: .5rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.5);
+        transition: transform .2s;
+    }
+
+    #social .google-my-business {
+        background-size: 100% auto;
+        background-position: center;
+        width: 5rem;
+        height: 4rem;
+    }
+
+    #social a:not(:first-of-type) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    footer address {
+        font-style: normal;
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+}

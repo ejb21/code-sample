@@ -1,0 +1,57 @@
+@import 'bootstrap.scss';
+
+body{
+    overflow-x: hidden;
+}
+
+.carousel-item{
+    height: 450px;
+}
+
+
+.carousel-image-1{
+    background: url('../img/image1.jpg')
+}
+
+#home-heading{
+    position: relative;
+    min-height: 200px;
+    background: url(../img/lights.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff
+}
+
+.dark-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+#video-play{
+    position: relative;
+    min-height: 200px;
+    background:url(../img/media.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    color:#fff;
+}
+
+footer#main-footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.card{
+    border:1px solid #444;
+
+    .card-body{
+        background: #ccc;
+        
+    }
+}

@@ -1,0 +1,314 @@
+.header
+{
+    display: grid;
+    width: 100vw;
+    max-width: 100%;
+    grid-template: auto auto / 1.5fr 1fr;
+    background-color: $blue;
+    background-image: url('../img/devices.png');
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: calc(100% + .8rem) -3.8rem;
+
+    @include respond(900px)
+    {
+        grid-template: auto auto / 1fr;
+    }
+
+    &_nav
+    {
+        display: grid;
+        grid-template: 1fr / 18rem repeat(2, 0.8fr) 1fr 0.9fr 0.7fr 0.8fr;
+        width: 100rem;
+        max-width: 100vw;
+        min-width: 90rem;
+        height: 100%;
+        background-color: lighten($blue, 8%);
+        border-bottom-right-radius: 0.7rem;
+        box-shadow: 0 0 5rem rgba(darken($blue, 50%), 0.03);
+
+        @include respond(900px)
+        {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            grid-template: 5rem / 1fr 20rem 1fr;
+        }
+
+        &_arrow
+        {
+            height: 80%;
+            width: 2.75rem;
+            background-image: url('../img/arrow-header.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+            cursor: pointer;
+            animation: arrows 4s linear infinite;
+
+            &:hover
+            {
+                animation: none;
+            }
+
+            &-left, &-right
+            {
+                display: none;
+                background-color: white;
+
+                @include respond(900px)
+                {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            &-left
+            {
+                justify-content: flex-end;
+                padding-right: 5rem;
+            }
+
+            &-right
+            {
+                justify-content: flex-start;
+                padding-left: 5rem;
+            }
+        }
+
+        &_link
+        {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-shadow: 0 .225rem 0 $gray;
+            background-color: lighten($blue, 8%);
+            transition: background-color .1s linear, transform .1s linear,
+                border-left .1s linear, border-right .1s linear,
+                border-bottom-right-radius .1s linear;
+            padding: 1.75rem 0;
+            
+            &:first-of-type
+            {
+                font-family: "Aileron Bold";
+                background-color: white;
+                color: $gray;
+                text-shadow: none;
+                height: 110%;
+                border-bottom-right-radius: 0.7rem;
+                z-index: 2;
+                position: relative;
+                overflow: hidden;
+                font-size: 3rem;
+
+                @include respond(900px)
+                {
+                    max-height: 5rem;
+                    border-right: none !important;
+                    border-bottom-right-radius: 0 !important;
+                }
+
+                &::before
+                {
+                    content: "";
+                    position: absolute;
+                    width: 200%;
+                    height: 200%;
+                    top: -52%;
+                    left: -50.5%;
+                    z-index: -1;
+                    background: url('../img/PCTWebDevs.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 45%;
+                    transform: rotate(-2deg);
+                    transition: background-size .2s linear, transform .2s linear;
+
+                    @include respond(900px)
+                    {
+                        background-size: auto 3rem;
+                    }
+                }
+
+                &:hover::before
+                {
+                    background-size: 48%;
+                    transform: rotate(-1.5deg);
+
+                    @include respond(900px)
+                    {
+                        background-size: auto 3rem;
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+
+            &:last-of-type
+            {
+                border-bottom-right-radius: 0.7rem;
+
+                @include respond(63rem)
+                {
+                    border-bottom-right-radius: 0;
+                }
+            }
+
+            &:not(:first-of-type)
+            {
+                border-left: 0.2rem solid lighten($blue, 3%);
+
+                @include respond(900px)
+                {
+                    display: none;
+                }
+            }
+
+            &:not(:last-of-type)
+            {
+                border-right: 0.2rem solid lighten($blue, 3%);
+            }
+
+            &:hover
+            {
+                &:not(:first-of-type)
+                {
+                    background-color: lighten($blue, 12%);
+                    transform: scale(1.05) translateY(-1%);
+                    border-left: 0.3rem solid lighten($blue, 3%);
+                    border-right: 0.3rem solid lighten($blue, 3%);
+                }
+
+                &:last-of-type
+                {
+                    border-right: none;
+                    border-bottom-right-radius: 0.7rem;
+                }
+            }
+        }
+
+        &_mobile
+        {
+            display: grid;
+            height: 0;
+            visibility: hidden;
+            transition: all .4s ease-out;
+            margin: 0 10%;
+            grid-column: span 3;
+            grid-template: repeat(3, 5rem) / 1fr 1fr 1fr;
+
+            @include respond(480px)
+            {
+                grid-template: repeat(3, 5rem) / 1fr 1fr;
+            }
+
+            @include respondMin(901px)
+            {
+                display: none;
+            }
+
+            &_link
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;color: white;
+                font-size: 2rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-shadow: 0 .225rem 0 $gray;
+                background-color: lighten($blue, 8%);
+                transition: all 1s ease-out, background-color .2s ease-out;
+                opacity: 0;
+
+                &:hover
+                {
+                    background-color: lighten($blue, 12%);
+                }
+            }
+        }
+    }
+
+    &_info
+    {
+        grid-column-start: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin-left: 4rem;
+        padding-bottom: .8rem;
+        max-width: 100%;
+        padding: 3rem 0 4rem 0;
+
+        @include respond(62.5rem)
+        {
+            align-items: center;
+            margin-left: 0;
+        }
+
+        @include respond(900px)
+        {
+            padding: 5vw 0;
+            margin-left: 0;
+        }
+
+        @include respond(480px)
+        {
+            padding: 7vw 0;
+            margin-left: 0;
+        }
+
+        &-header
+        {
+            display: inline-block;
+            font-family: 'Helvetica';
+            text-transform: uppercase;
+            color: white;
+            font-size: 6rem;
+            font-weight: 600;
+            text-shadow: -.7rem -.5rem 0 darken($blue, 4%), .7rem .5rem 0 lighten($blue, 4%),
+                .7rem -.5rem lighten($blue, 2%), -.7rem .5rem darken($blue, 2%);
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+
+            @include respond(900px)
+            {
+                font-size: 9vw;
+                text-shadow: -.777vw -.555rem 0 darken($blue, 4%), .777vw .555rem 0 lighten($blue, 4%),
+                    .777vw -.555rem lighten($blue, 2%), -.777vw .555rem darken($blue, 2%);
+            }
+        }
+
+        &-info
+        {
+            font-family: 'Aileron';
+            color: lighten($gray, 40%);
+            font-size: 2.25rem;
+            text-shadow: 0 0 1.5rem darken($gray, 30%);
+            font-weight: 400;
+            width: 90%;
+            max-width: 100%;
+            margin-top: .5rem;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+
+            @include respond(62.5rem)
+            {
+                text-align: center;
+                width: 100%;
+                font-size: 2.3rem;
+            }
+
+            @include respond(900px)
+            {
+                display: none;
+            }
+        }
+    }
+}

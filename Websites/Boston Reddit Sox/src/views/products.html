@@ -1,0 +1,118 @@
+@@include('./includes/header.html')
+@@include('./includes/navigation.html')
+
+<style>nav#nav { background: linear-gradient(70deg, #FE4404, #FE4404 5%, #FF9D00); }</style>
+
+<script>
+    $(document).ready(function()
+    { 
+        var navHeight = $('#nav').outerHeight();
+        var footerHeight = $('#footer').outerHeight();
+        var delta = navHeight + footerHeight;
+        console.log(delta);
+        $('#products').css({'min-height': 'calc(100vh - ' + delta + 'px)', 'margin-top': navHeight + 'px'});
+    });
+
+    firebase.auth().onAuthStateChanged(function(user)
+    {
+        console.log('asdf');
+        if (user)
+        {
+            $('#products > div > div:not(:nth-child(3)) > div > div.product-content > div > span').addClass('strikethrough');
+            
+            var upvoteDiscount = $('<span></span>').text('Priceless');
+            var bettsDiscount = $('<span></span>').text('7 years, $225 million');
+            var ringDiscount = $('<span></span>').text('Buy one, get three free!').css({'color': 'gray', 'display': 'block'});
+            var socksDiscount = $('<span></span>').text('$14.99');
+
+            $('#products > div > div:first-child > div > div.product-content > div').prepend(upvoteDiscount);
+            $('#products > div > div:nth-child(2) > div > div.product-content > div').prepend(bettsDiscount);
+            $('#products > div > div:nth-child(3) > div > div.product-content > div').append(ringDiscount);
+            $('#products > div > div:last-child > div > div.product-content > div').prepend(socksDiscount);
+        }
+        else return;
+    });
+</script>
+
+<div class="container" id="products">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="upvote.html">
+                        <img class="pic-1" src="../img/upvote.png">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="upvote.html">One Upvote</a></h3>
+                    <div class="price">
+                        <span>$420.69</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="upvote.html" data-tip="View Product Details"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="../img/mookie.png">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Mookie Betts</a></h3>
+                    <div class="price">
+                        <span>10 years, $350 million</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="View Product Details"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="../img/ring.png">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">World Series Ring</a></h3>
+                    <div class="price">
+                        <span>$247 million</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="View Product Details"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="../img/socks.png">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Red Socks</a></h3>
+                    <div class="price">
+                        <span>$15.00</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="View Product Details"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./includes/footer.html')

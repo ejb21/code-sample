@@ -1,0 +1,99 @@
+* { padding: 0; margin: 0; }
+html { font-size: .521vw; }
+body { width: 100%; height: 100vh; overflow: hidden;
+    display: flex; justify-content: center; align-items: center; }
+
+#fenway
+{
+    position: absolute; top: -14%;
+    width: 125%; min-height: 114%;
+}
+
+#sawx
+{
+    position: absolute;
+    width: 25%; top: 20%; left: 38%;
+    filter: drop-shadow(0 1.5rem 1.5rem rgba(0,0,0,0.2));
+    transform: rotate(0deg) rotate3d(0,1,0,0deg);
+    animation: sawx 7s linear infinite;
+    z-index: 3;
+}
+
+#depth
+{
+    background-color: #eee;
+    height: 24vw;
+    width: 5rem;
+    transform: rotate3d(0,1,0,90deg);
+    top: 20%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    animation: depth 7s linear infinite;
+    z-index: 2;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.trophy { position: absolute; filter: drop-shadow(0 .5rem 4rem rgba(0,0,0,0.3)); }
+
+.foulke
+{
+    width: 11.1%;
+    z-index: 4;
+    top: 31%;
+    left: 60%;
+    transform: rotate(-10deg);
+}
+
+.papelbon
+{
+    width: 11.1%;
+    z-index: 4;
+    top: 31%;
+    left: 29%;
+    transform: rotate(10deg);
+}
+
+.uehara
+{
+    width: 9%;
+    z-index: 1;
+    top: 31%;
+    left: 52.5%;
+    transform: rotate(13deg);
+}
+
+.eovaldi
+{
+    width: 9%;
+    z-index: 1;
+    top: 31%;
+    left: 36%;
+    transform: rotate(-12deg);
+}
+
+@keyframes sawx
+{
+    0% { top: 20%; transform: rotate(0deg) rotate3d(0,1,0,0deg); }
+    12.5% { top: 27%; transform: rotate(8deg) rotate3d(0,1,0,45deg); }
+    25% { top: 20%; transform: rotate(0deg) rotate3d(0,1,0,90deg); }
+    37.5% { top: 14%; transform: rotate(-2deg) rotate3d(0,1,0,135deg); }
+    50% { top: 20%; transform: rotate(0deg) rotate3d(0,1,0,180deg); }
+    62.5% { top: 27%; transform: rotate(8deg) rotate3d(0,1,0,225deg); }
+    75% { top: 20%; transform: rotate(0deg) rotate3d(0,1,0,270deg); }
+    87.5% { top: 14%; transform: rotate(-2deg) rotate3d(0,1,0,315deg); }
+    100% { top: 20%; transform: rotate(0deg) rotate3d(0,1,0,360deg); }
+}
+
+@keyframes depth
+{
+    0% { top: 20%; transform: rotate3d(0,1,0,90deg); width: 0; }
+    12.5% { top: 27%; transform: rotate3d(0,1,0,135deg); width: 0; }
+    25% { top: 20%; transform: rotate3d(0,1,0,180deg); width: 2rem; }
+    37.5% { top: 14%; transform: rotate3d(0,1,0,225deg); width: 0; }
+    50% { top: 20%; transform: rotate3d(0,1,0,270deg); width: 0; }
+    62.5% { top: 27%; transform: rotate3d(0,1,0,315deg); width: 0; }
+    75% { top: 20%; transform: rotate3d(0,1,0,360deg); width: 2rem; }
+    87.5% { top: 14%; transform: rotate3d(0,1,0,45deg); width: 0; }
+    100% { top: 20%; transform: rotate3d(0,1,0,90deg); width: 0; }
+}

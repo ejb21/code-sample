@@ -1,0 +1,156 @@
+  #   PROBLEM #1
+
+
+p1url <- "https://emergency.cdc.gov/han/han00384.asp"
+
+fentanyl <- read_html(p1url)
+fentanyl
+
+library(rvest)
+
+fentanyl %>%
+  html_nodes('table') %>%
+  magrittr::extract2(2) %>%
+  html_table() -> table
+
+class(table)
+colnames(table)[3] <- "Fentanyl seizures"
+table
+
+states <- head(table$State, 5)
+
+sprintf("States with the most fentanyl seizures: %s, %s, %s, %s, %s",
+        states[1], states[2], states[3], states[4], states[5])
+
+states <- tail(table$State, 5)
+
+sprintf("States with the fewest fentanyl seizures (among the top ten): %s, %s, %s, %s, %s",
+        states[5], states[4], states[3], states[2], states[1])
+
+
+
+
+  #   PROBLEM #2
+
+
+p2url <- "https://people.sc.fsu.edu/~jburkardt/data/csv/hurricanes.csv"
+
+library(readr)
+
+hurricanes <- read.table(file = p2url, header = TRUE, sep = ",")
+
+may <- hurricanes[1,seq(3,13)]
+june <- hurricanes[2,seq(3,13)]
+july <- hurricanes[3,seq(3,13)]
+august <- hurricanes[4,seq(3,13)]
+september <- hurricanes[5,seq(3,13)]
+october <- hurricanes[6,seq(3,13)]
+november <- hurricanes[7,seq(3,13)]
+december <- hurricanes[8,seq(3,13)]
+
+pre2010may <- as.numeric(may[1,seq(1,5)])
+post2010may <- as.numeric(may[1,seq(6,11)])
+
+pre2010jun <- as.numeric(june[1,seq(1,5)])
+post2010jun <- as.numeric(june[1,seq(6,11)])
+
+pre2010jul <- as.numeric(july[1,seq(1,5)])
+post2010jul <- as.numeric(july[1,seq(6,11)])
+
+pre2010aug <- as.numeric(august[1,seq(1,5)])
+post2010aug <- as.numeric(august[1,seq(6,11)])
+
+pre2010sep <- as.numeric(september[1,seq(1,5)])
+post2010sep <- as.numeric(september[1,seq(6,11)])
+
+pre2010oct <- as.numeric(october[1,seq(1,5)])
+post2010oct <- as.numeric(october[1,seq(6,11)])
+
+pre2010nov <- as.numeric(november[1,seq(1,5)])
+post2010nov <- as.numeric(november[1,seq(6,11)])
+
+pre2010dec <- as.numeric(december[1,seq(1,5)])
+post2010dec <- as.numeric(december[1,seq(6,11)])
+  
+pre2010mean <- c(mean(pre2010may), mean(pre2010jun), mean(pre2010jul), mean(pre2010aug),
+                mean(pre2010sep), mean(pre2010oct), mean(pre2010nov), mean(pre2010dec))
+
+hurricanes$"Average Pre-2010" <- pre2010mean
+
+post2010mean <- c(mean(post2010may), mean(post2010jun), mean(post2010jul), mean(post2010aug),
+                 mean(post2010sep), mean(post2010oct), mean(post2010nov), mean(post2010dec))
+
+hurricanes$"Average Post-2010" <- post2010mean
+
+library(ggplot2)
+
+ggplot(data = hurricanes, aes(x = Month)) +
+  geom_line(aes(y = hurricanes[14], group = 1, color = "Average Pre-2010")) +
+  geom_line(aes(y = hurricanes[15], group = 1, color = "Average Post-2010")) +
+  ylab("Average Number of Hurricanes") + ggtitle("Average Number of Hurricanes by Month")
+
+
+
+
+  #   PROBLEM #3
+
+
+setwd("C:/Users/Eric/Documents/Penn College/CIT460/Assignment 1")
+
+library(readxl)
+
+opioids <- read_excel("Assignment 1 opioid.xlsx")
+opioids <- opioids[-c(1, 2, 3, 4), ]
+opioids <- opioids[-seq(41,54), ]
+
+colnames(opioids)[1] <- "Descriptor"
+colnames(opioids)[seq(2,18)] <- seq(1999, 2015)
+opioids <- opioids[-c(1), ]
+
+
+deathsMale <- as.numeric(opioids[3, seq(5,18)])
+deathsFemale <- as.numeric(opioids[2, seq(5,18)])
+deathsTotal <- as.numeric(opioids[1, seq(5,18)])
+deathsFrame <- data.frame(v1 = seq(2002,2015), v2 = deathsMale, v3 = deathsFemale, v4 = deathsTotal)
+
+ggplot(data = deathsFrame, aes(x = v1)) + 
+  geom_bar(aes(y = v4, fill = "Total"), stat = "identity") +
+  geom_line(aes(y = v2, color = "Men"), group = 1, size = 1) + 
+  geom_line(aes(y = v3, color = "Women"), group = 1, size = 1) +
+  geom_point(aes(y = v2)) + geom_point(aes(y = v3)) +
+  scale_fill_manual(values=c("gray")) +
+  labs(x = "Year", y = "Number of Overdose Deaths") +
+  ggtitle("Number of Overdose Deaths by Year - All Drugs") +
+  scale_x_continuous(breaks = seq(2002, 2015, by = 1))
+
+
+deathsMale <- as.numeric(opioids[9, seq(5,18)])
+deathsFemale <- as.numeric(opioids[8, seq(5,18)])
+deathsTotal <- as.numeric(opioids[7, seq(5,18)])
+deathsFrame <- data.frame(v1 = seq(2002,2015), v2 = deathsMale, v3 = deathsFemale, v4 = deathsTotal)
+
+ggplot(data = deathsFrame, aes(x = v1)) + 
+  geom_bar(aes(y = v4, fill = "Total"), stat = "identity") +
+  geom_line(aes(y = v2, color = "Men"), group = 1, size = 1) + 
+  geom_line(aes(y = v3, color = "Women"), group = 1, size = 1) +
+  geom_point(aes(y = v2)) + geom_point(aes(y = v3)) +
+  scale_fill_manual(values=c("gray")) +
+  labs(x = "Year", y = "Number of Overdose Deaths") +
+  ggtitle("Number of Overdose Deaths by Year - Opioid Pain Relievers") +
+  scale_x_continuous(breaks = seq(2002, 2015, by = 1))
+
+
+deathsMale <- as.numeric(opioids[21, seq(5,18)])
+deathsFemale <- as.numeric(opioids[20, seq(5,18)])
+deathsTotal <- as.numeric(opioids[19, seq(5,18)])
+deathsFrame <- data.frame(v1 = seq(2002,2015), v2 = deathsMale, v3 = deathsFemale, v4 = deathsTotal)
+
+ggplot(data = deathsFrame, aes(x = v1)) + 
+  geom_bar(aes(y = v4, fill = "Total"), stat = "identity") +
+  geom_line(aes(y = v2, color = "Men"), group = 1, size = 1) + 
+  geom_line(aes(y = v3, color = "Women"), group = 1, size = 1) +
+  geom_point(aes(y = v2)) + geom_point(aes(y = v3)) +
+  scale_fill_manual(values=c("gray")) +
+  labs(x = "Year", y = "Number of Overdose Deaths") +
+  ggtitle("Number of Overdose Deaths by Year - Heroin") +
+  scale_x_continuous(breaks = seq(2002, 2015, by = 1))

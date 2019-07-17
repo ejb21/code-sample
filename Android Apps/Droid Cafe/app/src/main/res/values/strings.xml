@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Droid Café</string>
+
+    <string-array name="sports_titles">
+        <item>Coffee</item>
+        <item>Tea</item>
+        <item>Bagel</item>
+        <item>Donut</item>
+        <item>Mystery Item</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Potent coffee brewed black</item>
+        <item>Delicious, hot tea</item>
+        <item>Bagels cooked to perfection</item>
+        <item>Mouth-watering donuts</item>
+        <item>The world-renowned Droid Café Mystery Item...</item>
+    </string-array>
+
+    <array name="sports_images">
+        <item>@drawable/coffee</item>
+        <item>@drawable/tea</item>
+        <item>@drawable/bagel</item>
+        <item>@drawable/donut</item>
+        <item>@drawable/mystery</item>
+    </array>
+
+    <string-array name="prices">
+        <item>$2.50</item>
+        <item>$2.25</item>
+        <item>$1.25</item>
+        <item>$1.50</item>
+        <item>$5.00</item>
+    </string-array>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+</resources>

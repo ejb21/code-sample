@@ -1,0 +1,16 @@
+$red: #c91b34;
+$blue: #1a3553;
+
+$lightred: lighten($red, 50%);
+
+$grey: #959595;
+$lightgrey: #f1f1f1;
+$offwhite: #f0f0f0;
+
+$gutter-vertical: 3rem;
+$gutter-horizontal: 4.5rem;
+
+@include respond(tablet)
+{
+    $gutter-horizontal: 2rem;
+}

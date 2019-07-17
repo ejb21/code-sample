@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NormalMap PoC</title>
+</head>
+<body>
+    <canvas id="nm-target"></canvas>
+    <script src="js/normalmap.min.js"></script>
+    <script>
+        let canvas = document.getElementById("nm-target");
+        let normalMap = new ImageBitmap();
+        normalMap.src = "images/background.png";
+        let lights = normalmap({
+            canvas: canvas,
+            normalMap: normalMap,
+            baseColor: [0.5, 0.4, 0.5]
+        });
+
+        lights.clear();
+
+        let position = normalMap.vec3(0.5, 0.5, 1.0); // dead center
+        let color = normalMap.vec3(1.0, 1.0, 1.0); // bright white
+        lights.addPointLight(position, color);
+    </script>
+</body>
+</html>

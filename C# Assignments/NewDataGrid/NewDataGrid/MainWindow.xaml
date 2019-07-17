@@ -1,0 +1,27 @@
+﻿<Window x:Class="NewDataGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewDataGrid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DataGrid x:Name="dgBooks" CellEditEnding="SaveData"  AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="299" Width="497">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=id}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Title" Binding="{Binding Path=Title}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Author" Binding="{Binding Path=Author}"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn Header="Delete">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="btnDeleteRecord"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

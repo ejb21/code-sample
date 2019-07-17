@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; Curves</title>
+        <style>
+            body { display: flex; align-items: center; justify-content: center; }
+            @font-face { font-family: 'Bosox'; src: url('Bosox.ttf'); }
+        </style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                drawShape(context, 185, 25);
+                context.closePath();
+
+                context.font = '50pt Bosox';
+                context.fillStyle = '#c60c30';
+                context.textBaseline = 'middle';
+                context.fillText('Close', 20, 125);
+                context.fillText('Enough', 405, 125);
+            };
+
+            function drawShape(ctx, xoff, yoff)
+            {
+                ctx.beginPath();
+                ctx.moveTo(198 + xoff, 149 + yoff);
+                ctx.bezierCurveTo(191 + xoff, 104 + yoff, 137 + xoff, 113 + yoff, 129 + xoff, 103 + yoff);
+                ctx.bezierCurveTo(120 + xoff, 91 + yoff, 120 + xoff, 43 + yoff, 117 + xoff, 33 + yoff);
+                ctx.bezierCurveTo(113 + xoff, 19 + yoff, 125 + xoff, 28 + yoff, 110 + xoff, 26 + yoff);
+                ctx.bezierCurveTo(101 + xoff, 25 + yoff, 109 + xoff, 12 + yoff, 102 + xoff, 6 + yoff);
+                ctx.bezierCurveTo(91 + xoff, -4 + yoff, 93 + xoff, 0 + yoff, 72 + xoff, 7 + yoff);
+                ctx.bezierCurveTo(69 + xoff, 8 + yoff, 74 + xoff, 15 + yoff, 69 + xoff, 18 + yoff);
+                ctx.bezierCurveTo(64 + xoff, 21 + yoff, 74 + xoff, 11 + yoff, 60 + xoff, 16 + yoff);
+                ctx.bezierCurveTo(52 + xoff, 19 + yoff, 54 + xoff, 39 + yoff, 52 + xoff, 34 + yoff);
+                ctx.bezierCurveTo(46 + xoff, 20 + yoff, 23 + xoff, 92 + yoff, 25 + xoff, 104 + yoff);
+                ctx.bezierCurveTo(27 + xoff, 119 + yoff, 15 + xoff, 104 + yoff, 5 + xoff, 134 + yoff);
+                ctx.bezierCurveTo(0 + xoff, 148 + yoff, 50 + xoff, 169 + yoff, 30 + xoff, 157 + yoff);
+                ctx.bezierCurveTo(6 + xoff, 147 + yoff, 49 + xoff, 165 + yoff, 62 + xoff, 171 + yoff);
+                ctx.bezierCurveTo(79 + xoff, 179 + yoff, 81 + xoff, 187 + yoff, 95 + xoff, 191 + yoff);
+                ctx.bezierCurveTo(110 + xoff, 195 + yoff, 121 + xoff, 186 + yoff, 125 + xoff, 184 + yoff);
+                ctx.bezierCurveTo(138 + xoff, 177 + yoff, 81 + xoff, 130 + yoff, 103 + xoff, 151 + yoff);
+                ctx.bezierCurveTo(103 + xoff, 151 + yoff, 175 + xoff, 175 + yoff, 198 + xoff, 149 + yoff);
+                ctx.fillStyle = '#c60c30';
+                ctx.fill();
+            }
+        </script>    
+    </head>
+    <body style="font-family: 'Bosox';">
+        <canvas id="canvas" width="600" height="250"style="border:1px solid black;"></canvas>
+    </body>
+</html>

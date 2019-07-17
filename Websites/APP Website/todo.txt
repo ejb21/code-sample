@@ -1,0 +1,25 @@
+Home
+  News item #1
+  News item #2
+
+Events
+  Google Calendar
+  
+
+About
+  What We Do
+  Constitution
+  Board
+  History
+  Event History
+
+Resources
+  Email
+  Google Drive
+  Github
+  Discord
+  Tutorials — links
+
+<h2>C# Tutorials</h2>
+<a href="tutorial URL">How to Whatever</a>
+<p class="description">asdfasdfasdffasdf</p>

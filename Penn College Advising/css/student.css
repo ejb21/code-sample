@@ -1,0 +1,636 @@
+body
+{
+    overflow-x: visible !important ;
+}
+
+#content
+{
+    width: 1000px ;
+    height: 1275px ;
+    margin: auto ;
+    background-color: white ;
+    box-shadow: 0px 0px 50px black ;
+}
+
+#divAdvisor
+{
+    margin: auto ;
+    background-color: #e5e5e5 ;
+    border: solid 3px #d6cdbe ;
+    border-radius: 15px ;
+    height: 200px ;
+    width: 700px ;
+    text-align: center ;
+    margin-top: 83px ;
+}
+
+#divAdvisor:hover
+{
+    background-color: #f2f2f2 ;
+}
+
+#advInfo
+{
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    margin: auto ;
+    font-size: 60px ;
+    text-shadow: 0px 4px #d6cdbe , 2px 0px #d6cdbe , -2px 0px #d6cdbe , 0px 3px 10px white ;
+    position: relative ;
+    top: -33px ;
+    z-index: 1 ;
+}
+
+#advName
+{
+    font-family: AileronBold ;
+    font-size: 48px ;
+    text-shadow: 0px 3px white , 2px 0px white , -2px 0px white , 0px 2px 10px #4a7faf  ;
+    margin-top: -5px ;
+    position: relative ;
+    left: -70px ;
+}
+
+.advName
+{
+    font-family: AileronBold ;
+    font-size: 48px ;
+    text-shadow: 0px 3px white , 2px 0px white , -2px 0px white , 0px 2px 10px #4a7faf ;
+    margin-top: -5px ;
+    position: relative ;
+    left: -70px ;
+}
+
+#links
+{
+    margin-top: 18px ;
+}
+
+#information , #contact
+{
+    font-family: Helvetica ;
+    color: #991431 ;
+    text-decoration: none ;
+    font-size: 33px ;
+}
+
+#information:hover , #contact:hover
+{
+    text-decoration: underline ;
+    cursor: pointer ;
+}
+
+#bullet
+{
+    font-family: Aileron ;
+    font-size: 27px ;
+    color: #991431 ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    position: relative ;
+    top: -3px ;
+}
+
+#advName , #links
+{
+    position: relative ;
+    left: -70px ;
+}
+
+#advPhoto , .advPhoto
+{
+    float: right ;
+    display: flex ;
+    border-top: solid 5px white ;
+    border-left: solid 5px white ;
+    border-bottom: solid 5px #a39d91 ;
+    border-right: solid 5px #a39d91 ;
+    height: 175px ;
+    position: relative ;
+    top: -146px ;
+    margin-right: 8px ;
+}
+
+#calendar
+{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px ;
+    text-align: center ;
+    font-family: AileronBold ;
+    font-size: 20px ;
+    color: #4a7faf ;
+    text-shadow: 0px 2px #d6cdbe , 1px 0px #d6cdbe , -1px 0px #d6cdbe ;
+}
+
+.fc-right
+{
+    position: relative ;
+    left: 236px ;
+}
+
+#inputs
+{
+    text-align: center ;
+    margin-top: 23px ;
+}
+
+.fc-right button
+{
+    all: unset ;
+    background-color: #991431 ;
+    font-family: Helvetica ;
+    text-transform: uppercase ;
+    color: white ;
+    text-shadow: none ;
+    font-size: 28px !important ;
+    height: 55px !important ;
+}
+
+button[class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right"]
+{
+    width: 170px ;
+    border: 2px outset #bf193d ;
+}
+
+button[class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-disabled"]
+{
+    width: 170px ;
+    border: 2px outset #bf193d ;
+}
+
+button[class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-hover"]
+{
+    width: 170px ;
+    border: 2px outset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) !important ;
+}
+
+button[class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-hover fc-state-down"]
+{
+    width: 170px ;
+    border: 2px inset #bf193d ;
+}
+
+[class="fc widget-content fc-today"]
+{
+    background-color: rgba( 153 , 20 , 49 , 0.9 ) ;
+}
+
+#calendar h2
+{
+    font-family: Helvetica ;
+    font-weight: 900 ;
+    text-transform: uppercase ;
+    color: #991431 ;
+    text-shadow: none ;
+    font-size: 48px ;
+    position: relative ;
+    top: 52px ;
+    text-shadow: 0px 3px #d6cdbe , 1px 0px #d6cdbe , -1px 0px #d6cdbe , 0px 2px 5px #d6cdbe ;
+    width: 500px ;
+    text-align: left ;
+}
+
+.hfEvents
+{
+    width: 503px ;
+    height: 49px ;
+    border: inset 2px gray ;
+    border-radius: 4px ;
+    outline: none ;
+    margin-right: 20px ;
+    position: relative ;
+    top: -2px ;
+    text-align: center ;
+    font-family: Aileron ;
+    font-size: 22px ;
+}
+
+.btnSubmit
+{
+    background-color: #991431 ;
+    font-family: Helvetica ;
+    text-transform: uppercase ;
+    color: white ;
+    text-shadow: none ;
+    font-size: 28px ;
+    border: 2px outset #bf193d ;
+    border-radius: 4px ;
+    width: 370px ;
+    height: 55px ;
+    outline: none ;
+    cursor: default ;
+}
+
+.btnSubmit:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+.btnSubmit:active
+{
+    border: 2px inset #bf193d ;
+}
+
+td[class="fc-axis fc-time fc-widget-content"]
+{
+    text-align: center !important ;
+    background-color: #e5e5e5 ;
+    color: #4a7faf ;
+}
+
+#calendar th
+{
+    background-color: #e5e5e5 ;
+    color: #4a7faf ;
+    height: 35px ;
+    padding-top: 10px ;
+}
+
+td[class="fc-head-container fc-widget-header"]
+{
+    background-color: #e5e5e5 ;
+}
+
+div.fc-time
+{
+    font-size: 18px ;
+    margin-top: 5px ;
+}
+
+div.fc-time:hover
+{
+    cursor: default ;
+}
+
+button[class="fc-prev-button fc-button fc-state-default fc-corner-left"]
+{
+    border: 2px outset #bf193d ;
+}
+
+button[class="fc-prev-button fc-button fc-state-default fc-corner-left fc-state-hover"]
+{
+    border: 2px outset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) !important ;
+}
+
+button[class="fc-prev-button fc-button fc-state-default fc-corner-left fc-state-hover fc-state-down"]
+{
+    border: 2px inset #bf193d ;
+}
+
+button[class="fc-next-button fc-button fc-state-default fc-corner-right"]
+{
+    border: 2px outset #bf193d ;
+}
+
+button[class="fc-next-button fc-button fc-state-default fc-corner-right fc-state-hover"]
+{
+    border: 2px outset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) !important ;
+}
+
+button[class="fc-next-button fc-button fc-state-default fc-corner-right fc-state-hover fc-state-down"]
+{
+    border: 2px inset #bf193d ;
+}
+
+.fc-button-group button
+{
+    z-index: 0 !important;
+}
+
+#lightsOutStudent
+{
+    width: 100vw ;
+    height: 100vh ;
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgba( 0 , 0 , 0 , 0.75 ) ;
+    z-index: 1000 ;
+    display: none ;
+}
+
+#infoPanel
+{
+    width: 980px ;
+    height: 542px ;
+    border: outset 10px #5693cc ;
+    border-radius: 25px ;
+    position: fixed ;
+    left: 50% ;
+    top: 50% ;
+    margin-left: -500px ;
+    margin-top: -271px ;
+    background-color: white ;
+    font-family: Aileron ;
+    font-size: 50px ;
+    display: none ;
+}
+
+#infoInfo
+{
+    font-family: AileronBold ;
+    color: #4a7faf ;
+    font-size: 80px ;
+    text-shadow: 0px 5px #d6cdbe , 3px 0px #d6cdbe , -3px 0px #d6cdbe , 0px 3px 10px white ;
+    width: 100% ;
+    text-align: center ;
+    margin-bottom: 30px ;
+}
+
+#infoNamelbl , #infoEmaillbl , #infoPhonelbl , #infoOfficelbl
+{
+    font-family: AileronBold ;
+    font-size: 60px ;
+    text-shadow: 0px 3px white , 3px 0px white , -3px 0px white , 0px 3px 15px #991431  ;
+    margin-right: 35px ;
+    padding-left: 75px ;
+}
+
+#infoNamelbl
+{
+    margin-left: 13px ;
+}
+
+#infoEmaillbl
+{
+    margin-left: 24px ;
+}
+
+#infoOfficelbl
+{
+    margin-left: 11px ;
+}
+
+#infoPanel p
+{
+    margin-top: 15px ;
+}
+
+#infoClose
+{
+    width: 100% ;
+    text-align: center ;
+    margin-top: 40px ;
+}
+
+#infoClosebtn
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 50px ;
+    width: 350px ;
+    height: 52px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    margin: auto ;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+}
+
+#infoClosebtn:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+    cursor: default ;
+}
+
+#infoClosebtn:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#contactPanel
+{
+    width: 850px ;
+    height: 640px ;
+    border: outset 10px #5693cc ;
+    border-radius: 25px ;
+    position: fixed ;
+    left: 50% ;
+    top: 50% ;
+    margin-left: -425px ;
+    margin-top: -330px ;
+    background-color: white ;
+    font-family: Aileron ;
+    font-size: 45px ;
+    display: none ;
+}
+
+#lblTo
+{
+    font-family: AileronBold ;
+    font-size: 50px ;
+    color: #991431 ;
+    text-shadow: 0px 3px white , 3px 0px white , -3px 0px white , 0px 3px 10px #4a7faf  ;
+    margin-right: 20px ;
+    padding-left: 22px ;
+}
+
+#pTo
+{
+    margin-top: 15px ;
+}
+
+#pSubject
+{
+    margin-top: 13px ;
+}
+
+#lblSubject
+{
+    font-family: AileronBold ;
+    font-size: 45px ;
+    color: #991431 ;
+    text-shadow: 0px 3px white , 3px 0px white , -3px 0px white , 0px 3px 10px #4a7faf  ;
+    margin-right: 20px ;
+    padding-left: 22px ;
+    position: relative ;
+    top: 2px ;
+}
+
+.subject , .message
+{
+    border: 3px inset #5693cc ;
+    border-radius: 5px ;
+    font-family: Aileron ;
+    outline: none ;
+}
+
+.subject
+{
+    height: 45px ;
+    font-size: 32px ;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    width: 580px ;
+}
+
+#pMessage
+{
+    width: 100% ;
+    text-align: center ;
+    margin-top: 20px ;
+}
+
+.message
+{
+    margin: auto ;
+    width: 780px ;
+    height: 350px ;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 15px ;
+    font-size: 26px ;
+    resize: none ;
+}
+
+#contactButtons
+{
+    width: 100% ;
+    text-align: center ;
+    margin-top: 15px ;
+}
+
+#contactClosebtn , #send
+{
+    background-color: #991431 ;
+    color: white ;
+    font-family: Helvetica ;
+    font-size: 45px ;
+    width: 325px ;
+    height: 52px ;
+    border: 3px outset #bf193d ;
+    outline: none ;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    display: inline-block ;
+}
+
+#contactClosebtn
+{
+    width: 260px ;
+    margin-left: 15px ;
+    position: relative ;
+    top: -9px ;
+}
+
+#contactClosebtn:hover , #send:hover
+{
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+    cursor: default ;
+}
+
+#contactClosebtn:active , #send:active
+{
+    border: 3px inset #bf193d ;
+    text-shadow: 0px 0px 10px rgba( 255 , 255 , 255 , 0.4 ) ;
+}
+
+#imgSend
+{
+    height: 45px ;
+    margin-left: 20px ;
+    padding-top: 3px ;
+    display: inline ;
+}
+
+#sendtxt
+{
+    position: relative ;
+    top: -5px ;
+}
+
+#contactClosebtntxt
+{
+    position: relative ;
+    top: 4px ;
+}
+
+.fc-bg
+{
+    width: 100% !important ;
+}
+
+.fc-event-container
+{
+    width: 96.5% !important ;
+    margin: auto ;
+}
+
+a[class="fc-time-grid-event fc-v-event fc-event fc-start fc-end"] ,
+a[class="fc-time-grid-event fc-v-event fc-event fc-not-start fc-end"] ,
+a[class="fc-time-grid-event fc-v-event fc-event fc-start fc-not-end"] ,
+a[class="fc-time-grid-event fc-v-event fc-event fc-not-start fc-not-end"]
+{
+    display: flex !important ;
+    align-items: center !important ;
+    width: 100% !important ;
+}
+
+.fc-content
+{
+    width: 100% !important ;
+    margin: auto !important ;
+}
+
+div[class=".fc-event-container fc-helper-container"]
+{
+    width: 96.5% !important ;
+    margin: auto ;
+}
+
+a[class="fc-time-grid-event fc-v-event fc-event fc-start fc-end fc-helper"]
+{
+    width: 100% !important ;
+}
+
+a[class="fc-time-grid-event fc-v-event fc-event fc-start fc-end fc-helper"] .fc-content
+{
+    height: 100% ;
+    background-color: #991431 !important;
+    text-shadow: none !important;
+}
+
+.greyed
+{
+    background-color: #d6cdbe !important ;
+    border: 2px outset #ede4d3 !important ;
+    pointer-events: none !important ;
+    border-radius: 4px !important ;
+    color: #999388 !important ;
+    z-index: -1 !important ;
+}
+
+button[class="greyed fc-state-hover"]
+{
+    background-color: #d6cdbe !important ;
+    border: 2px outset #ede4d3 !important ;
+    pointer-events: none !important ;
+    border-radius: 4px !important ;
+    color: #999388 !important ;
+    z-index: -1 !important ;
+}
+
+a[category="appt"]
+{
+    display: flex ;
+    align-content: center ;
+}
+
+a[category="appt"] .fc-content
+{
+    height: 100% ;
+    background-color: #4a7faf;
+    text-shadow: none ;
+    padding-top: 3px ;
+}
+
+button[class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right"]
+{
+    display: none ;
+}

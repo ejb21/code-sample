@@ -1,0 +1,29 @@
+html
+{
+    font-size: $default-font-size;
+
+    @include respond(1200)
+    {
+        font-size: 0.83333vw;
+    }
+}
+
+body
+{
+    font-family: "Aileron", sans-serif;
+    font-weight: 400;
+
+    @include respond(tablet)
+    {
+        background-color: $sox-blue;
+    }
+}
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

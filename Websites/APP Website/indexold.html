@@ -1,0 +1,95 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Penn College APP Club</title>
+    <meta name="description" content="The official website for the Penn College chapter of the Association of Professional Programmers">
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    
+    <script>
+        //http://pctapp-dev.miscfolder.net/json-api/api.php?id=1
+        
+        function readJSON(url, callback)
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            
+            xhr.onload = function()
+            {
+                var status = xhr.status;
+
+                if (status === 200)
+                {
+                  callback(null, xhr.response);
+                }
+                else
+                {
+                    callback(status, xhr.response);
+                }
+            };
+            
+            xhr.send();
+        }
+    </script>
+</head>
+    
+<body>
+    <header>
+        <span id="pct"><a href="https://www.pct.edu/" target="_blank">Penn College</a></span>
+        <span id="app">Association of Professional Programmers</span>
+        <nav><ul>
+            <a href="index.html"><li>Root</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="resources.html"><li>Resources</li></a>
+        </ul></nav>
+    </header>
+    
+    <div id="content">
+        <a id="banner" href="signups.html">
+            Runtime Funtime signups are live!<br>Click here to register!
+        </a>
+
+        <h1>Sample APP News Headline</h1>
+        <img class="photo" src="img/mrrobot.jpg">
+        <p class="paragraph">
+            I don't think anybody knows it was Russia that wrote Lorem Ipsum, but I don't know, maybe it was. It could be Russia, but it could also be China. It could also be lots of other people. It also could be some wordsmith sitting on their bed that weights 400 pounds. Ok? I think the only card she has is the Lorem card.
+        </p>
+        <p class="paragraph">
+            You’re disgusting. You could see there was text coming out of her eyes, text coming out of her wherever.
+        </p>
+        <p class="paragraph">
+            All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot.
+        </p>
+        <p class="paragraph">
+            I’m the best thing that ever happened to placeholder text. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful. My text is long and beautiful, as, it has been well documented, are various other parts of my website.
+        </p>
+
+        <h1>Longer Sample APP News Headline #2</h1>
+        <img class="photo" src="img/1337hack3r.jpg">
+        <p class="paragraph">
+            Hodor hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor hodor! Hodor! Hodor hodor, HODOR hodor, hodor hodor - hodor. Hodor. Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor HODOR hodor, hodor hodor... Hodor hodor hodor? Hodor, hodor hodor hodor - hodor hodor. Hodor. Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor?! Hodor, HODOR hodor, hodor hodor... Hodor hodor hodor?! Hodor! Hodor hodor, hodor... Hodor hodor hodor - hodor?
+        </p>
+        <p class="paragraph">
+            Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor, hodor, hodor hodor. Hodor, hodor... Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor hodor! Hodor, hodor... Hodor hodor hodor hodor! Hodor hodor hodor hodor hodor hodor hodor. Hodor. Hodor, hodor hodor hodor... Hodor hodor hodor, hodor. Hodor hodor. Hodor hodor - hodor hodor hodor, hodor. Hodor hodor hodor.
+        </p>
+        <p class="paragraph">
+            Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor. Hodor hodor; hodor hodor - hodor - hodor hodor?! Hodor hodor - HODOR hodor, hodor hodor. Hodor. Hodor. Hodor hodor hodor?!
+        </p>
+        <p class="paragraph">
+            Hodor. Hodor hodor; hodor hodor; hodor hodor, hodor, hodor hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor hodor! Hodor, HODOR hodor, hodor hodor - hodor, hodor, hodor hodor. Hodor hodor... Hodor hodor hodor... Hodor hodor HODOR hodor, hodor hodor?! Hodor! Hodor hodor, hodor hodor hodor hodor hodor! Hodor. Hodor HODOR hodor, hodor hodor hodor hodor... Hodor hodor hodor. Hodor.
+        </p>
+    </div>
+        
+    <footer>
+        Copyright &copy; 2018 Penn College Association of Professional Programmers
+    </footer>
+</body>
+    
+</html>

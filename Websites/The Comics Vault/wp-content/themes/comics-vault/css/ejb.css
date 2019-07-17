@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1400px)
+{
+    main { width: calc(100vw - 20rem); }
+    main:before { left: -9.9rem; }
+    main:after { right: -9.9rem; }
+}
+
+@media only screen and (max-width: 1366px)      /*  Small computers  */
+{
+    
+}
+
+@media only screen and (max-width: 1280px)      /*  Minuscule computers  */
+{
+    
+}
+
+@media only screen and (max-width: 1200px)
+{
+    nav#nav { padding: 0 2% .25rem 2%; }
+    main { width: 100%; }
+    main:before, main:after { display: none; }
+    footer { padding: 3rem; }
+}
+
+@media only screen and (max-width: 1050px)
+{
+    nav#nav { padding: 0 0 .25rem 0; }
+    footer section#text-3 { display: none; }
+    #pgc-2-0-1 { margin-top: 0; } 
+    #panel-2-0-0-1 > #panel-2-0-0-1 { width: 60vw; margin: 6rem 0 0 calc(20vw - 3rem); }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    #logo { margin-bottom: -.5vw; }
+    .home #logo { margin-bottom: -1.6vw; }
+    #logo-clip { padding-top: .75vw; height: 18vw; width: 36vw; }
+    .home #logo-clip { height: 25vw; width: 50vw; }
+    #the-comics-vault { top: -2.75vw; }
+    .home #the-comics-vault { top: -4vw; }
+    #the-comics-vault span:first-child { font-size: 3.5vw; letter-spacing: .05vw; text-shadow: 0.25vw 0.175vw 0 #A2354E; }
+    #the-comics-vault span:last-child { font-size: 15.25vw; letter-spacing: .075vw; text-shadow: .65vw .45vw 0 #B72234; }
+    .home #the-comics-vault span:first-child { font-size: 5vw; letter-spacing: .1vw; text-shadow: 0.275vw 0.275vw 0 #A2354E; }
+    .home #the-comics-vault span:last-child { font-size: 21.25vw; letter-spacing: .125vw; text-shadow: .9vw .65vw 0 #B72234; }
+    #the-comics-vault:hover span:first-child { text-shadow: 0.25vw 0.175vw 0 #E73248; }
+    #the-comics-vault:hover span:last-child { text-shadow: .65vw .45vw 0 #E73248; }
+    .home #the-comics-vault:hover span:first-child { text-shadow: 0.275vw 0.275vw 0 #E73248; }
+    .home #the-comics-vault:hover span:last-child { text-shadow: .9vw .65vw 0 #E73248; }
+    #logo * { filter: drop-shadow(0 .1875vw .5625vw rgba(0,0,0,0.75)); }
+    .home #logo * { filter: drop-shadow(0 .3125vw .9375vw rgba(0,0,0,0.75)); }
+}
+
+@media only screen and (max-width: 991px)       /*  Middle-sized shit idk  */
+{
+    nav#nav a { font-size: 6vw; letter-spacing: .3vw; }
+    nav#nav { padding: 0 2% .2vw 2%; height: 7.5vw; text-shadow: 0.1vw 0.05vw 0.15vw rgba(0,0,0,0.2), 0.4vw 0.3vw 0 #B72234; }
+    nav#nav:hover { text-shadow: 0.1vw 0.05vw 0.15vw rgba(0,0,0,0.2), 0.4vw 0.3vw 0 #e73248; }
+}
+
+@media only screen and (max-width: 800px)
+{
+    nav#nav { height: 9vw; }
+    nav#nav a { font-size: 7.5vw; }
+}
+
+@media only screen and (max-width: 780px)
+{
+    main { font-size: 4vw; overflow-x: hidden; }
+    body.home main#page { padding: 7vw 6vw 14vw 6vw; }
+    #panel-2-0-0-0 h2 { font-size: 9vw; margin-bottom: 7vw; width: 100vw; margin-left: -6vw; }
+    #pgc-2-0-1 { margin-top: 10vw; min-height: 59rem; box-shadow: none; }
+    #panel-2-0-1-0 { box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.1); }
+    #panel-2-1-0-0 .woocommerce .product { width: 100%; }
+    #panel-2-1-0-0 img { width: 56%; box-shadow: 0 0.5vw 2vw rgba(0,0,0,0.2); }
+    #panel-2-1-0-0 .woocommerce-loop-product__title { font-size: 6.25vw; }
+    #pg-2-1 h3 { font-size: 8vw; margin-bottom: 7vw; }
+    #panel-2-0-0-0 li:not(:last-child) { margin-bottom: 2vw; }
+    #panel-2-0-0-0 li:not(:first-child) { margin-top: 2vw; }
+    #panel-2-0-0-1 { margin-top: 11vw; }
+    #panel-2-0-0-1 > #panel-2-0-0-1 { width: 72vw; margin: 6rem 0 0 calc(14vw - 3rem); }
+    #panel-2-0-0-1 h3 { height: 9vw; }
+    #panel-2-0-0-1 h3 span { font-size: 10vw; }
+    #panel-2-0-0-1 dt { font-size: 4vw; width: 45%; }
+    #panel-2-0-0-1 dd { width: 55%; }
+    #panel-2-0-0-1 dt, #panel-2-0-0-1 dd { line-height: 2.4; }
+    #panel-2-1-0-0 span.price { font-size: 6vw; }
+    div#pgc-2-1-1 h3 { margin-top: 12vw; }
+    body > footer { margin: 0; flex-direction: column; width: 100%; }
+    footer address { padding-bottom: 2.25vw; }
+    #custom_html-3 { font-size: 4.5vw; }
+
+    #contact div#pgc-33-0-1 div#panel-33-0-1-0 { width: 103vw; margin-left: -13.75vw; }
+    div.single-product form.variations_form.cart { flex-direction: column; }
+    div.single-product div.single_variation_wrap { display: flex; justify-content: center; }
+    div.single-product form.cart table.variations > tbody > tr:first-child { display: flex; justify-content: center; }
+    div.single-product table.variations td.value select { width: 100%; }
+    div.single-product form.variations_form.cart table.variations { margin-bottom: 0; }
+
+    #local-artists > h1 { margin-bottom: 5vw; }
+    #local-artists > ul > li { width: 100%; margin-bottom: 8vw; }
+}
+
+@media only screen and (max-width: 767px)       /*  Tablets  */
+{
+    
+}
+
+@media only screen and (max-width: 500px)       /*  Cell phones - ONE STYLESHEET TO RULE THEM ALL  */
+{
+    
+}
+
+@media only screen and (max-width: 460px)
+{
+
+}

@@ -1,0 +1,258 @@
+/*
+
+    Creative Block BB
+    Unocide
+    Expressway
+
+    green: #31a066
+    purple: #924d90
+    orange: #ff7b34
+    lightgreen: #7ff4b6
+    darkgreen: #1e4531
+
+*/
+
+
+@font-face
+    {
+        font-family: CreativeBlock ;
+        src: url( "../fonts/CreativeBlock.ttf" ) ;
+    }
+
+@font-face
+    {
+        font-family: Unocide ;
+        src: url( "../fonts/Unocide.ttf" ) ;
+    }
+
+@font-face
+    {
+        font-family: Expressway ;
+        src: url( "../fonts/Expressway.ttf" ) ;
+    }
+
+
+#container
+    {
+        padding-top: 80px ;
+        padding-bottom: 50px ;
+    }
+
+
+body
+    {
+        width: 950px ;
+        margin: auto ;
+        text-align: center ;
+    }
+
+
+h1
+    {
+        font-family: CreativeBlock ;
+        font-size: 60px ;
+        color: #924d90 ;
+        text-shadow: 2px 2px white , -2px -2px white , 2px -2px white , -2px 2px white , 0px 0px 10px #ff7b34 , 0px 0px 10px #ff7b34 ;
+    }
+
+
+h2
+    {
+        font-family: Expressway ;
+        font-size: 32px ;
+        font-weight: 900 ;
+        color: #31a066 ;
+        position: relative ;
+        top: -3px ;
+    }
+
+
+h3
+    {
+        font-family: Expressway ;
+        font-size: 20px ;
+        font-weight: 900 ;
+    }
+
+
+h3 a
+    {
+        color: #ff7b34 ;
+        text-decoration: none ;
+    }
+
+
+h3 a:hover
+    {
+        text-decoration: underline ;
+    }
+
+
+#star1
+    {
+        font-size: 38px ;
+        color: #ff7b34 ;
+        position: relative ;
+        top: 2px ;
+    }
+
+
+form
+    {
+        width: 670px ;
+        margin: auto ;
+        margin-bottom: 60px ;
+        border: 3px solid #924d90 ;
+        border-radius: 12px ;
+        margin-top: 30px ;
+        background-color: rgba(255, 123, 52, 0.1) ;
+        padding-top: 12px ;
+        padding-bottom: 10px ;
+    }
+
+
+fieldset
+    {
+        width: 92% ;
+        margin: auto ;
+        border: 1px solid #ff7b34 ;
+        border-radius: 5px ;
+    }
+
+
+legend
+    {
+        font-family: CreativeBlock ;
+        font-size: 28px ;
+        color: #924d90 ;
+        padding-left: 10px ;
+        padding-right: 10px ;
+    }
+
+
+#comment
+    {
+        margin-top: 10px ;
+        padding: 10px ;
+    }
+
+
+label
+    {
+        font-family: Expressway ;
+        font-size: 22px ;
+        font-weight: 900 ;
+        color: #3a9566 ;
+    }
+
+
+em
+    {
+        font-style: italic ;
+    }
+
+
+.green
+    {
+        font-size: 18px ;
+        color: #ff7b34 ;
+    }
+
+
+.right
+    {
+        margin-left: 13px ;
+    }
+
+
+input[type="checkbox"] , input[type="radio"]
+    {
+        margin-right: 5px ;
+        margin-top: 8px ;
+        position: relative ;
+        top: 1px ;
+    }
+
+
+label[for="diner"] , label[for="nightclub"]
+    {
+        margin-right: 3px ;
+    }
+
+
+.star
+    {
+        color: #ff7b34 ;
+        padding-left: 6px ;
+        padding-right: 6px ;
+    }
+
+
+#name , #email
+    {
+        text-align: center ;
+    }
+
+
+#name , #email , #age
+    {
+        margin-bottom: 5px ;
+        margin-top: 4px ;
+        height: 25px ;
+        border: 2px inset rgba(146, 77, 144, 0.6) ;
+        border-radius: 2px ;
+    }
+
+
+#age
+    {
+        width: 200px ;
+        padding-left: 70px ;
+        margin-bottom: 30px ;
+    }
+
+
+option
+    {
+        margin: auto ;
+    }
+
+
+input[type="checkbox"]
+    {
+        margin-bottom: 30px ;
+    }
+
+
+#geninfo
+    {
+        padding-top: 20px ;
+        padding-bottom: 44px ;
+        margin-bottom: 20px ;
+    }
+
+
+#comments
+    {
+        margin-top: 3px ;
+        border: 2px inset rgba(146, 77, 144, 0.6) ;
+        border-radius: 2px ;
+        padding: 5px ;
+    }
+
+
+input[type="submit"] , input[type="reset"]
+    {
+        font-family: CreativeBlock ;
+        font-weight: 900 ;
+        font-size: 20px ;
+        color: white ;
+        width: 225px ;
+        height: 35px ;
+        margin-left: 4px ;
+        margin-right: 4px ;
+        margin-top: 25px ;
+        margin-bottom: 1px ;
+        background-color: #7b4079 ;
+        border: 2px solid #31a066 ;
+    }

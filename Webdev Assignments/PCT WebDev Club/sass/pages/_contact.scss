@@ -1,0 +1,130 @@
+.contact_heading{
+        width: 100%;
+        padding-bottom: 3rem;
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+        color: $blue;
+        padding: 1.5rem;
+        font-size: 6rem;
+        font-weight: 600;
+        
+        @media only screen and (max-width: 1260px) {
+            font-size: 4.762vw;
+        }
+
+        @media only screen and (max-width: 750px) {
+            //font-size: 6vw;
+            font-size: 7vw;
+        }
+}
+
+.contact{
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+    align-content: center;
+    text-align: center;
+
+    &_heading{
+        text-align: center;
+        // padding-bottom: 3rem;
+        // font-family: 'Helvetica';
+        // text-transform: uppercase;
+        // color: $blue;
+        // padding: 1.5rem;
+        // font-size: 6rem;
+        // font-weight: 600;
+        
+        // @media only screen and (max-width: 1000px) {
+        //     font-size: 7vw;
+        // }
+
+        &--sub{
+            font-size: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        &--info{
+            font-size: 1.5rem;
+        }
+    }
+
+    &_info{
+        color: cornflowerblue;
+    }
+
+    &_map{
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+.contactForm{
+    width: 60%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 1rem;
+
+    & input, & label{
+    display: block;
+}
+
+    & label{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    & input,& textarea{
+        padding: 1.7rem;
+        background: #e1e1e1;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        font-size: 1.2rem;
+        transition: .25s ease all;
+    }
+    & input:hover, & textarea:hover{
+        background: #f9f9f9;
+    }
+    & input:active, & textarea:active{
+        background: #f9f9f9;
+    }
+    & input:focus, & textarea:focus{
+        background: #f9f9f9;
+        outline: none !important;
+    }
+    & textarea{
+        height: 200px;
+        max-height: 300px;
+    }
+    & .name, & .email{
+        grid-column: span 3;
+
+        @media only screen and (max-width: 480px){
+            grid-column: span 6;
+        }
+    }
+    & .address, & .service, & .message, & .company{
+        grid-column: span 6;
+    }
+    
+    & #submit{
+        grid-column: span 2;
+        background: cornflowerblue;
+        cursor: pointer;
+        color: white;
+
+        @media only screen and (max-width: 480px){
+            grid-column: span 3;
+        }
+    }
+    & #submit:hover{
+        background: blue;
+        transition:all .25s;
+    }
+
+}
+
+

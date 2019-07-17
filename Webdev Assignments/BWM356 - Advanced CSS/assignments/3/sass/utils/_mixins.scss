@@ -1,0 +1,21 @@
+@mixin clearfix
+{
+    &::after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin respond($breakpoint)
+{
+    @if $breakpoint == big { @media only screen and (min-width: 1367px)   { @content }; }
+    @if $breakpoint == navbreak { @media only screen and (max-width: 1600px)   { @content }; }
+    @if $breakpoint == desktop { @media only screen and (max-width: 1366px)   { @content }; }
+    @if $breakpoint == hamburger { @media only screen and (max-width: 1140px)   { @content }; }
+    @if $breakpoint == columns { @media only screen and (max-width: 999px)   { @content }; }
+    @if $breakpoint == tablet { @media only screen and (max-width: 768px)   { @content }; }
+    @if $breakpoint == headerbreak { @media only screen and (max-width: 560px)   { @content }; }
+    @if $breakpoint == phone { @media only screen and (max-width: 480px)   { @content }; }
+}

@@ -1,0 +1,19 @@
+
+
+    From most important to least:
+
+
+        1.  Put individual "events" pages under the /events/ slug (currently /event/)
+                —   looking for a line of PHP resembling $rewrite = array('slug' => 'event')... maybe??
+                —   "Custom Post Type Hyperlink" plugin (or whatever it's called) doesn't work
+                —   updating the database entry or the plugin's core internals would come undone if we ever update the plugin
+                —   tl;dr WTF
+
+
+        2.  Working Google API key for events pages?
+                —   requires a valid credit card
+                —   I think the first 28,571 Google Maps API requests per month are free??
+                —   you can tell the API to shut down after a certain number of requests to prevent invoicing
+
+
+        3.  Change "The Comics Vault" in WP toolbar to Neil's font

@@ -1,0 +1,248 @@
+@font-face
+    {
+        font-family: 'Passion' ;
+        src: url( "../fonts/Passion.ttf" ) ;
+    }
+@font-face
+    {
+        font-family: 'Aileron' ;
+        src: url( "../fonts/Aileron.otf" ) ;
+    }
+@font-face
+    {
+        font-family: 'AileronBold' ;
+        src: url( "../fonts/AileronBold.otf" ) ;
+    }
+h1
+    {
+        font-family: 'Passion' ;
+        font-size: 80px ;
+        text-align: center ;
+        color: #dc2d36 ;
+        
+    	text-shadow: 0px 1px 0px #eee, 0px 4px 0px #ddd, 0px 2px 0px #ccc, 0px 3px 4px #001135;
+    }
+body
+    {
+        background-color: #333 ;
+    }
+#inbody
+    {
+        background-color: white ;
+        width: 950px ;
+        margin: auto ;
+        padding-bottom: 300px ;
+        padding-top: 100px ;
+    }
+
+
+
+
+#taskstable
+    {
+        position: relative ;
+        margin: auto ;
+        background-color: #dfdfdf ;
+        border: 6px solid #ccc ;
+        border-radius: 5px ;
+        width: 96% ;
+        padding: 10px ;
+        padding-bottom: 17px ;
+    }
+
+
+th
+    {
+        font-family: 'Passion' ;
+        color: #dc2d36 ;
+        font-size: 27px ;
+        padding-bottom: 15px ;
+        text-shadow: 1px 1px 0px white , -1px -1px 0px white , -1px 1px 0px white , 1px -1px 0px white , 0px 0px 20px white , 0px 0px 20px white ;
+    }
+
+
+#th_taskname
+    {
+        font-size: 38px ;
+        text-shadow: 2px 2px 0px white , -2px -2px 0px white , -2px 2px 0px white , 2px -2px 0px white , 0px 0px 30px white , 0px 0px 30px white ;
+        padding-left: 16px ;
+    }
+
+
+tr
+    {
+        text-align: center ;
+    }
+
+
+td
+    {
+        margin: auto ;
+    }
+
+
+td input[type="checkbox"] 
+    {
+        height: 33px ;
+        width: 33px ;
+    }
+
+
+td input[type="text"] 
+    {
+        height: 35px ;
+        width: 280px ;
+        font-family: 'AileronBold' ;
+        font-size: 22px ;
+        text-align: center ;
+        border: 1px inset #606060 ;
+        border-radius: 2px ;
+        text-shadow: 1px 1px white , -1px -1px white , 1px -1px white , -1px 1px white , 0px 0px 12px rgba(220, 45, 54, 0.3) ;
+        margin-left: 15px ;
+    }
+
+
+td input[type="number"]
+    {
+        width: 130px ;
+        height: 30px ;
+        font-family: 'Aileron' ;
+        text-align: center ;
+        font-size: 18px ;
+    }
+
+
+input[type=number]::-webkit-inner-spin-button , input[type=number]::-webkit-outer-spin-button
+    {
+        opacity: 1 ;
+        height: 35px ;
+    }
+
+
+#th_created
+    {
+        display: none ;
+    }
+
+
+#th_updatedelete
+    {
+        padding-left: 20px ;
+    }
+
+
+.td_taskname
+    {
+        padding-top: 5px ;
+        padding-bottom: 5px ;
+    }
+
+
+.td_tasknamebox
+    {
+        
+    }
+
+
+.td_latitude
+    {
+        
+    }
+
+
+.td_latitudebox
+    {
+        
+    }
+
+
+.td_longitude
+    {
+        
+    }
+
+
+.td_longitudebox
+    {
+        
+    }
+
+
+.td_created
+    {
+        display: none ;
+    }
+
+
+.td_completed
+    {
+        padding: none ;
+    }
+
+
+.td_completebox
+    {
+        
+    }
+
+
+.td_update
+    {
+        padding-left: 20px ;
+    }
+
+
+.td_submitbutton
+    {
+        
+    }
+
+
+.td_delete
+    {
+        
+    }
+
+
+.td_deletebutton
+    {
+        
+    }
+
+
+#taskstable input[type="submit"]
+    {
+        width: 110px ;
+        font-family: 'Aileron' ;
+        font-weight: 900 ;
+        background-color: #dc2d36 ;
+        color: white ;
+        border: none ;
+        font-size: 16px ;
+        height: 28px ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

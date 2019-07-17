@@ -1,0 +1,14 @@
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\bin\Debug\PeronsalInfo.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\App.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo_MarkupCompile.cache
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo_MarkupCompile.lref
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\bin\Debug\PeronsalInfo.exe
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\bin\Debug\PeronsalInfo.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\MainWindow.baml
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.g.resources
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.Properties.Resources.resources
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.exe
+C:\Users\Eric\Documents\Penn College\CIT386\PeronsalInfo\PeronsalInfo\obj\Debug\PeronsalInfo.pdb

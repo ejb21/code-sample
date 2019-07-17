@@ -1,0 +1,77 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Penn College APP Club</title>
+    <meta name="description" content="The official website for the Penn College chapter of the Association of Professional Programmers">
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    
+    <script>
+        //http://pctapp-dev.miscfolder.net/json-api/api.php?id=1
+        
+        function readJSON(url, callback)
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            
+            xhr.onload = function()
+            {
+                var status = xhr.status;
+
+                if (status === 200)
+                {
+                  callback(null, xhr.response);
+                }
+                else
+                {
+                    callback(status, xhr.response);
+                }
+            };
+            
+            xhr.send();
+        }
+    </script>
+</head>
+    
+<body>
+    <header>
+        <span id="pct"><a href="https://www.pct.edu/" target="_blank">Penn College</a></span>
+        <span id="app">Association of Professional Programmers</span>
+        <nav><ul>
+            <a href="index.html"><li>Root</li></a>
+            <a href="events.html"><li>Events</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="resources.html"><li>Resources</li></a>
+        </ul></nav>
+    </header>
+    
+    <div id="content">
+        <a id="banner" href="signups.html">
+            PCT Programming Comp 2018 signups are live!<br>Click here to register!
+        </a>
+
+        <h1>APP Website is finally up!</h1>
+        <img class="photo" src="img/News1.jpg">
+        <p class="paragraph">
+                After weeks of hard work, the official Association of Professional Programmers (APP) club's website is finally live! </p>
+
+               <p class="paragraph"> Please take a moment to explore the website and take a look around. You can find the registration form for APP 2018 Programming Competition if you click on the banner above and you can view our Constitution and our club's Board Members under About. 
+                </p>
+                <p class="paragraph">This website was made possible thanks to Eric Budd, Nate Mattocks, Weston Laity, Ekaterina Molostvova, Andrew Young, Josh Patton and Phillip Bergeman.
+                    </p>
+               <p class="paragraph"> For any concerns regarding the website itself, the competition or anything else related to APP, please feel free to contact us<a href="mailto:app@pct.edu" id="email"></a>.</p>
+            </p>
+    </div>
+        
+    <footer>
+        Copyright &copy; 2018 Penn College Association of Professional Programmers
+    </footer>
+</body>
+    
+</html>

@@ -1,0 +1,14 @@
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\bin\Debug\ReadWriteXML.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\bin\Debug\ReadWriteXML.exe
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\bin\Debug\ReadWriteXML.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\App.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML_MarkupCompile.cache
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML_MarkupCompile.lref
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\MainWindow.baml
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.g.resources
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.Properties.Resources.resources
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.exe
+C:\Users\Eric\Documents\Penn College\CIT386\ReadWriteXML\ReadWriteXML\obj\Debug\ReadWriteXML.pdb

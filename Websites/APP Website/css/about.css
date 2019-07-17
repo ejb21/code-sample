@@ -1,0 +1,78 @@
+#content
+{
+    padding-top: 7rem;
+}
+
+#constitution
+{
+    font-family: 'Declaration';
+    text-decoration: none;
+    color: white;
+    font-size: 3.2rem;
+    display: table;
+    margin: 4rem auto 4.5rem auto;
+    transition: .2s;
+}
+
+#constitution:hover
+{
+    text-shadow: 0 0 1rem black, 0 0 1rem black, 0 0 1rem black,
+        0 0 2rem #ffd7a3, 0 0 2rem #ffd7a3, 0 0 4rem #ffd7a3;
+}
+
+.board
+{
+    font-family: 'Source Code';
+    font-size: 2.8rem;
+    display: block;
+    letter-spacing: -1px;
+    margin-top: .5rem;
+}
+
+.board:after
+{
+    content: "|";
+    font-weight: 900;
+    color: #394659;
+    animation: pipe 1s infinite;
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+    margin-left: 0.1rem;
+}
+
+.board:before
+{
+    font-weight: 900;
+    color: #394659;
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+    margin-right: 1rem;
+}
+
+.board:not(:first-child)
+{
+    margin-top: 1.5rem;
+}
+
+.board:last-child
+{
+    margin-bottom: 2rem;
+}
+
+#president:before { content: "APP\\President>"; }
+
+#vice:before { content: "APP\\VicePres.>"; }
+#vice:after { animation-delay: 0.4s; }
+
+#treasurer:before { content: "APP\\Treasurer>"; }
+#treasurer:after { animation-delay: 0.6s; }
+
+#secretary:before { content: "APP\\Secretary>"; }
+#secretary:after { animation-delay: 0.2s; }
+
+#marketing:before { content: "APP\\Marketing>"; }
+#marketing:after { animation-delay: 0.8s; }
+
+#board
+{
+    display: table;
+    margin: 0 auto;
+}

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; My Canvas Logo</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.moveTo(250,75);
+                context.lineTo(450,400);
+                context.lineTo(50,400);
+                context.lineTo(250,75);
+                context.lineTo(450,400);
+                context.strokeStyle = 'black';
+                context.lineWidth = 25;
+                context.stroke();
+                context.fillStyle = 'steelblue';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(250,290,110,0,2*Math.PI);
+                context.stroke();
+                context.fillStyle = 'yellow';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.rect(237.5,75,25,338);
+                context.fillStyle = 'darkred';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(237.5,75);
+                context.lineTo(250,50);
+                context.lineTo(262.5,75);
+                context.fill();
+                context.closePath();
+            };
+        </script>    
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"style="border: 1px solid black;"></canvas>
+    </body>
+</html>

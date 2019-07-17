@@ -1,0 +1,10 @@
+CREATE OR REPLACE PACKAGE LOGIN_PKG IS
+
+    FUNCTION LOGIN
+    (
+        f_username      IN      BB_SHOPPER.USERNAME%TYPE ,
+        f_password      IN      BB_SHOPPER.PASSWORD%TYPE
+    )
+    RETURN VARCHAR2 ;
+
+END ;

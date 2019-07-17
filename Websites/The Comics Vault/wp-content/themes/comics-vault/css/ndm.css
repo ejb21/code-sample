@@ -1,0 +1,73 @@
+/* getting the artists page to look decent */
+.article-image{
+	position: relative;
+}
+.article-image img{
+	object-fit: cover;
+	width: 30rem;
+	height: 30rem;
+}
+main>ul li{
+	width: 32rem;
+	margin: 1rem;
+	padding: 1rem;
+	float: left;
+	list-style-type: none;
+}
+
+/* fixing link colors */
+a{
+	color: #B72234;
+	text-decoration: none;
+}
+a:hover{
+	color: #E73248;
+}
+
+/* fixing bad sizing of WooCommerce thumbs */
+.woocommerce ul.products li.product a img.size-woocommerce_thumbnail{
+	width:300px;
+	height:300px;
+}
+
+/* fixing featured artist */
+.so-widget-sow-editor .display-posts-listing .listing-item img.wp-post-image{
+	float: right;
+	margin-left: 1ex;
+}
+.so-widget-sow-editor .display-posts-listing .listing-item::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* fixing dl crap for hours */
+dl dt{
+	width: 10em;
+	clear: left;
+}
+dl dd::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+dt, dd{
+	display: inline-block;
+	width: 50%;
+}
+
+/* fixing dropdown crap */
+#ai1ec-container::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.ai1ec-gmap-placeholder, .ai1ec-gmap-container{
+	display: none;
+}
+.ai1ec-map{
+	background-image: url('//www.thecomicsvault.com/wp-content/uploads/2019/02/maps.png');
+	background-size: cover;
+	height: 410px;
+	max-height: 100%;
+}

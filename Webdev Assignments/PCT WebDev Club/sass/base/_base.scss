@@ -1,0 +1,28 @@
+html
+{
+    font-size: $default-font-size;
+}
+
+body
+{
+    font-family: "Aileron", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container
+{
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+}

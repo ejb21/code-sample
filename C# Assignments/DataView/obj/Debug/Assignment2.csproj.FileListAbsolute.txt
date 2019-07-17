@@ -1,0 +1,16 @@
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\bin\Debug\Assignment2.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\App.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2_MarkupCompile.cache
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2_MarkupCompile.lref
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\MainWindow.baml
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.g.resources
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.Properties.Resources.resources
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.exe
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\bin\Debug\bin\Debug\us-states.xml
+C:\Users\Eric\Documents\Penn College\CIT386\Assignment2\Assignment2\obj\Debug\Assignment2_Content.g.cs

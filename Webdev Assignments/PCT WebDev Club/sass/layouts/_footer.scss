@@ -1,0 +1,253 @@
+.footer
+{
+    background-color: $blue;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr .5rem 1.5fr 1.5fr .5rem 1fr 1fr;
+
+    @include respond(900px)
+    {
+        grid-template: repeat(4, 1fr) / 1.3fr 1fr .5rem 1.5fr 1.5fr .5rem 1fr 1fr;
+    }
+    
+    &_pctwd
+    {
+        display: flex;
+        grid-area: span 2 / span 2;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-link
+        {
+            font-family: 'Helvetica';
+            font-weight: 900;
+            font-size: 4rem;
+            margin-right: 6rem;
+            color: white;
+            text-decoration: none;
+            transition: all .2s ease-out;
+            text-shadow: -.7rem -.5rem 0 darken($blue, 3%), .7rem .5rem 0 lighten($blue, 3%),
+                .7rem -.5rem lighten($blue, 2%), -.7rem .5rem darken($blue, 2%);
+
+            @include respond(68.75rem)
+            {
+                font-size: 3.636vw;
+                margin-right: 5.4545vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 5vw;
+            }
+
+            &:hover
+            {
+                font-size: 4.1rem;
+                margin-right: 5.85rem;
+
+                @include respond(900px)
+                {
+                    font-size: 5.1vw;
+                    margin-right: 5.3vw;
+                    position: relative;
+                    top: -.05vw;
+                }
+            }
+        }
+    }
+
+    &_border
+    {
+        margin: 5rem 0;
+        grid-row: span 2;
+        background-color: white;
+
+        @include respond(68.75rem)
+        {
+            margin: 4.545vw 0;
+        }
+
+        @include respond(900px)
+        {
+            margin: 6vw 0;
+        }
+    }
+
+    &_nav
+    {
+        grid-area: span 2 / span 2;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        padding: 4rem 5%;
+
+        @include respond(68.75rem)
+        {
+            padding: 3.636vw 5%;
+        }
+
+        @include respond(900px)
+        {
+            grid-area: span 2 / span 5;
+            padding: 5vw 5%;
+        }
+
+        &_link
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-family: 'Aileron';
+            text-transform: uppercase;
+            font-size: 2.25rem;
+            border-radius: .5rem;
+            transition: all .2s ease-out;
+            padding: 1rem 0;
+
+            @include respond(68.75rem)
+            {
+                font-size: 2.04545vw;
+                padding: .9091vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 2.8vw;
+                padding: .5vw 0;
+            }
+
+            &:hover
+            {
+                background-color: lighten($blue, 5%);
+            }
+        }
+    }
+
+    &_social
+    {
+        grid-area: span 2 / span 2;
+        display: flex;
+        align-items: center;
+
+        @include respond(900px)
+        {
+            grid-area: span 1 / span 8;
+            justify-content: center;
+            margin: 1vw 0;
+        }
+
+        &-facebook
+        {
+            @include social(facebook);
+            margin-left: 6rem;
+
+            @include respond(68.75rem)
+            {
+                margin-left: 5.4545vw;
+            }
+
+            @include respond(900px)
+            {
+                margin-left: 0;
+            }
+        }
+
+        &-linkedin
+        {
+            @include social(linkedin);
+        }
+
+        &-twitter
+        {
+            @include social(twitter);
+        }
+
+        &-instagram
+        {
+            @include social(instagram);
+            border-radius: .5rem;
+        }
+    }
+
+    &_copyright
+    {
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+        background-color: darken($blue, 5%);
+        font-family: 'Helvetica';
+        font-size: 2.2rem;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 5%;
+
+        @include respond(68.75rem)
+        {
+            font-size: 2vw;
+        }
+
+        @include respond(900px)
+        {
+            font-size: 2.5vw;
+        }
+    }
+
+    &_search
+    {
+        grid-column: span 4;
+        background-color: darken($blue, 5%);
+        padding-right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-text
+        {
+            background-color: white;
+            height: 5rem;
+            border-radius: .75rem 0 0 .75rem;
+            width: 45rem;
+            font-family: 'Aileron';
+            color: $blue;
+            font-size: 2rem;
+            padding-left: 1vw;
+
+            @include respond(68.75rem)
+            {
+                height: 4.545vw;
+                width: 40.909vw;
+                font-size: 1.8182vw;
+                margin: 1.8182vw 0;
+            }
+
+            &::placeholder
+            {
+                color: $gray;
+            }
+        }
+
+        &-button
+        {
+            background-color: $blue;
+            background-image: url('../img/search.png');
+            background-repeat: no-repeat;
+            background-size: 45%;
+            background-position: center;
+            border-radius: 0 .75rem .75rem 0;
+            width: 7rem;
+            height: 5rem;
+
+            @include respond(68.75rem)
+            {
+                width: 6.3636vw;
+                height: 4.545vw;
+                font-size: 1.8182vw;
+            }
+
+            &:active
+            {
+                transform: scale(0.95);
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+@font-face
+    {
+        font-family: Bosox ;
+        src: url("fonts/Bosox.ttf") ;
+    }
+
+
+body
+    {
+        background-image: url("../images/background.png") ;
+        background-color: #1a3553 ;
+        background-position: -39px -25px ;
+    }
+
+
+.body
+    {
+        width: 950px ;
+        margin: auto ;
+        background-color: white ;
+        box-shadow: 0px 0px 15px #222222 ;
+    }
+
+
+.header
+    {
+        position: relative ;
+        z-index: 10 ;
+    }
+
+
+nav
+    {
+        position: relative ;
+        bottom: 4px ;
+        border-top-style: solid ;
+        border-top-color: #c60c30 ;
+        border-top-width: 1px ;
+        border-bottom-style: solid ;
+        border-bottom-color: #c60c30 ;
+        border-bottom-width: 31px ;
+        z-index: 10 ;
+    }
+
+
+nav ul li
+    {
+        display: inline ;
+        list-style: none ;
+        float: left ;
+    }
+
+
+#lacestop
+    {
+        position: relative ;
+        bottom: 63px ;
+        z-index: 0 ;
+        margin-left: 20px ;
+    }
+
+
+#indexbody
+    {
+        height: 830px ;
+        position: relative ;
+        bottom: 30px ;
+    }
+
+
+#cursebody
+    {
+        height: 1030px ;
+        position: relative ;
+        bottom: 30px ;
+    }
+
+
+#papibody
+    {
+        height: 1100px ;
+        position: relative ;
+        bottom: 30px ;
+    }
+
+
+#fobody
+    {
+        height: 950px ;
+        position: relative ;
+        bottom: 30px ;
+    }
+
+
+#ootpbody
+    {
+        height: 860px ;
+        position: relative ;
+        bottom: 30px ;
+    }
+
+
+#soxtml
+    {
+        text-align: center ;
+        margin-top: 10px ;
+    }
+
+
+#paean
+    {
+        margin-top: 80px ;
+        margin-bottom: 15px ;
+    }
+
+
+h1
+    {
+        font-family: Bosox ;
+        color: #c60c30 ;
+        font-size: 45pt ;
+        text-align: center ;
+    }
+
+
+p
+    {
+        font-family: 'Varela Round' , sans-serif ;
+        width: 90% ;
+        margin: auto ;
+        padding-top: 10px ;
+        padding-bottom: 5px ;
+    }
+
+
+footer
+    {
+        position: relative ;
+        bottom: -4px ;
+    }
+
+
+#lacesbottom
+    {
+        position: relative ;
+        bottom: -15px ;
+        z-index: 0 ;
+        margin-left: 20px ;
+    }
+
+
+.footer
+    {
+        position: relative ;
+        z-index: 10 ;
+    }
+
+
+#players
+    {
+        width: 660px ;
+    }
+
+
+#babetheo
+    {
+        position: absolute ;
+        left: 635px ;
+        bottom: 765px ;
+    }
+
+
+#htop
+    {
+        margin-top: 40px ;
+    }
+
+
+#roberts
+    {
+        width: 570px ;
+        margin-left: 380px ;
+    }
+
+
+#dave
+    {
+        position: absolute ;
+        left: 18px ;
+    }
+
+
+#dealindave
+    {
+        position: relative ;
+        bottom: 15px ;
+    }
+
+
+#ootplogo
+    {
+        position: relative ;
+        bottom: 75px ;
+        left: 43px ;
+    }
+
+
+#ninepointeight
+    {
+        margin-top: 25px ;
+    }

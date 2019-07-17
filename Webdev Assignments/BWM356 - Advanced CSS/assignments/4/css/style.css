@@ -1,0 +1,347 @@
+html {
+  font-size: 10px; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 0.83333vw; } }
+
+body {
+  font-family: "Aileron", sans-serif;
+  font-weight: 400; }
+  @media only screen and (max-width: 800px) {
+    body {
+      background-color: #002244; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Bosox';
+  src: url("../fonts/Bosox.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bosox Full';
+  src: url("../fonts/Bosox Full.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("../fonts/Aileron.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url("../fonts/Aileron Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Aileron Heavy';
+  src: url("../fonts/Aileron Heavy.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Aileron Black';
+  src: url("../fonts/Aileron Black.otf") format("opentype"); }
+
+.wordmark {
+  height: 10%;
+  margin: 0 auto; }
+
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #002244;
+  border-radius: 1.5rem; }
+
+.copyright, .date {
+  font-family: "Aileron Black";
+  font-size: 6rem;
+  line-height: 6rem;
+  text-transform: uppercase;
+  color: white; }
+
+.name {
+  font-family: "Bosox";
+  font-size: 8.5rem;
+  color: white;
+  text-shadow: 0 0 2rem #002244, 0 0 2rem #002244, 0 0 2rem #002244, 0 0 5rem #c60c30, 0 0 5rem #c60c30, 0 0 8rem #c60c30, 0 0 10rem #c60c30, 0 0 8rem #c60c30, 0 0 10rem #c60c30, 0 0 15rem #c60c30, 0 0 20rem #c60c30;
+  margin-top: 2rem; }
+
+.star {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+  .star--super {
+    height: 10%;
+    background-color: #c60c30;
+    font-family: "Bosox";
+    color: #fff;
+    font-size: 4rem;
+    padding-top: 0.7rem; }
+  .star--name {
+    height: 25%;
+    background-color: #002244;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem; }
+  .star--image {
+    height: 65%;
+    background-color: gray; }
+
+.starter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+  .starter--name {
+    height: 25%;
+    background-color: #c60c30;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem; }
+  .starter--image {
+    height: 75%;
+    background-color: gray; }
+
+.starters {
+  text-transform: uppercase; }
+  .starters--name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #c60c30;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem; }
+  .starters--image {
+    height: 100%;
+    width: 60%;
+    background-color: gray; }
+
+.lplayer {
+  text-transform: uppercase; }
+  .lplayer--name {
+    background-color: #c60c30;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem;
+    line-height: 0; }
+  .lplayer--image {
+    background-color: #fff;
+    height: 100%;
+    width: 50%; }
+
+.mplayer {
+  text-transform: uppercase; }
+  .mplayer--name {
+    background-color: #c60c30;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem;
+    line-height: 0; }
+    @media only screen and (max-width: 800px) {
+      .mplayer--name {
+        min-height: 12rem; } }
+  .mplayer--image {
+    background-color: #fff;
+    width: 100%;
+    height: 65%; }
+
+.rplayer {
+  text-transform: uppercase; }
+  .rplayer--name {
+    background-color: #c60c30;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Aileron Black";
+    color: #fff;
+    font-size: 6rem;
+    line-height: 0; }
+  .rplayer--image {
+    background-color: #fff;
+    height: 100%;
+    width: 50%; }
+
+.u-offset-wins {
+  position: relative;
+  left: -1rem; }
+
+.u-guaranteed {
+  font-size: 20rem;
+  -webkit-text-stroke: 0.5rem #fff; }
+
+.container {
+  background-color: #002244;
+  width: 120rem;
+  height: 200rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1.75fr 2.5fr 2.75fr 3.25fr 1.75fr/repeat(12, 1fr);
+  box-sizing: default; }
+  @media only screen and (max-width: 1200px) {
+    .container {
+      width: 100vw;
+      height: 167vw; } }
+
+.won-loss {
+  display: block;
+  font-family: "Aileron Black";
+  font-size: 20rem;
+  line-height: 15rem;
+  color: #fff;
+  -webkit-text-stroke: 1rem #c60c30;
+  letter-spacing: -1rem; }
+  .won-loss-and {
+    color: white;
+    display: block;
+    font-size: 5rem;
+    line-height: 11rem; }
+
+.block {
+  display: grid;
+  margin: 0.5rem; }
+  .block--fenway {
+    margin: 0;
+    background: url(../img/fenway.jpg);
+    background-size: cover;
+    grid-template: 1.75fr 2.5fr/repeat(12, 1fr);
+    grid-area: 1 / 1 / 3 / -1;
+    padding: 0.5rem; }
+  .block--corner {
+    grid-template: 10% 90% / 1fr;
+    grid-area: 1 / 1 / span 2 / span 3; }
+    @media only screen and (max-width: 800px) {
+      .block--corner {
+        display: none; } }
+  .block--blue {
+    grid-template: 2.75fr 3.25fr 1.75fr/repeat(12, 1fr);
+    margin: 0;
+    padding: 0.5rem;
+    grid-area: 3 / 1 / -1 / -1; }
+    @media only screen and (max-width: 800px) {
+      .block--blue {
+        grid-template: 2.75fr 2.75fr 2.75fr 1.75fr/repeat(12, 1fr); } }
+  .block--starters {
+    grid-template: 1fr 1fr / 1fr;
+    margin: 0;
+    grid-column: span 6; }
+    @media only screen and (max-width: 480px) {
+      .block--starters {
+        grid-column: span 12; } }
+  .block--left {
+    grid-template: 1fr 1fr 1fr / 1fr;
+    margin: 0;
+    grid-column: span 4; }
+    @media only screen and (max-width: 800px) {
+      .block--left {
+        order: 1;
+        grid-column: span 6; } }
+    @media only screen and (max-width: 480px) {
+      .block--left {
+        grid-column: span 12; } }
+  .block--middle {
+    grid-template: 1fr 1fr / 1fr;
+    margin: 0;
+    grid-column: span 4; }
+    @media only screen and (max-width: 800px) {
+      .block--middle {
+        order: 0;
+        grid-column: span 12;
+        grid-template: 1fr / 1fr 1fr;
+        grid-auto-flow: row; } }
+  .block--right {
+    grid-template: 1fr 1fr 1fr / 1fr;
+    margin: 0;
+    grid-column: span 4; }
+    @media only screen and (max-width: 800px) {
+      .block--right {
+        order: 1;
+        grid-column: span 6; } }
+    @media only screen and (max-width: 480px) {
+      .block--right {
+        grid-column: span 12; } }
+  .block--footer {
+    grid-template: 1fr / 1fr 1fr;
+    grid-column: span 12; }
+    @media only screen and (max-width: 800px) {
+      .block--footer {
+        order: 2; } }
+
+.item {
+  margin: 0.5rem; }
+  @media only screen and (max-width: 480px) {
+    .item {
+      margin: 1rem; } }
+  .item--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: 1 / 4 / span 1 / -1;
+    font-family: "Bosox";
+    color: white;
+    font-size: 12rem;
+    line-height: 10rem;
+    text-shadow: 0 0 2rem #002244, 0 0 2rem #002244, 0 0 2rem #002244, 0 0 5rem #c60c30, 0 0 5rem #c60c30, 0 0 8rem #c60c30, 0 0 10rem #c60c30; }
+    @media only screen and (max-width: 800px) {
+      .item--header {
+        grid-area: 1 / 1 / span 1 / -1; } }
+  .item--star {
+    grid-column: span 3; }
+    @media only screen and (max-width: 800px) {
+      .item--star {
+        grid-column: span 4; } }
+  .item--starter {
+    grid-column: span 3; }
+    @media only screen and (max-width: 480px) {
+      .item--starter {
+        grid-column: span 6; } }
+  .item--starters {
+    display: flex;
+    flex-direction: row; }
+  .item--lplayer {
+    display: flex;
+    grid-column: span 4; }
+  .item--mplayer {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4; }
+    @media only screen and (max-width: 800px) {
+      .item--mplayer {
+        grid-column: span 1; } }
+    @media only screen and (max-width: 480px) {
+      .item--mplayer {
+        grid-column: span 2; } }
+  .item--rplayer {
+    display: flex;
+    grid-column: span 4; }
+  .item--footer-logo {
+    border-radius: 1.5rem;
+    width: 100%; }
+    @media only screen and (max-width: 480px) {
+      .item--footer-logo {
+        display: none; } }
+  .item--copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media only screen and (max-width: 480px) {
+      .item--copyright {
+        grid-column: span 12; } }

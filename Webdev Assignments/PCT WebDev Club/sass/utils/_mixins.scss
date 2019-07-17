@@ -1,0 +1,155 @@
+@mixin clearfix
+{
+    &::after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin respond($viewport)
+{
+    @if $viewport == large    { @media only screen and (min-width: 1921px)   { @content }; }
+    @if $viewport == tablet   { @media only screen and (max-width: 800px)    { @content }; }
+    @if $viewport == phone    { @media only screen and (max-width: 480px)    { @content }; }
+
+    @media only screen and (max-width: $viewport) { @content };
+}
+
+@mixin respondMin($viewport)
+{
+    @media only screen and (min-width: $viewport) { @content };
+}
+
+@mixin icon
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin social($network)
+{
+    width: 4rem;
+    height: 4rem;
+    background-image: url('../img/#{$network}.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-left: 1rem;
+    border-radius: .3rem;
+    transition: all .2s ease-out;
+    box-shadow: -.7rem -.5rem 0 darken($blue, 3%), .7rem .5rem 0 lighten($blue, 3%),
+        .7rem -.5rem lighten($blue, 2%), -.7rem .5rem darken($blue, 2%);
+
+    @include respond(68.75rem)
+    {
+        width: 3.636vw;
+        height: 3.636vw;
+        margin-left: .9091vw;
+    }
+
+    @include respond(900px)
+    {
+        width: 6vw;
+        height: 6vw;
+        margin-left: 3.5vw;
+        margin-bottom: 4vw;
+    }
+
+    &:hover
+    {
+        transform: scale(1.07) translateY(-3%);
+    }
+}
+
+@mixin archive
+{
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr 1fr;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding: 10rem 15%;
+    grid-auto-flow: column;
+    margin-top: -5.5rem;
+    transition: padding .3s ease-out;
+
+    @include respond(100rem)
+    {
+        padding: 10rem 10%;
+    }
+
+    @include respond(81.25rem)
+    {
+        padding: 10rem 7.5%;
+    }
+
+    @include respond(75rem)
+    {
+        padding: 10rem 5%;
+    }
+
+    @include respond(71.25rem)
+    {
+        padding: 10rem 3%;
+    }
+
+    @include respond(480px)
+    {
+        padding: 8rem 3%;
+    }
+
+    & div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    &:last-of-type
+    {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &:not(:first-of-type)
+    {
+        margin-top: -6.5rem;
+
+        @include respond(480px)
+        {
+            grid-template: repeat(7, auto) / 1fr;
+            margin-top: -16vw;
+        }
+    }
+}
+
+@mixin thumbnail($filename)
+{
+    &::before
+    {
+        display: inline-block;
+        content: "";
+        background: url('../img/#{$filename}.png');
+        background-size: 7rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 7rem;
+        height: 7rem;
+        margin-right: -1.5rem;
+        position: relative;
+        top: 2.5rem;
+        z-index: -1;
+        opacity: .15;
+        background-color: rgba($blue, 0);
+
+        @include respond(62.5rem)
+        {
+            background-size: 7vw;
+            width: 7vw;
+            height: 7vw;
+            margin-right: -1.5vw;
+            top: 2.5vw;
+        }
+    }
+}

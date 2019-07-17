@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; My Canvas Logo</title>
+        <style>
+            @font-face { font-family: 'Parry Hotter'; src: url('parry-hotter.ttf'); }
+            body { display: flex; align-items: center; justify-content: center; }
+        </style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.moveTo(250,75);
+                context.lineTo(450,400);
+                context.lineTo(50,400);
+                context.lineTo(250,75);
+                context.lineTo(450,400);
+                context.strokeStyle = 'black';
+                context.lineWidth = 25;
+                context.stroke();
+                context.fillStyle = 'steelblue';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(250,290,110,0,2*Math.PI);
+                context.stroke();
+                context.fillStyle = 'yellow';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.rect(237.5,75,25,338);
+                context.fillStyle = 'darkred';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(237.5,75);
+                context.lineTo(250,50);
+                context.lineTo(262.5,75);
+                context.fill();
+
+                context.save();
+                context.restore();
+
+                context.font = '90pt Parry Hotter';
+                context.fillStyle = 'black';
+                context.textBaseline = 'middle';
+                context.shadowColor = 'white';
+                context.shadowBlur = 30;
+                context.fillText('Deathly', 70, 115);
+                context.fillText('Hallows', 55, 420);
+
+                context.globalAlpha = 0.5;
+                var hogwarts = new Image();
+                hogwarts.src = 'hogwarts.png';
+                hogwarts.onload = function() { context.drawImage(hogwarts, 0, 0); }
+                context.scale(.75,.75);
+                context.rotate(.0125*Math.PI);
+                context.translate(-25,-85);
+
+                context.save();
+                context.restore();
+
+                drawShape(context, 65, 170);
+                context.fillStyle = 'black';
+                context.fill();
+            };
+            
+            function drawShape(ctx, xoff, yoff) {
+                ctx.beginPath();
+                ctx.moveTo(283 + xoff, 51 + yoff);
+                ctx.bezierCurveTo(277 + xoff, 37 + yoff, 181 + xoff, 278 + yoff, 187 + xoff, 292 + yoff);
+                ctx.bezierCurveTo(203 + xoff, 328 + yoff, 309 + xoff, 231 + yoff, 319 + xoff, 269 + yoff);
+                ctx.bezierCurveTo(323 + xoff, 284 + yoff, 315 + xoff, 434 + yoff, 326 + xoff, 424 + yoff);
+                ctx.bezierCurveTo(372 + xoff, 382 + yoff, 414 + xoff, 233 + yoff, 414 + xoff, 181 + yoff);
+                ctx.bezierCurveTo(414 + xoff, 166 + yoff, 282 + xoff, 204 + yoff, 291 + xoff, 188 + yoff);
+                ctx.bezierCurveTo(291 + xoff, 188 + yoff, 282 + xoff, 204 + yoff, 283 + xoff, 51 + yoff);
+            }
+        </script>    
+    </head>
+    <body style="font-family: 'Parry Hotter';">
+        <canvas id="canvas" width="500" height="500"style="border: 1px solid black;"></canvas>
+    </body>
+</html>

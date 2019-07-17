@@ -1,0 +1,583 @@
+.about
+{
+    display: grid;
+    grid-template: auto auto auto / 1fr 1fr 1fr 1fr;
+    width: 90%;
+    max-width: 150rem;
+    min-width: 75rem;
+    margin: 7rem auto 0 auto;
+
+    @include respond(900px)
+    {
+        margin: 7vw auto 0 auto;
+        width: 85%;
+        min-width: 0;
+    }
+
+    &_header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 6rem;
+        font-weight: 600;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        grid-column: span 4;
+
+        @include respond(900px)
+        {
+            font-size: 7vw;
+        }
+    }
+
+    &_icons
+    {
+        display: flex;
+        justify-content: space-between;
+        grid-column: span 4;
+        height: 10rem;
+        margin-top: 6rem;
+
+        @include respond(900px)
+        {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            height: 30vw;
+            height: auto;
+            margin-top: 6vw;
+        }
+
+        &-responsiveness
+        {
+            background: url('../img/responsiveness.png');
+            background-size: auto 85%;
+            @include icon;
+
+            @include respond(900px)
+            {
+                background-size: auto 75%;
+            }
+        }
+
+        &-attractiveness
+        {
+            background: url('../img/attractiveness.png');
+            background-size: auto 90%;
+            @include icon;
+
+            @include respond(900px)
+            {
+                background-size: auto 80%;
+            }
+        }
+
+        &-functionality
+        {
+            background: url('../img/functionality.png');
+            background-size: auto 100%;
+            @include icon;
+
+            @include respond(900px)
+            {
+                background-size: auto 90%;
+                margin-top: 23vw;
+            }
+        }
+
+        &-marketability
+        {
+            background: url('../img/marketability.png');
+            background-size: auto 82%;
+            @include icon;
+
+            @include respond(900px)
+            {
+                background-size: auto 72%;
+                margin-top: 23vw;
+            }
+        }
+    }
+
+    &_blurbs
+    {
+        display: flex;
+        justify-content: space-between;
+        grid-column: span 4;
+        height: auto;
+
+        @include respond(900px)
+        {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            width: 100%;
+            margin-top: -50vw;
+        }
+
+        &-responsiveness, &-attractiveness,
+        &-functionality, &-marketability
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            height: 100%;
+
+            @include respond(900px)
+            {
+                padding: 0;
+            }
+        }
+
+        &-functionality, &-marketability
+        {
+            @include respond(900px)
+            {
+                padding-top: 21vw;
+            }
+        }
+
+        &_header
+        {
+            font-family: 'Aileron Bold';
+            text-transform: uppercase;
+            color: $gray;
+            font-size: 2.8rem;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            text-shadow: 0 0 5rem lighten($gray, 30%);
+            margin-top: 4.5rem;
+            
+            @include respond(76.875rem)
+            {
+                font-size: 2.15vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 4vw;
+                margin-top: 7vw;
+            }
+        }
+
+        &_blurb
+        {
+            font-family: 'Aileron';
+            color: $gray;
+            font-size: 2.5rem;
+            text-align: center;
+            width: 85%;
+            max-width: 23rem;
+            padding: 0 auto;
+            margin-top: 2rem;
+            
+            @include respond(76.875rem)
+            {
+                font-size: 2.15vw;
+            }
+
+            @include respond(900px)
+            {
+                width: 100%;
+                font-size: 3.5vw;
+                max-width: 100%;
+                padding: 0 10%;
+                margin-top: 2vw;
+            }
+        }
+    }
+}
+
+.whoweare
+{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    margin-top: -52rem;
+
+    @include respond(81.25rem)
+    {
+        margin-top: -40vw;
+    }
+
+    &_bg
+    {
+        width: 100vw;
+        height: 40rem;
+        background: url('../img/keyboard.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 80%;
+        margin: 10rem 0;
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+        position: relative;
+        z-index: 1;
+
+        @include respond(81.25rem)
+        {
+            height: 30.77vw;
+            margin: 7.7vw 0;
+        }
+
+        @include respond(900px)
+        {
+            height: 45vw;
+            margin: 10vw 0;
+        }
+    }
+
+    &_info
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $blue;
+        border-radius: 2rem;
+        width: 40rem;
+        height: 36rem;
+        box-shadow: 0 1rem 3rem rgba(black, 0.3),  inset 0 0 4rem lighten($blue, 5%);
+        position: relative;
+        z-index: 2;
+        margin-left: 12vw;
+        transition: transform .2s ease-out, box-shadow .2s ease-out;
+        padding-top: .3rem;
+
+        @include respond(81.25rem)
+        {
+            width: 30.77vw;
+            height: 27.69vw;
+            border-radius: 1.54vw;
+            box-shadow: 0 .77vw 2.3vw rgba(black, 0.3),  inset 0 0 3.1vw lighten($blue, 5%);
+        }
+
+        @include respond(900px)
+        {
+            width: 48vw;
+            height: 42.5vw;
+            border-radius: 2.25vw;
+            box-shadow: 0 1.126vw 3.363666vw rgba(black, 0.3),  inset 0 0 4.533vw lighten($blue, 5%);
+            margin-left: 5vw;
+            position: relative;
+            top: -17vw;
+        }
+
+        &:hover
+        {
+            transform: scale(1.03) translateY(-1%);
+            box-shadow: 0 1rem 5rem rgba(black, 0.3),  inset 0 0 4rem lighten($blue, 5%);
+        }
+
+        &_header
+        {
+            font-family: 'Helvetica';
+            text-transform: uppercase;
+            color: white;
+            font-size: 5rem;
+            font-weight: 600;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+
+            @include respond(81.25rem)
+            {
+                font-size: 3.85vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 5.75vw;
+            }
+        }
+
+        &_blurb
+        {
+            font-family: 'Aileron';
+            color: white;
+            font-size: 2.6rem;
+            line-height: 3.5rem;
+            text-align: center;
+            padding: 0 3rem;
+            margin: 1.2rem;
+
+            @include respond(81.25rem)
+            {
+                font-size: 2vw;
+                line-height: 2.7vw;
+                padding: 0 2.3vw;
+                margin: 1vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 3vw;
+                line-height: 4vw;
+                padding: 0 3.363666vw;
+                margin: 1.45246vw;
+            }
+        }
+    }
+
+    &_learn
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        &-link
+        {
+            font-family: 'Aileron Bold';
+            color: white;
+            font-size: 5rem;
+            margin-right: 12vw;
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: 2.5rem;
+            text-shadow: 0 0 2rem $blue, 0 0 3rem $blue, 0 0 5rem $blue;
+            padding: 1rem 2.5rem;
+            border-radius: 1rem;
+            background-color: rgba($blue, 0);
+            transition: background-color .1s linear, transform .1s linear, box-shadow .1s linear;
+
+            @include respond(81.25rem)
+            {
+                font-size: 3.85vw;
+                margin-bottom: 2vw;
+                text-shadow: 0 0 1.54vw $blue, 0 0 2.3vw $blue, 0 0 3.85vw $blue;
+                padding: .77vw 2vw;
+                border-radius: .77vw;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 5vw;
+                text-shadow: 0 0 1.54vw $blue, 0 0 2.3vw $blue, 0 0 3.85vw $blue;
+                padding: 1vw 2.25vw;
+                border-radius: .77vw;
+                margin-right: 1vw;
+                position: relative;
+                top: -21vw;
+            }
+
+            &::after
+            {
+                display: inline-block;
+                content: "";
+                background: url('../img/link.png');
+                background-size: 4.3rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 5rem;
+                height: 5rem;
+                margin-left: 1rem;
+                position: relative;
+                top: .75rem;
+                background-color: rgba($blue, 0);
+                transition: all .1s linear;
+
+                @include respond(81.25rem)
+                {
+                    width: 3.85vw;
+                    height: 3.85vw;
+                    margin-left: .77vw;
+                    top: .577vw;
+                    background-size: 3.3vw;
+                }
+            }
+
+            &:hover
+            {
+                background-color: $blue;
+                transform: translateY(-4%);
+                box-shadow: 0 .5rem 2rem rgba(black, 0.2);
+            }
+        }
+    }
+}
+
+.events
+{
+    background-color: lighten($gray, 35%);
+
+    &_container
+    {
+        width: 90%;
+        max-width: 150rem;
+        margin: 0 auto;
+        padding-top: 14rem;
+        padding-bottom: 12rem;
+        display: grid;
+        grid-template: auto auto / 1fr 1fr 1fr;
+
+        @include respond(62.5rem)
+        {
+            padding-top: 11vw;
+            padding-bottom: 12vw;
+        }
+
+        @include respond(900px)
+        {
+            width: 95%;
+            grid-template: auto auto / 1fr 1fr;
+            margin-top: -19vw;
+            padding-top: 14vw;
+        }
+    }
+
+    &_header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 6rem;
+        font-weight: 600;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        grid-column: span 3;
+
+        @include respond(62.5rem)
+        {
+            font-size: 6vw;
+        }
+
+        @include respond(900px)
+        {
+            font-size: 7vw;
+        }
+    }
+
+    &_event
+    {
+        display: grid;
+        grid-template: 2.5vw 2.5vw 23vw / 1.75fr .7fr;
+        background-color: white;
+        margin: 6rem 1.25vw 0 1.25vw;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 2rem lighten($gray, 30%);
+        transition: all .2s ease-out;
+
+        @include respond(62.5rem)
+        {
+            margin: 6vw 1.25vw 0 1.25vw;
+        }
+
+        @include respond(900px)
+        {
+            grid-template: 4vw 4vw 35vw / 1.75fr .7fr;
+        }
+
+        @include respondMin(1666px)
+        {
+            grid-template: 4.166rem 4.166rem 38.333rem / 1.75fr .7fr;
+            margin: 6rem 2.08333rem 0 2.08333rem;
+        }
+
+        &:hover
+        {
+            transform: scale(1.02) translateY(-1%);
+            box-shadow: 0 .5rem 5rem lighten($gray, 30%);
+        }
+
+        &-header
+        {
+            display: flex;
+            align-items: center;
+            grid-row: span 2;
+            font-family: 'Aileron Bold';
+            font-size: 2.275vw;
+            color: $blue;
+            text-transform: uppercase;
+            padding-left: 1.4vw;
+
+            @include respondMin(1666px)
+            {
+                font-size: 3.791666rem;
+                padding-left: 2.333rem;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 3.4vw;
+                padding-left: 2vw;
+            }
+        }
+
+        &-date
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-family: 'Aileron Bold';
+            font-size: 1.35vw;
+            color: $gray;
+            padding-right: 1.4vw;
+
+            @include respondMin(104.125rem)
+            {
+                font-size: 2.25rem;
+                padding-right: 2.333rem;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 2vw;
+                padding-right: 2vw;
+            }
+        }
+
+        &-time
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-family: 'Aileron';
+            font-size: 1.35vw;
+            color: $gray;
+            padding-right: 1.4vw;
+
+            @include respondMin(104.125rem)
+            {
+                font-size: 2.25rem;
+                padding-right: 2.333rem;
+            }
+
+            @include respond(900px)
+            {
+                font-size: 2vw;
+                padding-left: 2vw;
+            }
+        }
+
+        &-img
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: $gray;
+            border-top: .5vw solid $gray;
+            grid-column: span 2;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+
+            @include respondMin(104.125rem)
+            {
+                border-top: .8333rem solid $gray;
+            }
+        }
+
+        &:last-child
+        {
+            @include respond(900px)
+            {
+                display: none;
+            }
+        }
+    }
+}

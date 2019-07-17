@@ -1,0 +1,35 @@
+@keyframes arrows
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    25%
+    {
+        opacity: .5;
+    }
+
+    50%
+    {
+        opacity: 0;
+    }
+
+    75%
+    {
+        opacity: .5;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes navbar
+{
+    100%
+    {
+        opacity: 1;
+    }
+}

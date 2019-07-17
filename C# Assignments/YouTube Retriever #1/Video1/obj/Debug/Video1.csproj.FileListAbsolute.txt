@@ -1,0 +1,7 @@
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\bin\Debug\Video1.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\bin\Debug\Video1.exe
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\bin\Debug\Video1.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\bin\Debug\libvideo.dll
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\obj\Debug\Video1.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\obj\Debug\Video1.exe
+C:\Users\Eric\Documents\Penn College\CIT386\Video1\Video1\obj\Debug\Video1.pdb

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Simple Quiz</title>
+<link href="_css/quiz.css" rel="stylesheet">
+<script>
+  var score = 0;
+  var questions =
+  [
+    ['Who is the Most Valuable Player of Major League Baseball\'s American League?', 'Mookie Betts'],
+    ['Who will win the Major League Baseball American League Cy Young Award?', 'Chris Sale'],
+    ['Complete the following sentence: "F%#k the _______', 'Yankees'],
+    ['Which song is objectively the greatest song ever made?', 'Dirty Water by The Standells'],
+    ['How many games are the Red Sox going to win this season?', 'Doesn\'t matter. They\'re gonna win the World Series']
+  ]
+
+  function askQuestion(question)
+  {
+    var answer = prompt(question[0], '');
+
+    if (answer == question[1])
+    {
+      alert('Correct!');
+      score++;
+    }
+    else
+    {
+      alert('Sorry. The correct answer is ' + question[1] + '.');
+    }
+  }
+
+  for (var i = 0; i < questions.length; i++)
+  {
+    askQuestion(questions[i]);
+  }
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header">
+    <p class="logo">JavaScript <i>&</i> jQuery <i class="mm">BWM350<br>
+     Interactive <br>
+     Scripting</i></p>
+  </div>
+  <div class="content">
+    <div class="main">
+      <h1>A Simple Quiz</h1>
+      <script>
+        var message = 'You got ' + score + ' out of ' + questions.length + ' questions correct.';
+        document.write('<h2 style="color: white; font-size: 24px;">' + message + '</h1>');
+        document.write('<h3 style="color: white; font-size: 20px; margin: 15px 0 10px 0;">Your score: ' + (score / questions.length).toFixed(2) * 100 + '%</h3>');
+	    </script>
+      </div>
+  </div>
+  <div class="footer">
+    <p>BWM350-98. Created by: Denise Leete</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gram &amp; Jam — Contact</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/contactstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="navl"><a href="index.html">Home</a></li>
+                <li class="navl"><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="navr"><a href="party.html">Party</a></li>
+                <li class="navr"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="container">
+    <h1>Feedback Form</h1>
+    <h2><span id="star1">★</span> — denotes required</h2>
+    <h3><a href="mailto:Betsy.DeVos@ed.gov">EMAIL</a></h3>
+    
+    <form name="contact" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+        <fieldset id="geninfo">
+            <legend>General Information</legend>
+            
+            <label for="name"><span class="star">★</span>Name:<span class="star">★</span></label><br>
+            <input type="text" name="name" id="name" size="45" required><br>
+            
+            <label for="email"><span class="star">★</span>Email:<span class="star">★</span></label><br>
+            <input type="text" name="email" id="email" size="45" required><br>
+            
+            <label for="age"><span class="star">★</span>Age:<span class="star">★</span></label><br>
+            <select name="age" id="age" required>
+                <option value="">Select...</option>
+                <option value="<18">&lt; 18 years</option>
+                <option value="18-25">18–25 years</option>
+                <option value="26-35">26–35 years</option>
+                <option value="36-45">36–45 years</option>
+                <option value="46-55">46–55 years</option>
+                <option value=">55">&gt; 55 years</option>
+            </select><br>
+            
+            <label id="which">Are you contacting about the diner or the nightclub?</label><br>
+            <input type="checkbox" name="which" id="diner" value="diner"><label for="diner" class="green">Diner</label>
+            <input type="checkbox" name="which" id="nightclub" class="right" value="nightclub"><label for="nightclub" class="green">Nightclub</label>
+            <input type="checkbox" name="which" id="other" class="right" value="neither"><label for="other" class="green">Other</label><br>
+            
+            <label id="rating">How would you rate your experience at the <em>Gram &amp; Jam?</em></label><br>
+            <input type="radio" name="rating" id="awful" value="awful"><label for="awful" class="green">Awful</label>
+            <input type="radio" name="rating" id="poor" class="right" value="poor"><label for="poor" class="green">Poor</label>
+            <input type="radio" name="rating" id="lacking" class="right" value="lacking"><label for="lacking" class="green">Lacking</label>
+            <input type="radio" name="rating" id="good" class="right" value="good"><label for="good" class="green">Good</label>
+            <input type="radio" name="rating" id="great" class="right" value="great"><label for="great" class="green">Great</label>
+        </fieldset>
+        
+        <fieldset id="comment">
+            <legend>Additional Comments</legend>
+            
+            <textarea name="comments" id="comments" rows="10" cols="70"></textarea>
+        </fieldset>
+        
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" id="reset">
+    </form>
+</div>
+</body>
+
+</html>

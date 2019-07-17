@@ -1,0 +1,16 @@
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\bin\Debug\NewDataGrid.exe.config
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\bin\Debug\NewDataGrid.exe
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\bin\Debug\NewDataGrid.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\App.g.cs
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid_MarkupCompile.cache
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid_MarkupCompile.lref
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\MainWindow.baml
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.g.resources
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.Properties.Resources.resources
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.exe
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid.pdb
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\bin\Debug\books.xml
+C:\Users\Eric\Documents\Penn College\CIT386\NewDataGrid\NewDataGrid\obj\Debug\NewDataGrid_Content.g.cs

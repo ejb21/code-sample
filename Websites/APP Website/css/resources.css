@@ -1,0 +1,60 @@
+#resources
+{
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0 6rem 0;
+}
+
+#resources a
+{
+    display: inline-block;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 12rem;
+    width: 12rem;
+    transition: .2s;
+}
+
+#resources a:hover
+{
+    transform: scale(1.1) translateY(-0.5rem);
+}
+
+#resources a:not(:first-child)
+{
+    margin-left: 1.5rem;
+}
+
+#email
+{
+    background-image: url('../img/email.png');
+    background-color: #e52226;
+    background-size: 65%;
+    background-position-y: 1.7rem !important;
+}
+
+#discord
+{
+    background-image: url('../img/discord.png');
+    background-color: #7389dc;
+    background-size: 70%;
+}
+
+#drive
+{
+    background-image: url('../img/drive.png');
+    background-color: #11a861;
+    background-size: 70%;
+}
+
+#github
+{
+    background-image: url('../img/github.png');
+    background-size: 100%;
+}
+
+#content
+{
+    padding-bottom: 10rem;
+}

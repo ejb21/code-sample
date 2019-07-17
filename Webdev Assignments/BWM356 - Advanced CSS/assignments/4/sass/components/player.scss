@@ -1,0 +1,80 @@
+.lplayer
+{
+    text-transform: uppercase;
+
+    &--name
+    {
+        background-color: $sox-red;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Aileron Black";
+        color: $white;
+        font-size: 6rem;
+        line-height: 0;
+    }
+
+    &--image
+    {
+        background-color: $white;
+        height: 100%;
+        width: 50%;
+    }
+}
+
+.mplayer
+{
+    text-transform: uppercase;
+
+    &--name
+    {
+        background-color: $sox-red;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Aileron Black";
+        color: $white;
+        font-size: 6rem;
+        line-height: 0;
+
+        @include respond(tablet)
+        {
+            min-height: 12rem;
+        }
+    }
+
+    &--image
+    {
+        background-color: $white;
+        width: 100%;
+        height: 65%;
+    }
+}
+
+.rplayer
+{
+    text-transform: uppercase;
+
+    &--name
+    {
+        background-color: $sox-red;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Aileron Black";
+        color: $white;
+        font-size: 6rem;
+        line-height: 0;
+    }
+
+    &--image
+    {
+        background-color: $white;
+        height: 100%;
+        width: 50%;
+    }
+}

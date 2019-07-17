@@ -1,0 +1,35 @@
+@@include('./includes/header.html')
+@@include('./includes/navigation.html')
+
+<style>nav#nav { background: linear-gradient(70deg, #FE4404, #FE4404 5%, #FF9D00); }</style>
+
+<script>
+    $(document).ready(function()
+    { 
+        var navHeight = $('#nav').outerHeight();
+        var footerHeight = $('#footer').outerHeight();
+        var delta = navHeight + footerHeight;
+        console.log(delta);
+        $('#upvote-container').css({'min-height': 'calc(100vh - ' + delta + 'px)', 'margin-top': navHeight + 'px'});
+    });
+</script>
+
+<div class="container" id="upvote-container">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-6" style="box-sizing: border-box; padding: 4rem 0; text-align: center;">
+            <img src="../img/upvote.png" alt="Upvote" style="max-height: 450px;">
+        </div>
+        <div class="col-6" class="product-details" style="text-align: center;">
+            <h1 style="color: #FE4404; font-weight: 900; font-size: 3.5rem; text-shadow: 0 .25rem .1rem rgba(0,0,0,0.2);">One Upvote</h1>
+            <h2 style="font-size: 2.5rem; margin-top: 1rem;">Priceless</h2>
+            <span style="text-decoration: line-through; opacity: 0.5; font-size: 1.5rem;">$420.69</span>
+            <div class="links" style="margin-top: 3rem;">
+                <a style="color: #FE4404; padding: 1rem 1.25rem; font-size: 2rem; border-radius: 50%; margin-right: 1rem;" href="upvote.html" data-tip="View Product Details"><i class="fa fa-search"></i></a>
+                <a style="color: #FE4404; padding: 1rem 1.25rem; font-size: 2rem; border-radius: 50%;" href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./includes/footer.html')

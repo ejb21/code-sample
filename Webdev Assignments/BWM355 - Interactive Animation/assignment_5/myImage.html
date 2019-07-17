@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; My Image</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                var trophy = new Image();
+                trophy.src = 'trophy.jpg';
+                trophy.onload = function()
+                {
+                    context.drawImage(trophy, 0, 0);
+                    context.drawImage(trophy, 280, 0, 130, 250, 820, 40, 130, 250);
+                    context.drawImage(trophy, 280, 0, 130, 250, 820, 40, 130, 250);
+                    context.rotate(20*Math.PI/180);
+                    context.drawImage(trophy, 280, 0, 130, 250, 450, -150, 260, 500);
+
+                    context.rect(80,181,1100,40);
+                    context.fillStyle = 'white';
+                    context.fill();
+
+                    context.font = '18pt Helvetica';
+                    context.fillStyle = 'black';
+                    context.textBaseline = 'middle';
+                    context.shadowColor = 'white';
+                    context.shadowBlur = 0;
+                    context.shadowOffsetY = 1;
+                    context.rotate(0*Math.PI/180);
+                    context.fillText('If I try to rotate it more than this, it rotates straight off the canvas and I can\'t maneuver it back on', 100, 200);
+                }
+            };
+        </script>    
+    </head>
+    <body>
+        <canvas id="canvas" width="1000" height="600"style="border: 1px solid black;"></canvas>
+    </body>
+</html>

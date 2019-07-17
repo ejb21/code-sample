@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+    <link href="css/tablestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    
+    <div id="inbody">
+    
+    
+            <h1>MY TASKS</h1>
+    
+<table id="taskstable">
+    <tr>
+		<th>✔</th>
+		<th id="th_taskname">TASK NAME</th>
+		<th id="th_latitude">LATITUDE</th>
+		<th id="th_longitude">LONGITUDE</th>
+		<th id="th_created">CREATED</th>
+		<th id="th_updatedelete" colspan="2">UPDATE / DELETE</th>
+	</tr>
+    
+    <tr>
+		<form method="post" action="actions/modify_task.php">
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete"/><label for="complete"></label></td>
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Test Task #1"/></td><br/>
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="45.454545"/></td>
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="69.696969"/></td>
+			<td class="td_created"><?=$dbcreated?></td>
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="UPDATE"/></td>
+		</form>
+		<form method="post" action="actions/delete_task.php">
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="DELETE"/></td>
+		</form>
+	</tr>
+    
+    <tr>
+		<form method="post" action="actions/modify_task.php">
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete"/></td>
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Test Task #1"/></td><br/>
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="45.454545"/></td>
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="69.696969"/></td>
+			<td class="td_created"><?=$dbcreated?></td>
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="UPDATE"/></td>
+		</form>
+		<form method="post" action="actions/delete_task.php">
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="DELETE"/></td>
+		</form>
+	</tr>
+    
+    <tr>
+		<form method="post" action="actions/modify_task.php">
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete"/></td>
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Test Task #1"/></td><br/>
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="45.454545"/></td>
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="69.696969"/></td>
+			<td class="td_created"><?=$dbcreated?></td>
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="UPDATE"/></td>
+		</form>
+		<form method="post" action="actions/delete_task.php">
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="DELETE"/></td>
+		</form>
+	</tr>
+    
+    <tr>
+		<form method="post" action="actions/modify_task.php">
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete"/></td>
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Test Task #1"/></td><br/>
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="45.454545"/></td>
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="69.696969"/></td>
+			<td class="td_created"><?=$dbcreated?></td>
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="UPDATE"/></td>
+		</form>
+		<form method="post" action="actions/delete_task.php">
+			<input type="hidden" name="task_id" value="<?=$dbtaskid?>"/>
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="DELETE"/></td>
+		</form>
+	</tr>
+</table>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--
+<table id="taskstable">
+    <tr class="task">
+    
+		<form method="post" action="actions/modify_task.php">
+            
+            
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Clean the Roof"/></td><br>
+            
+            
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="1234512"/></td>
+            
+            
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="1234515"/></td>
+            
+            
+            
+			<td class="td_created">January 1, 2020</td>
+            
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete" value="asdfasdf"/></td>
+            
+            
+            
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="Update"/></td>
+            
+            
+		</form>
+    
+    
+    
+    
+    
+		<form method="post" action="actions/delete_task.php">
+            
+            
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="Delete"/></td>
+            
+            
+		</form>
+    
+	</tr>
+    
+    <tr class="task">
+    
+		<form method="post" action="actions/modify_task.php">
+            
+            
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Clean the Roof"/></td><br>
+            
+            
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="1234512"/></td>
+            
+            
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="1234515"/></td>
+            
+            
+            
+			<td class="td_created">January 1, 2020</td>
+            
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete" value="asdfasdf"/></td>
+            
+            
+            
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="Update"/></td>
+            
+            
+		</form>
+    
+    
+    
+    
+    
+		<form method="post" action="actions/delete_task.php">
+            
+            
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="Delete"/></td>
+            
+            
+		</form>
+    
+	</tr>
+    
+    <tr class="task">
+    
+		<form method="post" action="actions/modify_task.php">
+            
+            
+			<td class="td_taskname"><input class="td_tasknamebox" type="text" name="name" value="Clean the Roof"/></td><br>
+            
+            
+			<td class="td_latitude"><input class="td_latitudebox" type="number" step="0.0001" name="latitude" value="1234512"/></td>
+            
+            
+			<td class="td_longitude"><input class="td_longitudebox" type="number" step="0.0001" name="longitude" value="1234515"/></td>
+            
+            
+            
+			<td class="td_created">January 1, 2020</td>
+            
+			<td class="td_completed"><input class="td_completebox" type="checkbox" name="complete"<?=($dbiscomplete == 1 ? " checked" : "")?>/></td>
+            
+            
+            
+			<td class="td_update"><input class="td_submitbutton" type="submit" value="Update"/></td>
+            
+            
+		</form>
+    
+    
+    
+    
+    
+		<form method="post" action="actions/delete_task.php">
+            
+            
+			<td class="td_delete"><input class="td_deletebutton" type="submit" value="Delete"/></td>
+            
+            
+		</form>
+    
+	</tr>
+</table>
+
+
+-->
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+.row
+{
+    width: 100%;
+    margin: 0 auto;
+
+    &:not(:last-child)
+    {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^="col-"]
+    {
+        float: left;
+
+        &:not(:last-child)
+        {
+            margin-right: $gutter-horizontal;
+
+            @include respond(columns)
+            {
+                &:not(:first-of-type)
+                {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .col-1-of-2, .col-2-of-4
+    {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3
+    {
+        width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+
+        @include respond(columns)
+        {
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+
+            &:not(:first-of-type)
+            {
+                margin-right: none !important;
+            }
+        }
+
+        @include respond(phone)
+        {
+            width: 100%;
+        }
+    }
+
+    .col-2-of-3
+    {
+        width: calc(((100% - (#{$gutter-horizontal} / 2)) / 3) * 2);
+    }
+
+    .col-1-of-4
+    {
+        width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+    }
+
+    .col-3-of-4
+    {
+        width: calc((100% - (#{$gutter-horizontal}  / 3)) * 0.75);
+    }
+}

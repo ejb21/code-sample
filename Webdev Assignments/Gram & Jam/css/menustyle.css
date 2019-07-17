@@ -1,0 +1,285 @@
+@font-face
+    {
+        font-family: Expressway ;
+        src: url("../fonts/Expressway.ttf") ;
+    }
+
+
+@font-face
+    {
+        font-family: CreativeBlock ;
+        src: url("../fonts/CreativeBlock.ttf") ;
+    }
+
+
+#container
+    {
+        padding-top: 50px ;
+        padding-bottom: 50px ;
+    }
+
+
+table
+    {
+/*        table-layout: fixed ;*/
+        margin: auto ;
+        background-color: white ;
+        text-align: center ;
+        margin-top: 20px ;
+        margin-bottom: 20px ;
+        column-width: auto ;
+        border: solid 5px #924d90 ;
+        border-top-left-radius: 50px ;
+        border-top-right-radius: 50px ;
+        border-bottom-left-radius: 10px ;
+        border-bottom-right-radius: 10px ;
+        border-spacing: 0 ;
+    }
+
+
+#appetizers
+    {
+        width: 500px ;
+    }
+
+
+#entrees
+    {
+        width: 650px ;
+    }
+
+
+#entrees td
+    {
+        font-size: 24px ;
+    }
+
+
+#drinks
+    {
+        width: 500px ;
+    }
+
+
+th
+    {
+        font-family: CreativeBlock ;
+        font-size: 38px ;
+        font-weight: 900 ;
+        color: white ;
+        text-shadow: 0px 3px black ;
+        height: 55px ;
+        padding-top: 15px ;
+        background-color: #924d90 ;
+        border-top-left-radius: 35px ;
+        border-top-right-radius: 35px ;
+        border-bottom: solid 2px #ff955c ;
+    }
+
+
+td
+    {
+        font-family: Expressway ;
+        font-size: 18px ;
+        font-weight: 600 ;
+        height: 50px ;
+        width: 10px ;
+        padding-top: 22px ;
+        border: solid 2px #ff955c ;
+        background-color: #f0f0f0 ;
+    }
+
+
+#appetizers td
+    {
+        height: 40px ;
+        padding-top: 18px ;
+    }
+
+
+#drinks td
+    {
+        height: 40px ;
+        padding-top: 18px ;
+        text-shadow: 0px 0px 3px #fff, 0px 0px 1px #fff ;
+    }
+
+
+.aphoto
+    {
+        width: 30% ;
+    }
+
+
+.appetizer
+    {
+        width: 40% ;
+    }
+
+
+.price1
+    {
+        width: 30% ;
+    }
+
+
+.entree
+    {
+        text-shadow: 0px 0px 5px rgba(146, 77, 144, 0.4) ;
+    }
+
+
+.photo
+    {
+        width: 25% ;
+    }
+
+
+.entree
+    {
+        width: 50% ;
+    }
+
+
+.price2
+    {
+        width: 25% ;
+    }
+
+
+#wmnote
+    {
+        border: 7px dashed black ;
+        background-color: white ;
+        padding: 40px ;
+        padding-top: 20px ;
+        padding-bottom: 30px ;
+        margin-top: 10px ;
+        margin-bottom: 40px ;
+    }
+
+
+#wmnote h1
+    {
+        font-family: Helvetica ;
+        font-weight: 900 ;
+        font-size: 30px ;
+        padding-bottom: 5px ;
+        text-align: center ;
+    }
+
+
+#wmnote p
+    {
+        font-family: Helvetica ;
+        font-weight: 600 ;
+        padding-top: 15px ;
+    }
+
+
+#wmnote p em
+    {
+        font-style: italic ;
+    }
+
+
+.col1 , .col2 , .col3 , .col4
+    {
+        width: 125px ;
+    }
+
+
+#applepie , #baconfries
+    {
+        background-image: url( "../images/appetizers/America.png" ) ;
+    }
+
+
+#borscht
+    {
+        background-image: url( "../images/appetizers/Russia.png" ) ;
+    }
+
+
+#fishchips
+    {
+        background-image: url( "../images/appetizers/England.png" ) ;
+    }
+
+
+#pierogies
+    {
+        background-image: url( "../images/appetizers/Poland.png" ) ;
+    }
+
+
+#poke
+    {
+        background-image: url( "../images/appetizers/Hawaii.png" ) ;
+    }
+
+
+#poutine
+    {
+        background-image: url( "../images/appetizers/Canada.png" ) ;
+    }
+
+
+#turnovers
+    {
+        background-image: url( "../images/appetizers/Ireland.png" ) ;
+    }
+
+
+#burger , #cheesesteak , #chowder , #crabcake , #pizza , #gumbo
+    {
+        background-image: url( "../images/entrees/America.png" ) ;
+    }
+
+
+#chili
+    {
+        background-image: url( "../images/entrees/Brazil.png" ) ;
+    }
+
+
+#dimsum
+    {
+        background-image: url( "../images/entrees/HongKong.png" ) ;
+    }
+
+
+#fettucini
+    {
+        background-image: url( "../images/entrees/Italy.png" ) ;
+    }
+
+
+#bandera
+    {
+        background-image: url( "../images/entrees/Dominican.png" ) ;
+    }
+
+
+#lamb
+    {
+        background-image: url( "../images/entrees/Australia.png" ) ;
+    }
+
+
+#sushi
+    {
+        background-image: url( "../images/entrees/Japan.png" ) ;
+    }
+
+
+#tacos
+    {
+        background-image: url( "../images/entrees/Mexico.png" ) ;
+    }
+
+
+#tortillas
+    {
+        background-image: url( "../images/entrees/Spain.png" ) ;
+    }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eternal Image</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Create a Custom Print</h1>
+
+        <div id="container">
+            <form method="POST" action="">
+                <span class="name">Name:
+                    <input type="text" name="fullName" placeholder="Enter Full Name" required>
+                </span>
+
+                <br>
+                <br>
+
+                <span class="email">Email:
+                    <input type="text" name="email" placeholder="Enter Email" required>
+                </span>
+                <h3 class="printSize">Size</h3>   
+                    <select name="prints">
+                        <option value="">9x12</option>
+                        <option value="">11x17</option>
+                    </select>
+
+
+                <h3 class="bodyType">Body Type</h3>
+                <label>Head
+                    <input type="radio" name="Head">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label>Torso
+                    <input type="radio" name="Torso">
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <h3 class="Medium">Medium</h3>
+                <label>Pencil
+                    <input type="radio" name="Pencil">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label>Marker
+                    <input type="radio" name="Marker">
+                    <span class="checkmark"></span>
+                </label>
+
+                <h3 class="artStyle">Art Style</h3>
+                <label>Realism
+                    <input type="radio" name="Realism">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label>Sketch
+                    <input type="radio" name="Sketch">
+                    <span class="checkmark"></span>
+                </label>
+
+                <span class="total">Estimated Total:
+                    <input type="text" name="total" readonly>
+                </span>
+
+                <br>
+                <br>
+
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="commissions.html">Commission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+</html>

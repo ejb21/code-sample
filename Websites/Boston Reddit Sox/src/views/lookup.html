@@ -1,0 +1,21 @@
+@@include('./includes/header.html')
+@@include('./includes/navigation.html')
+
+<style>
+    nav#nav { background: linear-gradient(70deg, #FE4404, #FE4404 5%, #FF9D00); }
+    div#pnlResults { min-height: calc(100vh - 560px); }
+</style>
+
+<div class="container" style="margin-top: 4.5rem;">
+    <h1 id="addr-lookup" class="text-center mt-5 pt-5" style="margin-top: 6rem !important; margin-bottom: 3rem !important;">Address Lookup</h1>
+
+    <div class="container">
+        <input class="form-control my-4" placeholder="Type an address here...">
+        <div id="pnlResults" style="margin-bottom: 2rem;" class="row"></div>
+    </div>
+</div>
+
+@@include('./includes/footer.html')
+
+<script src="https://d79i1fxsrar4t.cloudfront.net/sdk/1.4.0/smartystreets-sdk-1.4.0.min.js"></script>
+<script src="../js/smartystreets.js"></script>

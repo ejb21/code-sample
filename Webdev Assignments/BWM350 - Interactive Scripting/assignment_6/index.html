@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta id="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Hands-On Project</title>
+
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+   <script src="js/script.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>JavaScript Hands-On Project</h1>
+   </header>
+
+   <section>
+      <h2>Pizza Order Form</h2>
+      <form action="thank-you.html" id="form">
+         <fieldset id="deliveryinfo">
+            <legend>Delivery Information (<sub>*</sub> required field)</legend>
+
+            <label for="nameinput">Name:</label><sub>*</sub>
+            <input type="text" id="nameinput" name="name">
+
+            <label for="addrinput">Street Address:</label><sub>*</sub>
+            <input type="text" id="addrinput" name="address">
+
+            <label for="cityinput">City:</label><sub>*</sub>
+            <input type="text" id="cityinput" name="city">
+
+            <label for="emailinput">Email:</label><sub>*</sub>
+            <input type="email" id="emailinput" name="email">
+
+            <label for="phoneinput">Phone:</label><sub>*</sub>
+            <input type="tel" id="phoneinput" name="phone" maxlength="13" onfocus="phoneInit();" onkeydown="lintPhone();" onkeyup="lintPhone();">
+         </fieldset>
+
+         <fieldset id="orderinfo">
+            <legend>Order</legend>
+            <fieldset id="crustbox">
+               <legend>Crust: <sub>*</sub></legend>
+               <input type="radio" name="crust[]" id="thin" value="Thin">
+               <label for="thin">Thin Crust</label>
+               <input type="radio" name="crust[]" id="thick" value="Deep Dish">
+               <label for="thick">Deep Dish</label>
+            </fieldset>
+
+            <fieldset id="sizebox"> 
+               <legend>Size: <sub>*</sub></legend>
+               <select id="size" name="size">
+                  <option value="">Select a size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="xl">Extra Large</option>
+               </select>
+            </fieldset>
+
+            <fieldset id="toppingbox">
+               <legend>Topping(s): <sub>*</sub></legend>
+               <input type="checkbox" id="cheese" name="toppings[]" value="Cheese" checked>
+               <label for="cheese">Cheese</label>
+               <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+               <label for="pepperoni">Pepperoni</label>
+               <input type="checkbox" id="sausage" name="toppings[]" value="Sausage">
+               <label for="sausage">Sausage</label>
+               <input type="checkbox" id="greenpep" name="toppings[]" value="Green Peppers">
+               <label for="greenpep">Green Peppers</label>
+               <input type="checkbox" id="onion" name="toppings[]" value="Onions">
+               <label for="onion">Onions</label>
+               <input type="checkbox" id="xcheese" name="toppings[]" value="Extra Cheese">
+               <label for="xcheese">Extra Cheese</label>
+               <label for="instructions" id="instrlabel">Special Instructions:</label>
+               <textarea id="instructions" name="instructions" rows="3" cols="60" placeholder="special requests, delivery details"></textarea>
+            </fieldset>
+         </fieldset>
+
+         <fieldset id="submitbutton">
+            <input type="submit" id="submitBtn" value="Add to Cart"> <input type="reset" id="resetBtn" value="Clear Form">
+         </fieldset>
+      </form>
+   </section>
+</body>
+</html>

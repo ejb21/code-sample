@@ -1,0 +1,77 @@
+#container
+    {
+        padding-top: 80px ;
+        padding-bottom: 80px ;
+        text-align: center ;
+        height: 900px ;
+    }
+
+
+h1
+    {
+        font-family: CreativeBlock ;
+        font-size: 60px ;
+        color: #924d90 ;
+        text-shadow: 2px 2px white , -2px -2px white , 2px -2px white , -2px 2px white , 0px 0px 10px #ff7b34 , 0px 0px 10px #ff7b34 ;
+    }
+
+
+p
+    {
+        font-family: Expressway ;
+        font-size: 24px ;
+        width: 78% ;
+        margin: auto ;
+        margin-top: 30px ;
+    }
+
+
+em
+    {
+        font-style: italic ;
+    }
+
+
+h2
+    {
+        font-family: Expressway ;
+        font-size: 24px ;
+        font-weight: 900 ;
+        text-shadow: 1px 1px white , 1px -1px white , -1px 1px white , -1px -1px white , 0px 0px 7px #31a066 ;
+        margin-top: 20px ;
+        margin-bottom: 8px ;
+    }
+
+
+#pdf
+    {
+        font-family: Expressway ;
+        font-size: 24px ;
+        font-weight: 900 ;
+        color: black ;
+        text-shadow: 1px 1px white , 1px -1px white , -1px 1px white , -1px -1px white , 0px 0px 7px #924d90 ;
+        margin-top: 10px ;
+        text-decoration: none ;
+        margin-top: 50px ;
+    }
+
+
+#container a:hover
+    {
+        text-decoration: underline ;
+    }
+
+
+#googleMap
+    {
+        position: relative ;
+        top: 103px ;
+    }
+
+
+#frame
+    {
+        z-index: 10 ;
+        position: relative ;
+        top: -346px ;
+    }

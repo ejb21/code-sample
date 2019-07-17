@@ -1,0 +1,35 @@
+﻿<Window x:Class="Assignment2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="592" Width="536">
+    <Grid x:Name="stateGrid">
+        <DataGrid x:Name="dgStates" CellEditEnding="SaveData" CanUserAddRows="False" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="299" Width="497" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=name, UpdateSourceTrigger=LostFocus}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Capital" Binding="{Binding Path=capital}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Largest City" Binding="{Binding Path=most-populous-city}"></DataGridTextColumn>
+
+                <DataGridTemplateColumn Header="Delete">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="btnDeleteRecord"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <Label x:Name="lblAdd" Content="Add a State!" HorizontalAlignment="Left" Margin="207,339,0,0" VerticalAlignment="Top" Height="35" Width="115" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="lblName" Content="State Name:" HorizontalAlignment="Left" Margin="121,385,0,0" VerticalAlignment="Top" Width="77"/>
+        <Label x:Name="lblCapital" Content="State Capital:" HorizontalAlignment="Left" Margin="117,419,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label x:Name="lblCity" Content="Most Populous City:" HorizontalAlignment="Left" Margin="81,453,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="26" Margin="206,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198"/>
+        <TextBox x:Name="txtCapital" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="26" Margin="206,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="26" Margin="206,454,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198"/>
+        <Button x:Name="btnAnnex" Content="Annex" HorizontalAlignment="Left" Margin="222,501,0,0" VerticalAlignment="Top" Width="85" FontSize="14" FontWeight="Bold" Height="29" Click="btnAnnex_Click"/>
+    </Grid>
+</Window>

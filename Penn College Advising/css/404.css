@@ -1,0 +1,48 @@
+/*body
+{
+    overflow-y: hidden ;
+}*/
+
+#content
+{
+    width: 1000px ;
+    height: 100vh ;
+    margin: auto ;
+    background-color: white ;
+    box-shadow: 0px 0px 50px black ;
+    position: relative ;
+}
+
+/*
+#travolta
+{
+    height: 64vh ;
+    position: relative ;
+    left: 53% ;
+    top: -297px ;
+    z-index: 0 ;
+}
+*/
+
+#content #travolta
+{
+    height: 64vh ;
+    position: absolute ;
+    right: 0 ;
+    bottom: 0 ;
+    z-index: 0 ;
+}
+
+#notfound
+{
+    font-family: AileronBlack ;
+    font-size: 135px ;
+    color: #4a7faf ;
+    text-shadow: 0px 6px #d6cdbe , 3px 0px #d6cdbe , -3px 0px #d6cdbe ;
+    text-align: center ;
+    transform: rotate(-5deg) ;
+    position: relative ;
+    left: -135px ;
+    top: 8% ;
+    z-index: 1 ;
+}

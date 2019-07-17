@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; Smile Faces</title>
+        <style>body { display: flex; align-items: center; justify-content: center; }</style>
+        <script>
+            window.onload = function()
+            {
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                context.beginPath();
+                context.arc(300,110,75,0,2*Math.PI);
+                context.strokeStyle = '#F3A323';
+                context.lineWidth = 8;
+                context.stroke();
+                context.fillStyle = '#F7C347';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(270,90,15,10,0,0,2*Math.PI);
+                context.strokeStyle = 'black';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(328,90,15,10,0,0,2*Math.PI);
+                context.strokeStyle = 'black';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(270,89,7,0,2*Math.PI);
+                context.strokeStyle = '#295D7C';
+                context.lineWidth = 4;
+                context.stroke();
+                context.fillStyle = '#79B2DC';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(328,89,7,0,2*Math.PI);
+                context.strokeStyle = '#295D7C';
+                context.lineWidth = 4;
+                context.stroke();
+                context.fillStyle = '#79B2DC';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(270,89,4,0,2*Math.PI);
+                context.fillStyle = 'black';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(328,89,4,0,2*Math.PI);
+                context.fillStyle = 'black';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(270,101,15,5,0,0,2*Math.PI);
+                context.fillStyle = '#F7C347';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(328,101,15,5,0,0,2*Math.PI);
+                context.fillStyle = '#F7C347';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(300,120,60,40,0,0,Math.PI);
+                context.moveTo(360,120);
+                context.lineTo(240,120);
+                context.strokeStyle = 'black';
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(260,120);
+                context.lineTo(260,148);
+                context.moveTo(280,120);
+                context.lineTo(280,157);
+                context.moveTo(300,120);
+                context.lineTo(300,160);
+                context.moveTo(320,120);
+                context.lineTo(320,157);
+                context.moveTo(340,120);
+                context.lineTo(340,148);
+                context.moveTo(250,140);
+                context.lineTo(350,140);
+                context.strokeStyle = '#dddddd';
+                context.lineWidth = 3;
+                context.stroke();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(300,290,75,0,2*Math.PI);
+                context.strokeStyle = '#3E2A25';
+                context.lineWidth = 8;
+                context.stroke();
+                context.fillStyle = '#805533';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(270,270,15,10,0,0,2*Math.PI);
+                context.strokeStyle = 'black';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(328,270,15,10,0,0,2*Math.PI);
+                context.strokeStyle = 'black';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(270,269,7,0,2*Math.PI);
+                context.strokeStyle = '#181113';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = '#572F11';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(328,269,7,0,2*Math.PI);
+                context.strokeStyle = '#181113';
+                context.lineWidth = 3;
+                context.stroke();
+                context.fillStyle = '#572F11';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(270,269,3,0,2*Math.PI);
+                context.fillStyle = 'black';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.arc(328,269,3,0,2*Math.PI);
+                context.fillStyle = 'black';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(270,281,15,5,0,0,2*Math.PI);
+                context.fillStyle = '#805533';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(328,281,15,5,0,0,2*Math.PI);
+                context.fillStyle = '#805533';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.ellipse(300,300,60,40,0,0,Math.PI);
+                context.moveTo(360,300);
+                context.lineTo(240,300);
+                context.strokeStyle = 'black';
+                context.stroke();
+                context.fillStyle = 'white';
+                context.fill();
+                context.closePath();
+
+                context.beginPath();
+                context.moveTo(260,300);
+                context.lineTo(260,328);
+                context.moveTo(280,300);
+                context.lineTo(280,337);
+                context.moveTo(300,300);
+                context.lineTo(300,340);
+                context.moveTo(320,300);
+                context.lineTo(320,337);
+                context.moveTo(340,300);
+                context.lineTo(340,328);
+                context.moveTo(250,320);
+                context.lineTo(350,320);
+                context.strokeStyle = '#dddddd';
+                context.lineWidth = 3;
+                context.stroke();
+                context.closePath();
+            };
+        </script>    
+    </head>
+    <body>
+        <canvas id="canvas" width="600" height="400"style="border:1px solid black;"></canvas>
+    </body>
+</html>

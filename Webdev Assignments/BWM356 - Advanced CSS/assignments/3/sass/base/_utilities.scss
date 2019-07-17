@@ -1,0 +1,60 @@
+.u-float-left
+{
+    float: left;
+}
+
+.u-float-right
+{
+    float: right;
+}
+
+.u-preload
+{
+    transition: none !important;
+}
+
+.u-unset
+{
+    text-decoration: none;
+}
+
+.u-title-hyphen
+{
+    all: inherit;
+    position: relative;
+    left: 0.8rem;
+    bottom: 0.6rem;
+    transition-delay: -.2s;
+}
+
+.u-image-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.u-mobile-responsive
+{
+    @include respond(columns)
+    {
+        width: 100% !important;
+        margin-top: 6rem !important;
+
+        & .card
+        {
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+            float: left;
+            
+            &:not(:nth-child(2n))
+            {
+                margin-right: $gutter-horizontal;
+            }
+
+            @include respond(phone)
+            {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+}

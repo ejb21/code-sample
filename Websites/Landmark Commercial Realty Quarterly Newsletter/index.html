@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>CRE News</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <style type="text/css">
+      @media screen {
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic3CsTKlA.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic-CsTKlA.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic2CsTKlA.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic5CsTKlA.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic1CsTKlA.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic0CsTKlA.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto';
+          font-style:italic;
+          font-weight:700;
+          src:local('Roboto Bold Italic'),local(Roboto-BoldItalic),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        /* cyrillic-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:400;
+          src:local(Roboto),local(Roboto-Regular),url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        /* cyrillic-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:500;
+          src:local('Roboto Medium'),local(Roboto-Medium),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        /* cyrillic-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Bold'),local(Roboto-Bold),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        /* cyrillic-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19-7DRs5.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DRs5.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-1967DRs5.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19G7DRs5.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-1927DRs5.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19y7DRs5.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:400;
+          src:local('Roboto Condensed'),local(RobotoCondensed-Regular),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        /* cyrillic-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCkYb8td.woff2) format("woff2");
+          unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+        }
+        
+        /* cyrillic */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCAYb8td.woff2) format("woff2");
+          unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+        }
+        
+        /* greek-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCgYb8td.woff2) format("woff2");
+          unicode-range:U+1F00-1FFF;
+        }
+        
+        /* greek */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCcYb8td.woff2) format("woff2");
+          unicode-range:U+0370-03FF;
+        }
+        
+        /* vietnamese */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCsYb8td.woff2) format("woff2");
+          unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
+        }
+        
+        /* latin-ext */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCoYb8td.woff2) format("woff2");
+          unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+          font-family:'Roboto Condensed';
+          font-style:normal;
+          font-weight:700;
+          src:local('Roboto Condensed Bold'),local(RobotoCondensed-Bold),url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYbw.woff2) format("woff2");
+          unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+        
+        a:hover {
+          text-decoration:underline !important;
+        }
+        }center {
+          display:none;
+          }center {
+            display:none;
+          }
+          
+          @media only screen and (max-width: 480px) {
+            table#canspamBar td {
+              font-size:14px !important;
+            }
+            
+            table#canspamBar td a {
+              display:block !important;
+              margin-top:10px !important;
+            }
+          }
+    </style>
+  </head>
+  <body style="padding:0;margin:0;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#65070C;width:100%;max-width:100%;font-family:Roboto, Helvetica, sans-serif;border-spacing:0;border-collapse:collapse;">
+      <tr>
+        <td>
+          <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;display:block;font-family:Roboto, Helvetica, sans-serif;margin:0 auto;border-spacing:0;border-collapse:collapse;box-shadow: 0rem 0rem 1rem black;">
+            <tr>
+              <td width="100%" height="28" style="width:100%;height:28px;"></td>
+            </tr>
+            <tr>
+              <td width="100%" align="center" style="width:100%;">
+                <img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/CRE-News.png" alt="CRE News" title="CRE News" style="display:block;max-width:75%;">
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="8" style="width:100%;height:8px;"></td>
+            </tr>
+            <tr>
+              <td width="100%" align="center" style="width:100%;">
+                <a href="https://www.landmarkcr.com/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/30th-logo.png" alt="Landmark Commercial Realty" title="Landmark Commercial Realty" style="display:block;max-width:60%;"></a>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="13" style="width:100%;height:13px;"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="22" style="width:22px;"></td>
+                    <td height="3" style="height:3px;background:#000000;"></td>
+                    <td width="22" style="width:22px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="7" style="width:100%;height:7px;"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="22" style="width:22px;"></td>
+                    <td align="left" style="font-size:15px;font-weight:500;color:#666666;line-height:1;">Summer 2018 Edition</td>
+                    <td align="right" style="font-size:14px;font-weight:500;line-height:1;">
+                      <a href="https://www.landmarkcr.com/our-team/" target="_blank" style="font-family:'Roboto Condensed', Roboto, sans-serif;font-weight:700;text-decoration:none;color:#000000;letter-spacing:0px;padding-right:3px;">MEET OUR TEAM</a> | <a href="https://www.landmarkcr.com/properties/" target="_blank" style="font-family:'Roboto Condensed', Roboto, sans-serif;font-weight:700;text-decoration:none;color:#000000;letter-spacing:0px;padding-left:3px;">PROPERTY SEARCH</a>
+                    </td>
+                    <td width="22" style="width:22px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="14" style="width:100%;height:14px;"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="69" height="8" style="background:#FFFFFF;width:69px;height:8px;"></td>
+                    <td width="531" height="8" style="background:#BFBFBF;width:531px;height:8px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="69" height="5" style="background:#65070C;width:69px;height:5px;"></td>
+                    <td width="195" height="5" style="background:#4C0509;width:195px;height:5px;"></td>
+                    <td width="336" height="5" style="background:#BFBFBF;width:336px;height:5px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="69" height="3" style="background:#65070C;width:69px;height:3px;"></td>
+                    <td width="195" height="3" style="background:#4C0509;width:195px;height:3px;"></td>
+                    <td width="40" height="3" style="background:#BFBFBF;width:40px;height:3px;"></td>
+                    <td width="296" height="3" style="background:#4C0509;width:296px;height:3px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="338" style="width:100%;height:338px;" align="left">
+                <div style="position:relative;width:100%;height:100%;">
+                  <div style="position:absolute;left:0;top:0;background:#65070C;width:264px;height:8px;z-index:10;"></div>
+					<a href="https://www.youtube.com/watch?v=MPDM-H0HD-U" target="_blank"><img src="Featured-Property-very-new.jpg" alt="Featured Property" style="display:block;position:absolute;top:0;left:0;"></a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="3" style="background:#65070C;width:100%;height:4px;"></td>
+            </tr>
+            <tr>
+              <td width="100%" height="32" style="width:100%;height:32px;"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="22" style="width:22px;"></td>
+                    <td valign="top" width="100" height="86" style="width:100px;height:86px;"><a href="https://www.landmarkcr.com/landmark-costar-power-broker-awards/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/PowerBroker.png" alt="CoStar PowerBroker 2017 Top Firm Award" title="CoStar PowerBroker 2017 Top Firm Award" style="display:block;"></a>
+                  </td>
+                  <td width="18" style="width:18px;"></td>
+                  <td>
+                    <table width="100%" style="height:100px;width:100%;">
+                      <tr style="height:20px;">
+                        <td align="left" style="font-size:17px;font-weight:700;color:#384042;">
+                          Landmark Honored with Two CoStar Power Broker Awards
+                        </td>
+                      </tr>
+                      <tr style="height:20px;">
+                        <td align="left" height="20">
+                          <div style="display:block;height:20px;max-width:434px;color:#666666;white-space:nowrap;overflow:hidden;font-weight:500;font-size:14px;padding-top:2px;">
+                            Landmark Commercial Realty Inc. has been selected by CoStar …
+                          </div>
+                        </td>
+                      </tr>
+                      <tr style="height:20px;">
+                        <td align="left">
+                          <a href="https://www.landmarkcr.com/landmark-costar-power-broker-awards/" target="_blank" style="color:#65070c;text-decoration:none;font-weight:500;font-size:16px;">[Read More]</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width="22" style="width:22px;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="100%" height="24" style="width:100%;height:24px;"></td>
+          </tr>
+          <tr>
+            <td>
+              <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+                <tr>
+                  <td width="22" style="width:22px;"></td>
+                  <td valign="top" width="100" height="86" style="width:100px;height:86px;"><a href="https://www.landmarkcr.com/tom-posavec-honored-2017-costar-power-broker/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Posavec.jpg" alt="Tom Posavec" title="Tom Posavec" style="display:block;"></a>
+                </td>
+                <td width="18" style="width:18px;"></td>
+                <td>
+                  <table width="100%" style="height:100px;width:100%;">
+                    <tr style="height:20px;">
+                      <td align="left" style="font-size:17px;font-weight:700;color:#384042;">
+                        Tom Pasavec Named One of the Top Commercial Office Leasing Brokers
+                      </td>
+                    </tr>
+                    <tr style="height:20px;">
+                      <td align="left" height="20">
+                        <div style="display:block;height:20px;max-width:434px;color:#666666;white-space:nowrap;overflow:hidden;font-weight:500;font-size:14px;padding-top:2px;">
+                          Tom Posavec, Senior Vice President of Landmark Commercial …
+                        </div>
+                      </td>
+                    </tr>
+                    <tr style="height:20px;">
+                      <td align="left">
+                        <a href="https://www.landmarkcr.com/tom-posavec-honored-2017-costar-power-broker/" target="_blank" style="color:#65070c;text-decoration:none;font-weight:500;font-size:16px;">[Read More]</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="22" style="width:22px;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" height="24" style="width:100%;height:24px;"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#FFFFFF;width:600px;max-width:100%;margin:0 auto;border-collapse:collapse;">
+              <tr>
+                <td width="22" style="width:22px;"></td>
+                <td valign="top" width="100" height="86" style="width:100px;height:86px;"><a href="https://www.landmarkcr.com/women-commercial-real-estate-cre/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Women-in-CRE.jpg" alt="Women in Commercial Real Estate (CRE)" title="Women in Commercial Real Estate (CRE)" style="display:block;"></a>
+              </td>
+              <td width="18" style="width:18px;"></td>
+              <td>
+                <table width="100%" style="height:100px;width:100%;">
+                  <tr style="height:20px;">
+                    <td align="left" style="font-size:17px;font-weight:700;color:#384042;">
+                      Women in Commercial Real Estate (CRE)
+                    </td>
+                  </tr>
+                  <tr style="height:20px;">
+                    <td align="left" height="20">
+                      <div style="display:block;height:20px;max-width:434px;color:#666666;white-space:nowrap;overflow:hidden;font-weight:500;font-size:14px;padding-top:2px;">
+                        Currently, 43 percent of commercial real estate professionals are …
+                      </div>
+                    </td>
+                  </tr>
+                  <tr style="height:20px;">
+                    <td align="left">
+                      <a href="https://www.landmarkcr.com/women-commercial-real-estate-cre/" target="_blank" style="color:#65070c;text-decoration:none;font-weight:500;font-size:16px;">[Read More]</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="22" style="width:22px;"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" height="28" style="width:100%;height:28px;"></td>
+      </tr>
+      <tr>
+        <td>
+          <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#f2f2f2;width:600px;margin:0 auto;border-collapse:collapse;">
+            <tr>
+              <td width="100%" height="19" style="width:100%;height:19px;"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#f2f2f2;width:600px;margin:0 auto;border-collapse:collapse;">
+                  <tr>
+                    <td width="115" style="width:115px;"></td>
+                    
+                    <td height="128" style="height:128px;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;border-collapse:collapse;">
+                        <tr align="center">
+                          <td><a href="https://www.landmarkcr.com/regional-spotlight-bellefonte/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Regional-Spotlight.png" alt="Regional Spotlight" title="Regional Spotlight" style="display:block;"></a>
+                        </td>
+                      </tr>
+                      <tr style="height:72px;">
+                        <td>
+                          <div style="display:block;max-width:179px;color:#666666;overflow:hidden;font-weight:500;font-size:13px;line-height:1.25;">
+                            Located just 12 miles northeast of State College, Bellefonte is experiencing a downtown revitalization.
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  
+                  <td width="114" style="width:114px;"></td>
+                  
+                  <td height="128" style="height:128px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;border-collapse:collapse;">
+                      <tr align="center">
+                        <td><a href="https://www.landmarkcr.com/first-quarter-market-watch-2018/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Market-Watch-1-2018.png" alt="Market Watch" title="Market Watch" style="display:block;"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td width="115" style="width:115px;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" height="13" style="width:100%;height:13px;background:#f2f2f2;"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#f2f2f2;width:600px;margin:0 auto;border-collapse:collapse;">
+              <tr>
+                <td width="107" style="width:107px;"></td>
+                
+                <td width="130" height="37" style="width:130px;height:37px;border:2px solid #000000;">
+                  <a href="https://www.landmarkcr.com/regional-spotlight-bellefonte/" target="_blank" style="text-decoration:none;display:block;width:100%;height:100%;line-height:37px;text-align:center;color:#000000;letter-spacing:2px;font-size:14px;font-weight:500;">READ MORE »</a>
+                </td>
+                
+                <td width="133" style="width:133px;"></td>
+                
+                <td width="130" height="37" style="width:130px;height:37px;border:2px solid #000000;">
+                  <a href="https://www.landmarkcr.com/first-quarter-market-watch-2018/" target="_blank" style="text-decoration:none;display:block;width:100%;height:100%;line-height:37px;text-align:center;color:#000000;letter-spacing:2px;font-size:14px;font-weight:500;">READ MORE »</a>
+                </td>
+                
+                <td width="100" style="width:100px;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" height="31" style="background:#f2f2f2;width:100%;height:31px;"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#666666;width:100%;max-width:100%;margin:0 auto;font-family:Roboto, Helvetica, sans-serif;border-spacing:0;border-collapse:collapse;">
+<tr>
+<td width="100%" height="22" style="width:100%;height:22px;"></td>
+</tr>
+<tr style="width:100%;">
+<td align="center" width="100%" style="font-family:'Roboto Condensed', Helvetica, sans-serif;color:#FFFFFF;font-weight:700;font-size:17px;text-align:center;letter-spacing:.3px;">
+<em>CENTRAL PA’S PREMIER COMMERCIAL REAL ESTATE BROKERAGE FIRM SINCE 1988.</em>
+</td>
+</tr>
+<tr>
+<td width="100%" height="14" style="width:100%;height:14px;"></td>
+</tr>
+<tr>
+<td>
+<table width="600" border="0" cellpadding="0" cellspacing="0" style="background:#666666;width:600px;max-width:100%;margin:0 auto;font-family:Roboto, Helvetica, sans-serif;border-spacing:0;border-collapse:collapse;">
+  <tr>
+    <td width="22" style="width:22px;"></td>
+    
+    <td>
+      <a href="https://www.landmarkcr.com/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Footer-Logo.png" alt="Landmark Commercial Realty" title="Landmark Commercial Realty" style="display:block;"></a>
+    </td>
+    
+    <td width="112" style="width:112px;"></td>
+    
+    <td>
+      <table width="210" border="0" cellpadding="0" cellspacing="0" style="background:#666666;width:210px;font-family:Roboto, Helvetica, sans-serif;border-spacing:0;border-collapse:collapse;">
+        <tr>
+          <td colspan="7" width="100%" height="23" style="width:100%;height:23px;"></td>
+        </tr>
+        <tr style="width:100%;">
+          <td><a href="https://twitter.com/LandmarkCommer1" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Twitter.png" alt="Twitter" title="Twitter" style="display:block;"></a>
+        </td>
+        <td width="13" style="width:13px;"></td>
+        <td><a href="https://www.facebook.com/landmarkcr/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/Facebook.png" alt="Facebook" title="Facebook" style="display:block;"></a>
+      </td>
+      <td width="13" style="width:13px;"></td>
+      <td><a href="https://www.linkedin.com/company/1438723/admin/updates/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/LinkedIn.png" alt="LinkedIn" title="LinkedIn" style="display:block;"></a>
+    </td>
+    <td width="8" style="width:8px;"></td>
+    <td><a href="https://www.tcnworldwide.com/" target="_blank"><img src="http://www.landmarkcr.com/wp-content/uploads/2018/08/TCN-Worldwide.png" alt="TCN Worldwide" title="TCN Worldwide" style="display:block;"></a>
+  </td>
+</tr>
+</table>
+</td>
+
+<td width="22" style="width:22px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="20" style="width:100%;height:20px;"></td>
+</tr>
+</table>
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper" style="background-color:#FFFFFF;border-top:1px solid #E5E5E5;">
+<tr>
+<td align="center" valign="top" style="padding-top:20px;padding-bottom:20px;">
+<table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+<tr>
+<td align="center" valign="top" style="color:#606060;font-family:Helvetica, Arial, sans-serif;font-size:11px;line-height:150%;padding-right:20px;padding-bottom:5px;padding-left:20px;text-align:center;">
+This email was sent to <a href="mailto:*|EMAIL|*" target="_blank" style="color:#404040 !important;">*|EMAIL|*</a>
+<br><a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get this?</em></a>    <a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from this list</a>    <a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update subscription preferences</a>
+<br>*|LIST:ADDRESSLINE|*
+<br>
+<br>*|REWARDS|*
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,106 @@
+#container
+    {
+        text-align: center ;
+        padding-top: 80px ;
+        padding-bottom: 110px ;
+    }
+
+
+#grams
+    {
+        font-family: CreativeBlock ;
+        font-size: 60px ;
+        color: #ff7b34 ;
+        text-shadow: 2px 2px white , -2px -2px white , 2px -2px white , -2px 2px white , 0px 0px 10px #1e4531 , 0px 0px 10px #1e4531 ;
+    }
+
+
+#jams
+    {
+        font-family: Unocide ;
+        font-size: 60px ;
+        color: #924d90 ;
+        text-shadow: 2px 2px white , -2px -2px white , 2px -2px white , -2px 2px white , 0px 0px 13px #ff7b34 , 0px 0px 13px #ff7b34 ;
+    }
+
+
+p
+    {
+        font-family: Expressway ;
+        font-size: 24px ;
+        width: 84% ;
+        margin: auto ;
+    }
+
+
+#intro
+    {
+        margin-top: 30px ;
+        margin-bottom: 35px ;
+    }
+
+
+#locales
+    {
+        font-weight: 900 ;
+        font-size: 22px ;
+    }
+
+
+#flags
+    {
+        margin-top: 20px ;
+        text-align: left ;
+        width: 50% ;
+        position: relative ;
+        left: 295px ;
+    }
+
+
+#flags p
+    {
+        font-size: 20px ;
+        margin-bottom: 8px ;
+    }
+
+
+.flag
+    {
+        margin-right: 14px ;
+        position: relative ;
+        top: 5px ;
+        box-shadow: 0px 0px 8px rgba( 0 , 0 , 0 , 0.4 ) ;
+    }
+
+
+#jams
+    {
+        margin-top: 85px ;
+    }
+
+
+#aboutjams
+    {
+        margin-top: 30px ;
+        margin-bottom: 20px ;
+    }
+
+
+#nightclub
+    {
+        transform: rotate( -2.5deg ) ;
+        margin-top: 36px ;
+        box-shadow: 0px 8px 25px rgba( 0 , 0 , 0 , 0.5 ) ;
+    }
+
+
+em
+    {
+        font-style: italic ;
+    }
+
+
+strong
+    {
+        font-weight: 900 ;
+    }

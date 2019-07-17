@@ -1,0 +1,23 @@
+.starter
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &--name
+    {
+        height: 25%;
+        background-color: $sox-red;
+        font-family: "Aileron Black";
+        color: $white;
+        font-size: 6rem;
+    }
+
+    &--image
+    {
+        height: 75%;
+        background-color: gray;
+    }
+}

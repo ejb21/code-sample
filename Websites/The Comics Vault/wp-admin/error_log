@@ -1,0 +1,1557 @@
+[05-Feb-2019 20:51:02 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 20:51:03 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6IkRkaUQ0bTFUTnJyT3BxWDBpcWJMQ1E9PSIsInZhbHVlIjoiNklnK3I4Y1drT1VyS0hhZTVYUmtpVWZGNG5hWXlzWEdwY0lJMFdTQ1lBWkRWN1VkM2ZqckdQNUJwdDFoYlpmY29SOXZxRE9aNnEwZEQ2b1RNZVZERXc9PSIsIm1hYyI6ImI3NzQzOGRkMzc2NjQzNzk3ZGNjYmQzYWExMmU3NmFjYmZhN2EwYjk0N2JkODU5Zjc1ZjYyZTViMDIyM2NiNDQifQ%3D%3D; expires=Tue, 05-Feb-2019 22:51:03 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6IkRkaUQ0bTFUTnJyT3BxWDBpcWJMQ1E9PSIsInZhbHVlIjoiNklnK3I4Y1drT1VyS0hhZTVYUmtpVWZGNG5hWXlzWEdwY0lJMFdTQ1lBWkRWN1VkM2ZqckdQNUJwdDFoYlpmY29SOXZxRE9aNnEwZEQ2b1RNZVZERXc9PSIsIm1hYyI6ImI3NzQzOGRkMzc2NjQzNzk3ZGNjYmQzYWExMmU3NmFjYmZhN2EwYjk0N2JkODU5Zjc1ZjYyZTViMDIyM2NiNDQifQ==
+                    [expires] => 1549407063
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 20:51:03 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6IkRkaUQ0bTFUTnJyT3BxWDBpcWJMQ1E9PSIsInZhbHVlIjoiNklnK3I4Y1drT1VyS0hhZTVYUmtpVWZGNG5hWXlzWEdwY0lJMFdTQ1lBWkRWN1VkM2ZqckdQNUJwdDFoYlpmY29SOXZxRE9aNnEwZEQ2b1RNZVZERXc9PSIsIm1hYyI6ImI3NzQzOGRkMzc2NjQzNzk3ZGNjYmQzYWExMmU3NmFjYmZhN2EwYjk0N2JkODU5Zjc1ZjYyZTViMDIyM2NiNDQifQ%3D%3D; expires=Tue, 05-Feb-2019 22:51:03 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 20:51:03 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6IkRkaUQ0bTFUTnJyT3BxWDBpcWJMQ1E9PSIsInZhbHVlIjoiNklnK3I4Y1drT1VyS0hhZTVYUmtpVWZGNG5hWXlzWEdwY0lJMFdTQ1lBWkRWN1VkM2ZqckdQNUJwdDFoYlpmY29SOXZxRE9aNnEwZEQ2b1RNZVZERXc9PSIsIm1hYyI6ImI3NzQzOGRkMzc2NjQzNzk3ZGNjYmQzYWExMmU3NmFjYmZhN2EwYjk0N2JkODU5Zjc1ZjYyZTViMDIyM2NiNDQifQ%3D%3D; expires=Tue, 05-Feb-2019 22:51:03 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6IkRkaUQ0bTFUTnJyT3BxWDBpcWJMQ1E9PSIsInZhbHVlIjoiNklnK3I4Y1drT1VyS0hhZTVYUmtpVWZGNG5hWXlzWEdwY0lJMFdTQ1lBWkRWN1VkM2ZqckdQNUJwdDFoYlpmY29SOXZxRE9aNnEwZEQ2b1RNZVZERXc9PSIsIm1hYyI6ImI3NzQzOGRkMzc2NjQzNzk3ZGNjYmQzYWExMmU3NmFjYmZhN2EwYjk0N2JkODU5Zjc1ZjYyZTViMDIyM2NiNDQifQ%3D%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549407063
+                                                            [max-age] => 1549407062
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549399862
+                                                    [last-access] => 1549399862
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549399862
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[05-Feb-2019 20:51:03 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 20:51:04 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6IkhxTnpUMTNmR0RjRVFMM1FoRXRabEE9PSIsInZhbHVlIjoiVnZla0hjMldVMTJwQmF2VFwvWWhSSzU5bGhBTXZkZkJEWTVwYUFubk04UlwvSmtEdnNQTWtUaFZUOHR1SVwvb0NTdVwvblBMdkNJYUMzWU5zNmpKMDB4ZFRBPT0iLCJtYWMiOiJmOGUxZjIzYjkwMTY1N2I1MmM3ZmU3ZTQxNTYxMzdlMmY1NTBmYTg4MmY2Zjc4NmQwN2RkNTU3YzM0ZDhiMDM4In0%3D; expires=Tue, 05-Feb-2019 22:51:04 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6IkhxTnpUMTNmR0RjRVFMM1FoRXRabEE9PSIsInZhbHVlIjoiVnZla0hjMldVMTJwQmF2VFwvWWhSSzU5bGhBTXZkZkJEWTVwYUFubk04UlwvSmtEdnNQTWtUaFZUOHR1SVwvb0NTdVwvblBMdkNJYUMzWU5zNmpKMDB4ZFRBPT0iLCJtYWMiOiJmOGUxZjIzYjkwMTY1N2I1MmM3ZmU3ZTQxNTYxMzdlMmY1NTBmYTg4MmY2Zjc4NmQwN2RkNTU3YzM0ZDhiMDM4In0=
+                    [expires] => 1549407064
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 20:51:04 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6IkhxTnpUMTNmR0RjRVFMM1FoRXRabEE9PSIsInZhbHVlIjoiVnZla0hjMldVMTJwQmF2VFwvWWhSSzU5bGhBTXZkZkJEWTVwYUFubk04UlwvSmtEdnNQTWtUaFZUOHR1SVwvb0NTdVwvblBMdkNJYUMzWU5zNmpKMDB4ZFRBPT0iLCJtYWMiOiJmOGUxZjIzYjkwMTY1N2I1MmM3ZmU3ZTQxNTYxMzdlMmY1NTBmYTg4MmY2Zjc4NmQwN2RkNTU3YzM0ZDhiMDM4In0%3D; expires=Tue, 05-Feb-2019 22:51:04 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 20:51:04 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6IkhxTnpUMTNmR0RjRVFMM1FoRXRabEE9PSIsInZhbHVlIjoiVnZla0hjMldVMTJwQmF2VFwvWWhSSzU5bGhBTXZkZkJEWTVwYUFubk04UlwvSmtEdnNQTWtUaFZUOHR1SVwvb0NTdVwvblBMdkNJYUMzWU5zNmpKMDB4ZFRBPT0iLCJtYWMiOiJmOGUxZjIzYjkwMTY1N2I1MmM3ZmU3ZTQxNTYxMzdlMmY1NTBmYTg4MmY2Zjc4NmQwN2RkNTU3YzM0ZDhiMDM4In0%3D; expires=Tue, 05-Feb-2019 22:51:04 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6IkhxTnpUMTNmR0RjRVFMM1FoRXRabEE9PSIsInZhbHVlIjoiVnZla0hjMldVMTJwQmF2VFwvWWhSSzU5bGhBTXZkZkJEWTVwYUFubk04UlwvSmtEdnNQTWtUaFZUOHR1SVwvb0NTdVwvblBMdkNJYUMzWU5zNmpKMDB4ZFRBPT0iLCJtYWMiOiJmOGUxZjIzYjkwMTY1N2I1MmM3ZmU3ZTQxNTYxMzdlMmY1NTBmYTg4MmY2Zjc4NmQwN2RkNTU3YzM0ZDhiMDM4In0%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549407064
+                                                            [max-age] => 1549407063
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549399863
+                                                    [last-access] => 1549399863
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549399863
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[05-Feb-2019 21:04:13 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 21:04:14 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6Imx3MXdUT0RrR3dkY29YYnZRUzBUeVE9PSIsInZhbHVlIjoiOXpMVUt4Q1pqeXdEOGt4WGp1MTRRZldMVUVVV3Y3aUwrUXJXd1JwM0VuYnl5d2Y3dGh3cENlRE1LNzlHV2NsVGlYS0xtRGU1XC9vcEdsN05sUktRaWp3PT0iLCJtYWMiOiI2YTg3NWYxMzM3MWViNGRlOWI2YjVjYzZmZGMyNjljNjNhMDYxYmY3YzcyMjQxODFiMTZjN2EyOGM4ZWVhYjE3In0%3D; expires=Tue, 05-Feb-2019 23:04:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6Imx3MXdUT0RrR3dkY29YYnZRUzBUeVE9PSIsInZhbHVlIjoiOXpMVUt4Q1pqeXdEOGt4WGp1MTRRZldMVUVVV3Y3aUwrUXJXd1JwM0VuYnl5d2Y3dGh3cENlRE1LNzlHV2NsVGlYS0xtRGU1XC9vcEdsN05sUktRaWp3PT0iLCJtYWMiOiI2YTg3NWYxMzM3MWViNGRlOWI2YjVjYzZmZGMyNjljNjNhMDYxYmY3YzcyMjQxODFiMTZjN2EyOGM4ZWVhYjE3In0=
+                    [expires] => 1549407854
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 21:04:14 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6Imx3MXdUT0RrR3dkY29YYnZRUzBUeVE9PSIsInZhbHVlIjoiOXpMVUt4Q1pqeXdEOGt4WGp1MTRRZldMVUVVV3Y3aUwrUXJXd1JwM0VuYnl5d2Y3dGh3cENlRE1LNzlHV2NsVGlYS0xtRGU1XC9vcEdsN05sUktRaWp3PT0iLCJtYWMiOiI2YTg3NWYxMzM3MWViNGRlOWI2YjVjYzZmZGMyNjljNjNhMDYxYmY3YzcyMjQxODFiMTZjN2EyOGM4ZWVhYjE3In0%3D; expires=Tue, 05-Feb-2019 23:04:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 21:04:14 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6Imx3MXdUT0RrR3dkY29YYnZRUzBUeVE9PSIsInZhbHVlIjoiOXpMVUt4Q1pqeXdEOGt4WGp1MTRRZldMVUVVV3Y3aUwrUXJXd1JwM0VuYnl5d2Y3dGh3cENlRE1LNzlHV2NsVGlYS0xtRGU1XC9vcEdsN05sUktRaWp3PT0iLCJtYWMiOiI2YTg3NWYxMzM3MWViNGRlOWI2YjVjYzZmZGMyNjljNjNhMDYxYmY3YzcyMjQxODFiMTZjN2EyOGM4ZWVhYjE3In0%3D; expires=Tue, 05-Feb-2019 23:04:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6Imx3MXdUT0RrR3dkY29YYnZRUzBUeVE9PSIsInZhbHVlIjoiOXpMVUt4Q1pqeXdEOGt4WGp1MTRRZldMVUVVV3Y3aUwrUXJXd1JwM0VuYnl5d2Y3dGh3cENlRE1LNzlHV2NsVGlYS0xtRGU1XC9vcEdsN05sUktRaWp3PT0iLCJtYWMiOiI2YTg3NWYxMzM3MWViNGRlOWI2YjVjYzZmZGMyNjljNjNhMDYxYmY3YzcyMjQxODFiMTZjN2EyOGM4ZWVhYjE3In0%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549407854
+                                                            [max-age] => 1549407853
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549400653
+                                                    [last-access] => 1549400653
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549400653
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[05-Feb-2019 21:21:22 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 21:21:23 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6IjA1dUp6cFJETUROeWxZVHpnODRaa0E9PSIsInZhbHVlIjoiVkxLWVZLQ2liSlZGZ25iMkZIdFVxQkUrWTBWQ0F4cFJEbnJHcGpYQWI1RFRLUW1PbTBUcnc5NGNpckd0Q09ycXpkVWRhSyszd2tSSjFFYTBVY0NQOHc9PSIsIm1hYyI6ImFlODk3YTJkN2NjZTM0NjUxMWI1Zjc5MmE2N2ZiNGJhZjUxYzg0NTkwMzBmZThjZWU1Y2U5OTI4NjE0MTI0MTIifQ%3D%3D; expires=Tue, 05-Feb-2019 23:21:23 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6IjA1dUp6cFJETUROeWxZVHpnODRaa0E9PSIsInZhbHVlIjoiVkxLWVZLQ2liSlZGZ25iMkZIdFVxQkUrWTBWQ0F4cFJEbnJHcGpYQWI1RFRLUW1PbTBUcnc5NGNpckd0Q09ycXpkVWRhSyszd2tSSjFFYTBVY0NQOHc9PSIsIm1hYyI6ImFlODk3YTJkN2NjZTM0NjUxMWI1Zjc5MmE2N2ZiNGJhZjUxYzg0NTkwMzBmZThjZWU1Y2U5OTI4NjE0MTI0MTIifQ==
+                    [expires] => 1549408883
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 21:21:23 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6IjA1dUp6cFJETUROeWxZVHpnODRaa0E9PSIsInZhbHVlIjoiVkxLWVZLQ2liSlZGZ25iMkZIdFVxQkUrWTBWQ0F4cFJEbnJHcGpYQWI1RFRLUW1PbTBUcnc5NGNpckd0Q09ycXpkVWRhSyszd2tSSjFFYTBVY0NQOHc9PSIsIm1hYyI6ImFlODk3YTJkN2NjZTM0NjUxMWI1Zjc5MmE2N2ZiNGJhZjUxYzg0NTkwMzBmZThjZWU1Y2U5OTI4NjE0MTI0MTIifQ%3D%3D; expires=Tue, 05-Feb-2019 23:21:23 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 21:21:23 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6IjA1dUp6cFJETUROeWxZVHpnODRaa0E9PSIsInZhbHVlIjoiVkxLWVZLQ2liSlZGZ25iMkZIdFVxQkUrWTBWQ0F4cFJEbnJHcGpYQWI1RFRLUW1PbTBUcnc5NGNpckd0Q09ycXpkVWRhSyszd2tSSjFFYTBVY0NQOHc9PSIsIm1hYyI6ImFlODk3YTJkN2NjZTM0NjUxMWI1Zjc5MmE2N2ZiNGJhZjUxYzg0NTkwMzBmZThjZWU1Y2U5OTI4NjE0MTI0MTIifQ%3D%3D; expires=Tue, 05-Feb-2019 23:21:23 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6IjA1dUp6cFJETUROeWxZVHpnODRaa0E9PSIsInZhbHVlIjoiVkxLWVZLQ2liSlZGZ25iMkZIdFVxQkUrWTBWQ0F4cFJEbnJHcGpYQWI1RFRLUW1PbTBUcnc5NGNpckd0Q09ycXpkVWRhSyszd2tSSjFFYTBVY0NQOHc9PSIsIm1hYyI6ImFlODk3YTJkN2NjZTM0NjUxMWI1Zjc5MmE2N2ZiNGJhZjUxYzg0NTkwMzBmZThjZWU1Y2U5OTI4NjE0MTI0MTIifQ%3D%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549408883
+                                                            [max-age] => 1549408882
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549401682
+                                                    [last-access] => 1549401682
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549401682
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[05-Feb-2019 21:39:05 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 21:39:06 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6IlVESUhTRE02dlpBTERMV1N6R3FwS3c9PSIsInZhbHVlIjoid3hqMTdtblwvVElnc3NRSUJqaGdNdkE0R3RqZXFlUjZtNDZwR2o5NlhXWmh1OWdXU1VhM3N6TE80ZnF2ZFwvNFNMZm1BM3p2OFNWVXMwQTRSendVUUl1Zz09IiwibWFjIjoiMzNjNGY1MDE0MzMzYTE5YmRmMThlNjYzMWQxZTEwYTJjMzNhZGQ1NmRhOTAzMjE2NDhhY2E4ZTMzY2Q2YzQ4OSJ9; expires=Tue, 05-Feb-2019 23:39:06 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6IlVESUhTRE02dlpBTERMV1N6R3FwS3c9PSIsInZhbHVlIjoid3hqMTdtblwvVElnc3NRSUJqaGdNdkE0R3RqZXFlUjZtNDZwR2o5NlhXWmh1OWdXU1VhM3N6TE80ZnF2ZFwvNFNMZm1BM3p2OFNWVXMwQTRSendVUUl1Zz09IiwibWFjIjoiMzNjNGY1MDE0MzMzYTE5YmRmMThlNjYzMWQxZTEwYTJjMzNhZGQ1NmRhOTAzMjE2NDhhY2E4ZTMzY2Q2YzQ4OSJ9
+                    [expires] => 1549409946
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 21:39:06 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6IlVESUhTRE02dlpBTERMV1N6R3FwS3c9PSIsInZhbHVlIjoid3hqMTdtblwvVElnc3NRSUJqaGdNdkE0R3RqZXFlUjZtNDZwR2o5NlhXWmh1OWdXU1VhM3N6TE80ZnF2ZFwvNFNMZm1BM3p2OFNWVXMwQTRSendVUUl1Zz09IiwibWFjIjoiMzNjNGY1MDE0MzMzYTE5YmRmMThlNjYzMWQxZTEwYTJjMzNhZGQ1NmRhOTAzMjE2NDhhY2E4ZTMzY2Q2YzQ4OSJ9; expires=Tue, 05-Feb-2019 23:39:06 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 21:39:06 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6IlVESUhTRE02dlpBTERMV1N6R3FwS3c9PSIsInZhbHVlIjoid3hqMTdtblwvVElnc3NRSUJqaGdNdkE0R3RqZXFlUjZtNDZwR2o5NlhXWmh1OWdXU1VhM3N6TE80ZnF2ZFwvNFNMZm1BM3p2OFNWVXMwQTRSendVUUl1Zz09IiwibWFjIjoiMzNjNGY1MDE0MzMzYTE5YmRmMThlNjYzMWQxZTEwYTJjMzNhZGQ1NmRhOTAzMjE2NDhhY2E4ZTMzY2Q2YzQ4OSJ9; expires=Tue, 05-Feb-2019 23:39:06 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6IlVESUhTRE02dlpBTERMV1N6R3FwS3c9PSIsInZhbHVlIjoid3hqMTdtblwvVElnc3NRSUJqaGdNdkE0R3RqZXFlUjZtNDZwR2o5NlhXWmh1OWdXU1VhM3N6TE80ZnF2ZFwvNFNMZm1BM3p2OFNWVXMwQTRSendVUUl1Zz09IiwibWFjIjoiMzNjNGY1MDE0MzMzYTE5YmRmMThlNjYzMWQxZTEwYTJjMzNhZGQ1NmRhOTAzMjE2NDhhY2E4ZTMzY2Q2YzQ4OSJ9
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549409946
+                                                            [max-age] => 1549409945
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549402745
+                                                    [last-access] => 1549402745
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549402745
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[05-Feb-2019 21:50:41 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Tue, 05 Feb 2019 21:50:42 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6InRDeTRsSzFoOU13ZDhwYkRJcXFjaWc9PSIsInZhbHVlIjoiVUphQUFBM3VWeisyeXB5Tmt4WlZreVczN3BlbzBhd2F2ZkM2ZzRTdks5U01ibHhUUHdrZzJLd04xY3lsUnFKdDFMQ0dXUVFnVkdnVnNwMTdGU1gxRWc9PSIsIm1hYyI6IjQ1MTE3ZTRlZDJhNjQzN2E1YjU2NGYwNGY1MGM3Y2JkYjgzZWE5ODI0NzAwMDJlMDZmM2Q1NDdiMTZmZDY1ZDAifQ%3D%3D; expires=Tue, 05-Feb-2019 23:50:42 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6InRDeTRsSzFoOU13ZDhwYkRJcXFjaWc9PSIsInZhbHVlIjoiVUphQUFBM3VWeisyeXB5Tmt4WlZreVczN3BlbzBhd2F2ZkM2ZzRTdks5U01ibHhUUHdrZzJLd04xY3lsUnFKdDFMQ0dXUVFnVkdnVnNwMTdGU1gxRWc9PSIsIm1hYyI6IjQ1MTE3ZTRlZDJhNjQzN2E1YjU2NGYwNGY1MGM3Y2JkYjgzZWE5ODI0NzAwMDJlMDZmM2Q1NDdiMTZmZDY1ZDAifQ==
+                    [expires] => 1549410642
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 05 Feb 2019 21:50:42 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6InRDeTRsSzFoOU13ZDhwYkRJcXFjaWc9PSIsInZhbHVlIjoiVUphQUFBM3VWeisyeXB5Tmt4WlZreVczN3BlbzBhd2F2ZkM2ZzRTdks5U01ibHhUUHdrZzJLd04xY3lsUnFKdDFMQ0dXUVFnVkdnVnNwMTdGU1gxRWc9PSIsIm1hYyI6IjQ1MTE3ZTRlZDJhNjQzN2E1YjU2NGYwNGY1MGM3Y2JkYjgzZWE5ODI0NzAwMDJlMDZmM2Q1NDdiMTZmZDY1ZDAifQ%3D%3D; expires=Tue, 05-Feb-2019 23:50:42 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Tue, 05 Feb 2019 21:50:42 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6InRDeTRsSzFoOU13ZDhwYkRJcXFjaWc9PSIsInZhbHVlIjoiVUphQUFBM3VWeisyeXB5Tmt4WlZreVczN3BlbzBhd2F2ZkM2ZzRTdks5U01ibHhUUHdrZzJLd04xY3lsUnFKdDFMQ0dXUVFnVkdnVnNwMTdGU1gxRWc9PSIsIm1hYyI6IjQ1MTE3ZTRlZDJhNjQzN2E1YjU2NGYwNGY1MGM3Y2JkYjgzZWE5ODI0NzAwMDJlMDZmM2Q1NDdiMTZmZDY1ZDAifQ%3D%3D; expires=Tue, 05-Feb-2019 23:50:42 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6InRDeTRsSzFoOU13ZDhwYkRJcXFjaWc9PSIsInZhbHVlIjoiVUphQUFBM3VWeisyeXB5Tmt4WlZreVczN3BlbzBhd2F2ZkM2ZzRTdks5U01ibHhUUHdrZzJLd04xY3lsUnFKdDFMQ0dXUVFnVkdnVnNwMTdGU1gxRWc9PSIsIm1hYyI6IjQ1MTE3ZTRlZDJhNjQzN2E1YjU2NGYwNGY1MGM3Y2JkYjgzZWE5ODI0NzAwMDJlMDZmM2Q1NDdiMTZmZDY1ZDAifQ%3D%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549410642
+                                                            [max-age] => 1549410641
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549403441
+                                                    [last-access] => 1549403441
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549403441
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[07-Feb-2019 00:23:54 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Thu, 07 Feb 2019 00:23:55 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6IjNGRjBFRjNCUUdqdUlIcUVab2JxUnc9PSIsInZhbHVlIjoiVmc3WnJzdGVFUzdkcU1Mam1uaHhYVFA0bTJcL0NJcW9URzVOdTZ1R05PdHozNkU4dmpFT2diS3BwNTlqcStpNEFiTkdOaUl5NlwvKzJhbVVaU0IzODJDZz09IiwibWFjIjoiMTYzMmZjNjk2NDgwNGFmMTRmYWYyYzE0M2JmZGU3M2E3YzhkOTdiMzgzNWUwNzVhMWQ0Y2QwZmNkMDQ3MTlmYSJ9; expires=Thu, 07-Feb-2019 02:23:55 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6IjNGRjBFRjNCUUdqdUlIcUVab2JxUnc9PSIsInZhbHVlIjoiVmc3WnJzdGVFUzdkcU1Mam1uaHhYVFA0bTJcL0NJcW9URzVOdTZ1R05PdHozNkU4dmpFT2diS3BwNTlqcStpNEFiTkdOaUl5NlwvKzJhbVVaU0IzODJDZz09IiwibWFjIjoiMTYzMmZjNjk2NDgwNGFmMTRmYWYyYzE0M2JmZGU3M2E3YzhkOTdiMzgzNWUwNzVhMWQ0Y2QwZmNkMDQ3MTlmYSJ9
+                    [expires] => 1549506235
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 07 Feb 2019 00:23:55 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6IjNGRjBFRjNCUUdqdUlIcUVab2JxUnc9PSIsInZhbHVlIjoiVmc3WnJzdGVFUzdkcU1Mam1uaHhYVFA0bTJcL0NJcW9URzVOdTZ1R05PdHozNkU4dmpFT2diS3BwNTlqcStpNEFiTkdOaUl5NlwvKzJhbVVaU0IzODJDZz09IiwibWFjIjoiMTYzMmZjNjk2NDgwNGFmMTRmYWYyYzE0M2JmZGU3M2E3YzhkOTdiMzgzNWUwNzVhMWQ0Y2QwZmNkMDQ3MTlmYSJ9; expires=Thu, 07-Feb-2019 02:23:55 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Thu, 07 Feb 2019 00:23:55 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6IjNGRjBFRjNCUUdqdUlIcUVab2JxUnc9PSIsInZhbHVlIjoiVmc3WnJzdGVFUzdkcU1Mam1uaHhYVFA0bTJcL0NJcW9URzVOdTZ1R05PdHozNkU4dmpFT2diS3BwNTlqcStpNEFiTkdOaUl5NlwvKzJhbVVaU0IzODJDZz09IiwibWFjIjoiMTYzMmZjNjk2NDgwNGFmMTRmYWYyYzE0M2JmZGU3M2E3YzhkOTdiMzgzNWUwNzVhMWQ0Y2QwZmNkMDQ3MTlmYSJ9; expires=Thu, 07-Feb-2019 02:23:55 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6IjNGRjBFRjNCUUdqdUlIcUVab2JxUnc9PSIsInZhbHVlIjoiVmc3WnJzdGVFUzdkcU1Mam1uaHhYVFA0bTJcL0NJcW9URzVOdTZ1R05PdHozNkU4dmpFT2diS3BwNTlqcStpNEFiTkdOaUl5NlwvKzJhbVVaU0IzODJDZz09IiwibWFjIjoiMTYzMmZjNjk2NDgwNGFmMTRmYWYyYzE0M2JmZGU3M2E3YzhkOTdiMzgzNWUwNzVhMWQ0Y2QwZmNkMDQ3MTlmYSJ9
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549506235
+                                                            [max-age] => 1549506234
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549499034
+                                                    [last-access] => 1549499034
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549499034
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[07-Feb-2019 00:29:13 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Thu, 07 Feb 2019 00:29:14 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6ImFiV2g4MnBaWHpNaHNpc0RpaUV5RFE9PSIsInZhbHVlIjoicTB2T3RwNTZmQjFqRzRKenBqY3h4ODhHcmh2WER6QTVqcldlbldISnZKak4rWFBsQnBNZTR5bEdTa0VVSG9aZzlRVzEzQnk0Z0xGQk83aHRBZEQrMEE9PSIsIm1hYyI6IjIzZGE1ZjZmMjk3MzkwODE2ZDlkZmVmY2FiZjJjOWJlYzZmZTBhNjc2MzU3ZGExMDYxMjg2MGJjODBmMWZjY2MifQ%3D%3D; expires=Thu, 07-Feb-2019 02:29:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6ImFiV2g4MnBaWHpNaHNpc0RpaUV5RFE9PSIsInZhbHVlIjoicTB2T3RwNTZmQjFqRzRKenBqY3h4ODhHcmh2WER6QTVqcldlbldISnZKak4rWFBsQnBNZTR5bEdTa0VVSG9aZzlRVzEzQnk0Z0xGQk83aHRBZEQrMEE9PSIsIm1hYyI6IjIzZGE1ZjZmMjk3MzkwODE2ZDlkZmVmY2FiZjJjOWJlYzZmZTBhNjc2MzU3ZGExMDYxMjg2MGJjODBmMWZjY2MifQ==
+                    [expires] => 1549506554
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 07 Feb 2019 00:29:14 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6ImFiV2g4MnBaWHpNaHNpc0RpaUV5RFE9PSIsInZhbHVlIjoicTB2T3RwNTZmQjFqRzRKenBqY3h4ODhHcmh2WER6QTVqcldlbldISnZKak4rWFBsQnBNZTR5bEdTa0VVSG9aZzlRVzEzQnk0Z0xGQk83aHRBZEQrMEE9PSIsIm1hYyI6IjIzZGE1ZjZmMjk3MzkwODE2ZDlkZmVmY2FiZjJjOWJlYzZmZTBhNjc2MzU3ZGExMDYxMjg2MGJjODBmMWZjY2MifQ%3D%3D; expires=Thu, 07-Feb-2019 02:29:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Thu, 07 Feb 2019 00:29:14 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6ImFiV2g4MnBaWHpNaHNpc0RpaUV5RFE9PSIsInZhbHVlIjoicTB2T3RwNTZmQjFqRzRKenBqY3h4ODhHcmh2WER6QTVqcldlbldISnZKak4rWFBsQnBNZTR5bEdTa0VVSG9aZzlRVzEzQnk0Z0xGQk83aHRBZEQrMEE9PSIsIm1hYyI6IjIzZGE1ZjZmMjk3MzkwODE2ZDlkZmVmY2FiZjJjOWJlYzZmZTBhNjc2MzU3ZGExMDYxMjg2MGJjODBmMWZjY2MifQ%3D%3D; expires=Thu, 07-Feb-2019 02:29:14 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6ImFiV2g4MnBaWHpNaHNpc0RpaUV5RFE9PSIsInZhbHVlIjoicTB2T3RwNTZmQjFqRzRKenBqY3h4ODhHcmh2WER6QTVqcldlbldISnZKak4rWFBsQnBNZTR5bEdTa0VVSG9aZzlRVzEzQnk0Z0xGQk83aHRBZEQrMEE9PSIsIm1hYyI6IjIzZGE1ZjZmMjk3MzkwODE2ZDlkZmVmY2FiZjJjOWJlYzZmZTBhNjc2MzU3ZGExMDYxMjg2MGJjODBmMWZjY2MifQ%3D%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549506554
+                                                            [max-age] => 1549506553
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549499353
+                                                    [last-access] => 1549499353
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549499353
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+[07-Feb-2019 00:35:01 UTC] Created calendar: Created calendar. Please reload this page to try again. If this error persists, please contact us at <a href="mailto:labs@time.ly" target="_top">labs@time.ly</a>. In your report please include the information below.<br/>API URL: https://api.time.ly/api/calendars.<br/>Detail: 401 - Unauthorized. - raw error: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                    [access-control-allow-methods] => GET, POST, OPTIONS, PUT, DELETE
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, private
+                    [content-type] => text/html; charset=UTF-8
+                    [date] => Thu, 07 Feb 2019 00:35:02 GMT
+                    [server] => nginx
+                    [set-cookie] => laravel_session=eyJpdiI6ImJSc01SdVh6dWNRbWlyXC9sTlZ4eEVBPT0iLCJ2YWx1ZSI6IlcxdnhXRUdTRUJ0MlRjeDVyOE9qc2cyQ1diOGFORXFsTzJCUTVkQ21jNGJwN0dXMlN3TEdkUVArOGs5czRZU1Fzd3ZBMnJobDREbDJmR1A0dzYrTVdnPT0iLCJtYWMiOiJmOGYzMTE2MDE5NThlYjc4YTcxZGY1OWU4ZmMwZGQwMDMzN2E0NzhhOTlkZDRhZGVmZDJiYmM1MzIyYTZiZmMxIn0%3D; expires=Thu, 07-Feb-2019 02:35:02 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                    [content-length] => 13
+                )
+
+        )
+
+    [body] => Unauthorized.
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => laravel_session
+                    [value] => eyJpdiI6ImJSc01SdVh6dWNRbWlyXC9sTlZ4eEVBPT0iLCJ2YWx1ZSI6IlcxdnhXRUdTRUJ0MlRjeDVyOE9qc2cyQ1diOGFORXFsTzJCUTVkQ21jNGJwN0dXMlN3TEdkUVArOGs5czRZU1Fzd3ZBMnJobDREbDJmR1A0dzYrTVdnPT0iLCJtYWMiOiJmOGYzMTE2MDE5NThlYjc4YTcxZGY1OWU4ZmMwZGQwMDMzN2E0NzhhOTlkZDRhZGVmZDJiYmM1MzIyYTZiZmMxIn0=
+                    [expires] => 1549506902
+                    [path] => /
+                    [domain] => time.ly
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => Unauthorized.
+                    [raw] => HTTP/1.1 401 Unauthorized
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 07 Feb 2019 00:35:02 GMT
+Server: nginx
+Set-Cookie: laravel_session=eyJpdiI6ImJSc01SdVh6dWNRbWlyXC9sTlZ4eEVBPT0iLCJ2YWx1ZSI6IlcxdnhXRUdTRUJ0MlRjeDVyOE9qc2cyQ1diOGFORXFsTzJCUTVkQ21jNGJwN0dXMlN3TEdkUVArOGs5czRZU1Fzd3ZBMnJobDREbDJmR1A0dzYrTVdnPT0iLCJtYWMiOiJmOGYzMTE2MDE5NThlYjc4YTcxZGY1OWU4ZmMwZGQwMDMzN2E0NzhhOTlkZDRhZGVmZDJiYmM1MzIyYTZiZmMxIn0%3D; expires=Thu, 07-Feb-2019 02:35:02 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+Content-Length: 13
+Connection: Close
+
+Unauthorized.
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Auth-Token,X-CustomHeader,X-Mx-ReqToken,X-Requested-With
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET, POST, OPTIONS, PUT, DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, private
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=UTF-8
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Thu, 07 Feb 2019 00:35:02 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => laravel_session=eyJpdiI6ImJSc01SdVh6dWNRbWlyXC9sTlZ4eEVBPT0iLCJ2YWx1ZSI6IlcxdnhXRUdTRUJ0MlRjeDVyOE9qc2cyQ1diOGFORXFsTzJCUTVkQ21jNGJwN0dXMlN3TEdkUVArOGs5czRZU1Fzd3ZBMnJobDREbDJmR1A0dzYrTVdnPT0iLCJtYWMiOiJmOGYzMTE2MDE5NThlYjc4YTcxZGY1OWU4ZmMwZGQwMDMzN2E0NzhhOTlkZDRhZGVmZDJiYmM1MzIyYTZiZmMxIn0%3D; expires=Thu, 07-Feb-2019 02:35:02 GMT; Max-Age=7200; path=/; domain=.time.ly; httponly
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 13
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 401
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.time.ly/api/calendars
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [laravel_session] => Requests_Cookie Object
+                                        (
+                                            [name] => laravel_session
+                                            [value] => eyJpdiI6ImJSc01SdVh6dWNRbWlyXC9sTlZ4eEVBPT0iLCJ2YWx1ZSI6IlcxdnhXRUdTRUJ0MlRjeDVyOE9qc2cyQ1diOGFORXFsTzJCUTVkQ21jNGJwN0dXMlN3TEdkUVArOGs5czRZU1Fzd3ZBMnJobDREbDJmR1A0dzYrTVdnPT0iLCJtYWMiOiJmOGYzMTE2MDE5NThlYjc4YTcxZGY1OWU4ZmMwZGQwMDMzN2E0NzhhOTlkZDRhZGVmZDJiYmM1MzIyYTZiZmMxIn0%3D
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1549506902
+                                                            [max-age] => 1549506901
+                                                            [path] => /
+                                                            [domain] => time.ly
+                                                            [httponly] => 1
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1549499701
+                                                    [last-access] => 1549499701
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1549499701
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+

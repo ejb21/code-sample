@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Assignment #6 &mdash; My Video</title>
+        <style>
+            body
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            a
+            {
+                font-family: 'Helvetica';
+                font-size: 1.75rem;
+                display: inline-block;
+                background-color: #eee;
+                margin: 4rem 1.2rem 0 1.2rem;
+                color: black;
+                text-decoration: none;
+                padding: 1rem 0;
+                width: 10rem;
+                text-align: center;
+            }
+
+            a:hover
+            {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <script>
+        window.onload = function()
+        {
+            var theCanvas = document.getElementById('canvas');
+
+            if (theCanvas && theCanvas.getContext)
+            {
+                var context = theCanvas.getContext('2d');
+
+                if (context)
+                {
+                    var vid = document.getElementById('video');
+                    vid.play();
+                    
+                    setInterval(function()
+                    {
+                        var canvas = document.getElementById('canvas');
+                        var context = canvas.getContext('2d');
+                        context.drawImage(vid, 0, 0, 720, 405);
+                    });
+                }
+            }
+        }
+    </script>
+    <body>
+        <canvas id="canvas" width="720" height="405"style="border:1px solid black;"></canvas>
+        <video id="video" src="winrar.mp4" controls="false" style="display: none;"></video>
+        
+        <div>
+            <a href="http://ejb21.me/winrar.mp4">MP4</a>
+            <a href="http://ejb21.me/winrar.ogg">OGG</a>
+            <a href="http://ejb21.me/winrar.webm">WebM</a>
+        </div>
+    </body>
+</html>
