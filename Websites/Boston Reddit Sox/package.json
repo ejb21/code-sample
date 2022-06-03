@@ -13,7 +13,7 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "jquery-serializejson": "^2.8.1",
-    "jquery-validation": "^1.17.0",
+    "jquery-validation": "^1.19.4",
     "node": "^8.15.0",
     "okjs": "^3.4.0",
     "sweetalert": "^2.1.2"
